@@ -1,0 +1,9 @@
+{
+  "playerId": "example_user",
+  "progress": {
+    "level": 3,
+    "xp": 2400,
+    "coins": 512
+  },
+  "timestamp": "2025-10-16T00:00:00Z"
+}
