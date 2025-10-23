@@ -1,0 +1,9 @@
+{
+  "language": "ru",
+  "ui_scale": 1.0,
+  "safe_area": true,
+  "show_fps": false,
+  "theme": "dark",
+  "splash_duration_sec": 2.5,
+  "logo_path": "../assets/logo/nikiton_logo.png"
+}
