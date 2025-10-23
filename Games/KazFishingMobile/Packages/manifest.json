@@ -1,9 +1,26 @@
 {
   "dependencies": {
-    "com.unity.modules.ui": "1.0.0",
-    "com.unity.ugui": "1.0.0",
     "com.unity.textmeshpro": "3.0.6",
-    "com.unity.inputsystem": "1.7.0"
+    "com.unity.inputsystem": "1.6.1",
+    "com.unity.postprocessing": "3.3.0",
+    "com.unity.render-pipelines.universal": "14.0.9",
+    "com.unity.timeline": "1.8.2",
+    "com.unity.cinemachine": "2.9.7",
+    "com.unity.addressables": "1.21.20",
+    "com.unity.analytics": "4.4.0",
+    "com.unity.collab-proxy": "2.3.2",
+    "com.unity.purchasing": "4.9.3"
   },
-  "registry": "https://packages.unity.com"
+  "registry": "https://packages.unity.com",
+  "scopedRegistries": [
+    {
+      "name": "NikitoN Games Core",
+      "url": "https://nikitongames.github.io/nikiton-cloud/core/",
+      "scopes": [
+        "com.nikiton.core",
+        "com.nikiton.monetization",
+        "com.nikiton.templates"
+      ]
+    }
+  ]
 }
