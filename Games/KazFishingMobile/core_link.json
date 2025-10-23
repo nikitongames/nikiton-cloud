@@ -14,5 +14,10 @@
     "terms": "core/policies/terms_ru.md",
     "eula": "core/policies/eula_ru.md",
     "donations": "core/policies/donations_ru.md"
+  },
+  "gameSettings": {
+    "type": "fishing",
+    "assets": "fish, rods, lures, boats, maps, crafting",
+    "enableWeatherSystem": true
   }
 }
