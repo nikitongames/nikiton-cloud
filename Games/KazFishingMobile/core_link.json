@@ -1,0 +1,18 @@
+{
+  "useCore": true,
+  "corePath": "../../core/",
+  "version": "1.0.0",
+  "modules": [
+    "configs",
+    "engine",
+    "monetization",
+    "policies",
+    "templates"
+  ],
+  "legal": {
+    "privacy": "core/policies/privacy_policy_ru.md",
+    "terms": "core/policies/terms_ru.md",
+    "eula": "core/policies/eula_ru.md",
+    "donations": "core/policies/donations_ru.md"
+  }
+}
