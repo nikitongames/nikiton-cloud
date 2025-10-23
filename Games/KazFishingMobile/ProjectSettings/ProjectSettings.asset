@@ -1,11 +1,11 @@
 companyName: NikitoN Games
-productName: KazHunt Mobile
+productName: KazFishing Mobile
 defaultScreenWidth: 1920
 defaultScreenHeight: 1080
 fullscreenMode: 1
 displayResolutionDialog: 0
 bundleVersion: 1.0.0
-bundleIdentifier: com.nikitongames.kazhuntmobile
+bundleIdentifier: com.nikitongames.kazfishingmobile
 defaultOrientation: LandscapeLeft
 scriptingBackend: IL2CPP
 apiCompatibilityLevelPerPlatform:
