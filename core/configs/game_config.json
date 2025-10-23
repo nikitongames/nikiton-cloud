@@ -3,14 +3,30 @@
   "studio": "NikitoN Games",
   "splashSeconds": 2.3,
   "landscape": true,
+
   "donations": {
     "currency": "KZT",
-    "tiers": [449, 899, 1790, 3590]
+    "tiers": [449, 899, 1790, 3590],
+    "specialOffers": {
+      "dailyPack": {
+        "common": 449,
+        "rare": 899,
+        "legendary": 1790,
+        "bundleAll": 3590
+      }
+    }
   },
+
   "policies": {
-    "privacy": "https://nikitongames.github.io/nikiton-cloud/core/policies/privacy_policy_ru.md",
-    "terms": "https://nikitongames.github.io/nikiton-cloud/core/policies/terms_ru.md",
-    "eula": "https://nikiton games.github.io/nikiton-cloud/core/policies/eula_ru.md",
-    "donations": "https://nikitongames.github.io/nikiton-cloud/core/policies/donations_ru.md"
+    "privacy": "https://nikitongames.github.io/core/policies/privacy_policy_ru.md",
+    "terms": "https://nikitongames.github.io/core/policies/terms_ru.md",
+    "eula": "https://nikitongames.github.io/core/policies/eula_ru.md",
+    "donations": "https://nikitongames.github.io/core/policies/donations_ru.md"
+  },
+
+  "features": {
+    "enableWeatherSystem": true,
+    "enableLocalization": true,
+    "enableCoreUpdates": true
   }
 }
