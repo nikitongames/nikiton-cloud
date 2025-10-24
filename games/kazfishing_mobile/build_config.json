@@ -1,0 +1,11 @@
+{
+  "platform": "Android",
+  "target_file": "KazFishingMobile.aab",
+  "orientation": "landscape",
+  "package_name": "com.nikiton.kazfishing",
+  "unity_version": "6.0.0f1",
+  "minimum_api_level": 33,
+  "splash_screen_logo": "../../shared/logo_nikiton.png",
+  "donations_enabled": true,
+  "privacy_check_required": true
+}
