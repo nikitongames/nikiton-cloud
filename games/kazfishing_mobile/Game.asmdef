@@ -1,0 +1,19 @@
+{
+  "name": "KazFishing.Mobile",
+  "references": [
+    "NikitonCore.Core",
+    "NikitonCore.Systems",
+    "NikitonCore.UI",
+    "NikitonCore.Legal",
+    "NikitonCore.Localization"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
