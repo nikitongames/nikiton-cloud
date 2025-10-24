@@ -1,0 +1,11 @@
+{
+  "CoreVersion": "1.0.0",
+  "Cloud": {
+    "BaseURL": "https://github.com/nikitongames/nikiton-cloud/",
+    "CorePath": "core/",
+    "LegalPath": "legal/"
+  },
+  "Legal": {
+    "RequireConsent": true
+  }
+}
