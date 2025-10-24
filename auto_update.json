@@ -1,0 +1,12 @@
+{
+  "latest_core_version": "1.0.0",
+  "latest_systems_version": "1.0.0",
+  "latest_ui_version": "1.0.0",
+  "latest_localization_version": "1.0.0",
+  "latest_legal_update": "2025-10-25",
+  "games": {
+    "kazfishing_mobile": "1.0.0",
+    "kazhunt_mobile": "1.0.0"
+  },
+  "next_check_interval_hours": 12
+}
