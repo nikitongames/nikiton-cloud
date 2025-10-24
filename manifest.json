@@ -1,0 +1,17 @@
+{
+  "name": "Nikiton Cloud Framework",
+  "version": "1.0.0",
+  "last_update": "2025-10-25",
+  "modules": {
+    "core": "core/",
+    "systems": "systems/",
+    "ui": "ui/",
+    "legal": "legal/",
+    "localization": "localization/",
+    "games": "games/"
+  },
+  "supported_platforms": ["Android", "Windows", "iOS"],
+  "default_game": "kazfishing_mobile",
+  "author": "NikitoN Games",
+  "description": "Unified cloud framework for all Nikiton Games projects. Contains shared systems, legal files, UI, and localization templates."
+}
