@@ -1,0 +1,16 @@
+{
+  "start_game": "Start Game",
+  "exit_game": "Exit",
+  "privacy_policy": "Privacy Policy",
+  "terms_of_use": "Terms of Use",
+  "eula": "License Agreement",
+  "accept": "I Accept",
+  "donate": "Support Project",
+  "loading": "Loading...",
+  "confirm": "Confirm",
+  "cancel": "Cancel",
+  "connected": "Connected to Nikiton Cloud",
+  "disconnected": "Offline Mode",
+  "language_changed": "Language changed to English",
+  "legal_notice": "All characters and names are fictional."
+}
