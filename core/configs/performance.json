@@ -1,7 +1,0 @@
-{
-  "target_fps": 60,
-  "v_sync": 0,
-  "texture_quality": "medium",
-  "shadow_quality": "low",
-  "post_processing": false
-}
