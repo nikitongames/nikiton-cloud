@@ -1,0 +1,12 @@
+{
+  "id": "sturgeon",
+  "title": "Осётр",
+  "average_weight_kg": 15.0,
+  "trophy_weight_kg": 120.0,
+  "activity": { "day": 0.4, "night": 0.8 },
+  "preferred_depth_m": [10.0, 40.0],
+  "preferred_baits": ["fish_meat", "worm_bundle"],
+  "gear_suggestions": { "rod_power": "heavy", "line_test_kg": [20, 40], "hook_sizes": [2, 4] },
+  "fight_profile": { "runouts": "slow_heavy", "stamina": "very_high" },
+  "notes": "Донная рыба; обитает в крупных реках и у устьев. Сильный боец."
+}
