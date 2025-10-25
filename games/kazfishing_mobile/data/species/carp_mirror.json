@@ -1,0 +1,12 @@
+{
+  "id": "carp_mirror",
+  "title": "Карп зеркальный",
+  "average_weight_kg": 4.5,
+  "trophy_weight_kg": 25.0,
+  "activity": { "day": 0.7, "night": 0.6 },
+  "preferred_depth_m": [1.5, 4.0],
+  "preferred_baits": ["boilie", "corn", "pellets"],
+  "gear_suggestions": { "rod_power": "medium_heavy", "line_test_kg": [10, 18], "hook_sizes": [4, 6] },
+  "fight_profile": { "runouts": "high", "stamina": "high" },
+  "notes": "Искусственно выведенная форма карпа. Силен и осторожен."
+}
