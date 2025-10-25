@@ -1,0 +1,100 @@
+{
+  "store_config": {
+    "currency_primary": "kzc",
+    "currency_secondary": "ngt",
+    "refresh_utc": "00:00",
+    "supports_auto_renew": true,
+    "license_duration_days": 30,
+    "linked_systems": ["locations", "species_meta", "tournaments"],
+    "region_based_pricing": true
+  },
+
+  "licenses": [
+    {
+      "id": "license_basic",
+      "title": "Базовая лицензия рыболова",
+      "description": "Позволяет ловить на стартовых локациях. Обязательно для начала игры.",
+      "price_kzc": 100,
+      "regions": ["irtysh", "tobol"],
+      "duration_days": 30
+    },
+    {
+      "id": "license_north",
+      "title": "Северная лицензия",
+      "description": "Доступ к холодным водоёмам и арктическим видам рыб (сиг, хариус, налим).",
+      "price_kzc": 600,
+      "min_level": 8,
+      "regions": ["markakol", "baikal", "north_bay"],
+      "duration_days": 45
+    },
+    {
+      "id": "license_south",
+      "title": "Южная лицензия",
+      "description": "Позволяет рыбачить в тёплых водоёмах и на Амазонке. Включает тропические виды рыб.",
+      "price_kzc": 900,
+      "min_level": 12,
+      "regions": ["amazon", "tambaqui_lake"],
+      "duration_days": 45
+    },
+    {
+      "id": "license_carp_special",
+      "title": "Карповая лицензия",
+      "description": "Открывает доступ к карповым турнирам и эксклюзивным снастям.",
+      "price_ngt": 5,
+      "min_level": 15,
+      "regions": ["balkhash", "kapchagay", "alakol"],
+      "duration_days": 60
+    },
+    {
+      "id": "license_predator",
+      "title": "Лицензия хищника",
+      "description": "Позволяет участвовать в турнирах 'Осенний хищник' и ловить на живца.",
+      "price_ngt": 5,
+      "min_level": 10,
+      "regions": ["zaisan", "shalkar"],
+      "duration_days": 60
+    },
+    {
+      "id": "license_master",
+      "title": "Лицензия Мастера Рыбалки",
+      "description": "Постоянная лицензия, объединяющая все регионы и снимающая любые ограничения.",
+      "price_ngt": 15,
+      "min_level": 20,
+      "regions": "all",
+      "duration_days": 365,
+      "permanent": true
+    }
+  ],
+
+  "passes": [
+    {
+      "id": "tour_pass_weekly",
+      "title": "Туровой пропуск (неделя)",
+      "description": "Дает временный доступ ко всем локациям и удваивает награды XP и KZC.",
+      "price_ngt": 3,
+      "duration_days": 7
+    },
+    {
+      "id": "tournament_pass",
+      "title": "Турнирный пропуск",
+      "description": "Позволяет участвовать в турнирах всех уровней и открывает доступ к рейтингу Nikiton Cloud.",
+      "price_ngt": 4,
+      "duration_days": 14
+    },
+    {
+      "id": "elite_pass",
+      "title": "Elite Pass",
+      "description": "Максимальный уровень доступа. Сочетает все бонусы Premium, турнирные допуски и +15% XP.",
+      "price_ngt": 10,
+      "duration_days": 30
+    }
+  ],
+
+  "renewal_rules": {
+    "auto_notify_days_before": 3,
+    "auto_extend_discount": 0.1,
+    "allow_stacking": true
+  },
+
+  "notes": "Магазин лицензий и пропусков. Лицензии регулируют доступ к регионам и видам рыб, пропуска — к турнирам и премиум-контенту. Разделение по валютам: KZC для обычных, NGT для специальных и мастерских лицензий."
+}
