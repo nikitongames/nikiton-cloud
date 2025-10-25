@@ -1,0 +1,12 @@
+{
+  "id": "salmon_atlantic",
+  "title": "Лосось атлантический",
+  "average_weight_kg": 6.0,
+  "trophy_weight_kg": 30.0,
+  "activity": { "day": 0.8, "night": 0.4 },
+  "preferred_depth_m": [2.0, 8.0],
+  "preferred_lures": ["spoon", "wobbler", "fly"],
+  "gear_suggestions": { "rod_power": "medium_heavy", "line_test_kg": [8, 16], "hook_sizes": [4, 6] },
+  "fight_profile": { "runouts": "high", "stamina": "very_high" },
+  "notes": "Активен в холодной воде и на рассвете. Сильная рыба, часто выпрыгивает из воды."
+}
