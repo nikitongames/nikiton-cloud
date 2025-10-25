@@ -1,0 +1,12 @@
+{
+  "id": "white_amur",
+  "title": "Белый амур",
+  "average_weight_kg": 4.0,
+  "trophy_weight_kg": 18.0,
+  "activity": { "day": 0.7, "night": 0.5 },
+  "preferred_depth_m": [1.0, 3.0],
+  "preferred_baits": ["corn", "grass_mix", "vegetable_pellets"],
+  "gear_suggestions": { "rod_power": "medium_heavy", "line_test_kg": [8, 14], "hook_sizes": [6, 8] },
+  "fight_profile": { "runouts": "high", "stamina": "medium_high" },
+  "notes": "Любит тёплую воду и водную растительность. Быстро выматывает снасть."
+}
