@@ -1,0 +1,10 @@
+{
+  "baits": [
+    { "id": "worm", "title": "Червь", "price": 2, "stack": 30, "targets": ["common_carp", "roach"] },
+    { "id": "corn", "title": "Кукуруза", "price": 3, "stack": 40, "targets": ["common_carp"] },
+    { "id": "boilies_sweet", "title": "Бойлы сладкие", "price": 12, "stack": 20, "targets": ["common_carp"] }
+  ],
+  "groundbaits": [
+    { "id": "gb_carp_sweet", "title": "Прикорм Сазан (слад.)", "price": 15, "effect": {"common_carp": 1.2} }
+  ]
+}
