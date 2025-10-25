@@ -1,0 +1,60 @@
+{
+  "durability_model": {
+    "logic": "item_durability = base_durability - (fish_weight * wear_rate * difficulty_factor)",
+    "update_interval": "on_catch",
+    "repair_enabled": true,
+    "auto_repair_threshold": 0.15,
+    "notifications": {
+      "warn_at": 0.3,
+      "critical_at": 0.1,
+      "messages": {
+        "warn": "⚠️ Снасть изнашивается. Рекомендуется ремонт.",
+        "critical": "❗ Снасть почти сломана!",
+        "broken": "❌ Предмет сломан и требует восстановления."
+      }
+    }
+  },
+
+  "base_durability": {
+    "rod": { "light": 100, "medium": 150, "heavy": 200, "extra_heavy": 250 },
+    "reel": { "basic": 120, "medium": 160, "pro": 200, "heavy": 250 },
+    "line": { "mono": 100, "braid": 180, "fluoro": 150, "elite": 220 },
+    "hook": { "small": 80, "medium": 100, "large": 120, "advanced": 150, "elite": 200 },
+    "bait": { "organic": 10, "synthetic": 30, "special": 50 },
+    "lure": { "basic": 60, "metal": 100, "pro": 150 }
+  },
+
+  "wear_rate": {
+    "rod": 0.002,
+    "reel": 0.001,
+    "line": 0.004,
+    "hook": 0.003,
+    "bait": 0.05,
+    "lure": 0.01
+  },
+
+  "difficulty_factor": {
+    "common": 1.0,
+    "uncommon": 1.2,
+    "rare": 1.4,
+    "legendary": 1.8
+  },
+
+  "repair_costs": {
+    "rod": { "base": 10, "per_damage": 0.2 },
+    "reel": { "base": 8, "per_damage": 0.15 },
+    "line": { "base": 5, "per_damage": 0.1 },
+    "hook": { "base": 2, "per_damage": 0.05 },
+    "bait": { "base": 1, "per_damage": 0.02 },
+    "lure": { "base": 4, "per_damage": 0.08 }
+  },
+
+  "auto_repair_service": {
+    "enabled": true,
+    "cost_multiplier": 1.2,
+    "requirements": ["premium_pass", "license_elite"],
+    "description": "Автоматический ремонт снастей после рыбалки доступен для владельцев Premium Pass или лицензии Elite."
+  },
+
+  "notes": "Система износа снастей. Работает при каждом вываживании. Если прочность падает ниже 15%, включается авто-ремонт (если активирован). Поддерживает ручной ремонт через меню 'Инвентарь → Ремонт'."
+}
