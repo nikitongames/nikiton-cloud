@@ -1,0 +1,8 @@
+{
+  "boards": [
+    { "id": "zander_total_weight_week", "title": "Судак — общий вес (неделя)", "scope": "weekly", "metric": "weight_total", "source": "tournaments" },
+    { "id": "income_daily", "title": "Доход за день", "scope": "daily", "metric": "income", "source": "fish_market" },
+    { "id": "tp_season", "title": "Трофейные очки (сезон)", "scope": "season", "metric": "tp_total", "source": "tours_events" }
+  ],
+  "anti_cheat_checks": ["abnormal_values", "rapid_gains", "duplicate_sessions"]
+}
