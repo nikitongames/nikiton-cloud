@@ -1,0 +1,92 @@
+{
+  "store_config": {
+    "currency_primary": "kzc",
+    "currency_secondary": "ngt",
+    "daily_refresh_utc": "00:00",
+    "auto_discount_events": true,
+    "categories": ["rods", "reels", "lines", "hooks", "baits", "lures", "accessories", "feed", "upgrades"],
+    "discount_rules": {
+      "daily": 0.1,
+      "event": 0.25,
+      "premium_pass_bonus": 0.15
+    }
+  },
+
+  "inventory": {
+    "rods": [
+      { "id": "basic_rod", "title": "Базовое удилище", "price_kzc": 150, "min_level": 1 },
+      { "id": "float_set", "title": "Поплавочная снасть", "price_kzc": 300, "min_level": 2 },
+      { "id": "spin_set", "title": "Спиннинг", "price_kzc": 600, "min_level": 3 },
+      { "id": "rod_medium", "title": "Среднее удилище", "price_kzc": 1200, "min_level": 10 },
+      { "id": "rod_heavy", "title": "Тяжёлое удилище", "price_kzc": 2000, "min_level": 20 },
+      { "id": "carp_rod_elite", "title": "Карповое удилище Elite", "price_ngt": 15, "min_level": 25 },
+      { "id": "expedition_rod", "title": "Экспедиционное удилище", "price_ngt": 20, "min_level": 40 }
+    ],
+    "reels": [
+      { "id": "reel_basic", "title": "Катушка начальная", "price_kzc": 200, "min_level": 1 },
+      { "id": "reel_medium", "title": "Катушка универсальная", "price_kzc": 500, "min_level": 5 },
+      { "id": "reel_pro", "title": "Катушка Pro", "price_kzc": 1000, "min_level": 10 },
+      { "id": "reel_heavy", "title": "Катушка Heavy", "price_kzc": 1800, "min_level": 20 },
+      { "id": "reel_auto", "title": "Катушка Auto Digital", "price_ngt": 10, "min_level": 30 }
+    ],
+    "lines": [
+      { "id": "line_basic", "title": "Леска монофильная", "price_kzc": 50, "min_level": 1 },
+      { "id": "line_braided", "title": "Плетёная леска", "price_kzc": 100, "min_level": 5 },
+      { "id": "line_fluorocarbon", "title": "Флюорокарбоновая", "price_kzc": 200, "min_level": 15 },
+      { "id": "line_elite", "title": "Элитная леска", "price_ngt": 5, "min_level": 25 }
+    ],
+    "hooks": [
+      { "id": "hook_small", "title": "Малый крючок", "price_kzc": 20, "min_level": 1 },
+      { "id": "hook_medium", "title": "Средний крючок", "price_kzc": 40, "min_level": 3 },
+      { "id": "hook_large", "title": "Большой крючок", "price_kzc": 60, "min_level": 6 },
+      { "id": "hook_advanced", "title": "Продвинутый крючок", "price_kzc": 120, "min_level": 10 },
+      { "id": "hook_elite", "title": "Элитный крючок", "price_ngt": 3, "min_level": 20 }
+    ],
+    "baits": [
+      { "id": "worm", "title": "Червь", "price_kzc": 10 },
+      { "id": "maggot", "title": "Опарыш", "price_kzc": 15 },
+      { "id": "bloodworm", "title": "Мотыль", "price_kzc": 20 },
+      { "id": "corn", "title": "Кукуруза", "price_kzc": 25 },
+      { "id": "dough", "title": "Тесто", "price_kzc": 15 },
+      { "id": "pellets", "title": "Пеллеты", "price_kzc": 40 },
+      { "id": "boilie", "title": "Бойлы", "price_ngt": 1 },
+      { "id": "fish_meat", "title": "Рыбное мясо", "price_kzc": 60 },
+      { "id": "fruit", "title": "Фрукты", "price_kzc": 35 },
+      { "id": "shrimp", "title": "Креветка", "price_kzc": 45 }
+    ],
+    "lures": [
+      { "id": "spinner", "title": "Вертушка", "price_kzc": 80, "min_level": 3 },
+      { "id": "spoon", "title": "Блесна", "price_kzc": 90, "min_level": 4 },
+      { "id": "wobbler", "title": "Воблер", "price_kzc": 120, "min_level": 6 },
+      { "id": "soft_plastic", "title": "Силиконовая приманка", "price_kzc": 100, "min_level": 5 },
+      { "id": "fly", "title": "Мушка", "price_kzc": 150, "min_level": 8 },
+      { "id": "jerkbait", "title": "Джеркбейт", "price_kzc": 180, "min_level": 10 },
+      { "id": "popper", "title": "Поппер", "price_kzc": 200, "min_level": 12 }
+    ],
+    "accessories": [
+      { "id": "net_basic", "title": "Подсак", "price_kzc": 150, "min_level": 2 },
+      { "id": "keeper_small", "title": "Садок малый", "price_kzc": 250, "min_level": 3 },
+      { "id": "keeper_large", "title": "Садок большой", "price_kzc": 600, "min_level": 8 },
+      { "id": "alarm_basic", "title": "Сигнализатор", "price_kzc": 300, "min_level": 5 },
+      { "id": "alarm_elite", "title": "Цифровой сигнализатор", "price_ngt": 5, "min_level": 20 }
+    ],
+    "feed": [
+      { "id": "feed_basic", "title": "Базовая прикормка", "price_kzc": 25 },
+      { "id": "feed_mix", "title": "Смесь донная", "price_kzc": 35 },
+      { "id": "feed_sweet", "title": "Сладкая смесь", "price_kzc": 40 },
+      { "id": "feed_meat", "title": "Мясная смесь", "price_kzc": 50 },
+      { "id": "feed_rare", "title": "Редкая смесь", "price_ngt": 1 }
+    ],
+    "upgrades": [
+      { "id": "rod_upgrade_token", "title": "Токен улучшения удилища", "price_ngt": 1 },
+      { "id": "reel_upgrade_token", "title": "Токен улучшения катушки", "price_ngt": 1 },
+      { "id": "hook_upgrade_token", "title": "Токен улучшения крючков", "price_ngt": 1 },
+      { "id": "lure_upgrade_token", "title": "Токен улучшения приманок", "price_ngt": 1 },
+      { "id": "universal_upgrade_kit", "title": "Универсальный комплект улучшений", "price_ngt": 3 },
+      { "id": "pro_repair_kit", "title": "Полевой ремонтный набор PRO", "price_ngt": 2 },
+      { "id": "auto_repair_module", "title": "Модуль автопочинки", "price_ngt": 5 }
+    ]
+  },
+
+  "notes": "Главный магазин снастей KazFishing Mobile. Цены основаны на экономике fish_prices.json. Поддерживает динамические скидки, ежедневные обновления и бонусы Premium Pass."
+}
