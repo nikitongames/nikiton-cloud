@@ -1,0 +1,32 @@
+{
+  "id": "balkhash",
+  "title": "Озеро Балхаш",
+  "description": "Крупное озеро Казахстана с разнообразием видов и сменой погодных условий.",
+  "water_type": "lake",
+  "min_level": 1,
+  "weather_profile": "continental",
+  "time_profile": "24h",
+  "spots": [
+    { "id": "north_bay", "title": "Северная бухта", "depth_m": [1.0, 3.5], "snags": 0.15 },
+    { "id": "reed_area", "title": "Тростниковая зона", "depth_m": [0.5, 2.0], "snags": 0.25 },
+    { "id": "rock_shore", "title": "Каменистый берег", "depth_m": [2.0, 5.0], "snags": 0.10 }
+  ],
+  "species_weights": {
+    "common_carp": 0.35,
+    "roach": 0.25,
+    "pike": 0.15,
+    "zander": 0.10,
+    "asp": 0.08,
+    "catfish": 0.07
+  },
+  "allowed_tackle": ["float", "spinning", "feeder"],
+  "events": {
+    "daily_peak_hours": [ "05:00-08:00", "18:00-21:00" ],
+    "season_modifiers": {
+      "spring": {"bite_multiplier": 1.15},
+      "summer": {"bite_multiplier": 1.00},
+      "autumn": {"bite_multiplier": 1.10},
+      "winter": {"bite_multiplier": 0.80}
+    }
+  }
+}
