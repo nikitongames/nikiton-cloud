@@ -1,0 +1,64 @@
+{
+  "store_config": {
+    "currency_primary": "kzc",
+    "currency_secondary": "ngt",
+    "refresh_utc": "00:00",
+    "items_per_day": 3,
+    "auto_rotate": true,
+    "discount_range": [0.15, 0.5],
+    "premium_pass_extra_slot": true,
+    "duplicate_prevention_days": 7
+  },
+
+  "daily_item_pools": {
+    "common": [
+      { "id": "worm", "title": "Червь", "base_price_kzc": 10 },
+      { "id": "maggot", "title": "Опарыш", "base_price_kzc": 15 },
+      { "id": "dough", "title": "Тесто", "base_price_kzc": 15 },
+      { "id": "hook_small", "title": "Крючок малый", "base_price_kzc": 20 },
+      { "id": "feed_basic", "title": "Базовая прикормка", "base_price_kzc": 25 }
+    ],
+    "uncommon": [
+      { "id": "line_braided", "title": "Плетёная леска", "base_price_kzc": 100 },
+      { "id": "feed_mix", "title": "Смесь донная", "base_price_kzc": 35 },
+      { "id": "corn", "title": "Кукуруза", "base_price_kzc": 25 },
+      { "id": "reel_medium", "title": "Катушка универсальная", "base_price_kzc": 500 }
+    ],
+    "rare": [
+      { "id": "hook_advanced", "title": "Продвинутый крючок", "base_price_kzc": 120 },
+      { "id": "rod_medium", "title": "Среднее удилище", "base_price_kzc": 1200 },
+      { "id": "feed_sweet", "title": "Сладкая прикормка", "base_price_kzc": 40 },
+      { "id": "line_fluorocarbon", "title": "Флюорокарбоновая леска", "base_price_kzc": 200 }
+    ],
+    "legendary": [
+      { "id": "rod_heavy", "title": "Тяжёлое удилище", "base_price_kzc": 2000 },
+      { "id": "auto_repair_module", "title": "Модуль автопочинки", "base_price_ngt": 5 },
+      { "id": "skin_carp_royal", "title": "Скин: Король карпа", "base_price_ngt": 3 }
+    ]
+  },
+
+  "rotation_rules": {
+    "common_chance": 0.4,
+    "uncommon_chance": 0.3,
+    "rare_chance": 0.2,
+    "legendary_chance": 0.1
+  },
+
+  "premium_benefits": {
+    "extra_item_slot": 1,
+    "discount_bonus": 0.1,
+    "exclusive_pool": [
+      { "id": "durability_boost_1h", "title": "Усилитель прочности (1ч)", "base_price_ngt": 1 },
+      { "id": "xp_boost_1h", "title": "Буст опыта (1ч)", "base_price_ngt": 1 },
+      { "id": "luck_boost_1h", "title": "Буст удачи (1ч)", "base_price_ngt": 2 }
+    ]
+  },
+
+  "special_rules": {
+    "event_boost": { "enabled": true, "discount_multiplier": 1.5 },
+    "first_purchase_bonus": { "enabled": true, "extra_xp": 50, "message": "🎁 Спасибо за покупку! Вы получили бонус XP." },
+    "auto_notify": { "enabled": true, "hours_before_refresh": 1 }
+  },
+
+  "notes": "Ежедневный магазин с 3 случайными товарами. Обновляется в 00:00 UTC. Поддерживает эксклюзивные позиции для владельцев Premium Pass и дополнительные скидки во время событий."
+}
