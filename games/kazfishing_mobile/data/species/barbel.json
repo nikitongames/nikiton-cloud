@@ -1,0 +1,12 @@
+{
+  "id": "barbel",
+  "title": "Усач",
+  "average_weight_kg": 1.8,
+  "trophy_weight_kg": 7.0,
+  "activity": { "day": 0.7, "night": 0.5 },
+  "preferred_depth_m": [1.0, 4.0],
+  "preferred_baits": ["worm", "cheese_paste", "corn"],
+  "gear_suggestions": { "rod_power": "medium", "line_test_kg": [5, 9], "hook_sizes": [6, 8] },
+  "fight_profile": { "runouts": "medium_high", "stamina": "high" },
+  "notes": "Любит течение и каменистое дно. Сильный соперник, часто рвёт поводок."
+}
