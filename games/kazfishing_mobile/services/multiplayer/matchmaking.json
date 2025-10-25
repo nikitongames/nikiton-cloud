@@ -1,0 +1,9 @@
+{
+  "modes": [
+    { "id": "tournament_weekly", "team_size": 1, "region_lock": "auto", "latency_cap_ms": 220 },
+    { "id": "event_instance", "team_size": 1, "region_lock": "auto", "latency_cap_ms": 250 }
+  ],
+  "backfill": false,
+  "spectator": false,
+  "notes": "Лёгкий матчмейкинг для синхронного подсчёта результатов, без прямого PvP."
+}
