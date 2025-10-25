@@ -1,0 +1,32 @@
+{
+  "tours": [
+    {
+      "id": "tour_kz_grand",
+      "title": "Казахстанский Гранд-тур",
+      "locations": ["balkhash","kapchagay","ili","zaisan"],
+      "duration_days": 7,
+      "entry": { "currency": "NGT", "amount": 5 },
+      "rewards": { "TP": 50, "items": ["rod_upgrade_token"], "badges": ["badge_event_participant"] },
+      "requirements": { "min_level": 10, "licenses": ["license_river","license_lake"] }
+    },
+    {
+      "id": "tour_arctic_pass",
+      "title": "Арктические воды",
+      "locations": ["markakol","baikal","north_bay"],
+      "duration_days": 7,
+      "entry": { "real_money_sku": "tour_ticket_elite_pack" },
+      "rewards": { "TP": 80, "items": ["line_elite"], "badges": ["badge_sturgeon_royal"] },
+      "requirements": { "min_level": 20, "licenses": ["license_north"] }
+    },
+    {
+      "id": "tour_amazon_legends",
+      "title": "Легенды Амазонки",
+      "locations": ["amazon"],
+      "duration_days": 10,
+      "entry": { "currency": "NGT", "amount": 10 },
+      "rewards": { "TP": 120, "items": ["universal_upgrade_kit"], "skins": ["skin_amazon_spirit"] },
+      "requirements": { "min_level": 30, "licenses": ["license_south","license_expedition"] }
+    }
+  ],
+  "notes": "Часть туров за NGT, часть — за реальную покупку билета (SKU). Никакого KZC."
+}
