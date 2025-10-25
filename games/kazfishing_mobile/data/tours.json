@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "cooldown_hours": 24,
+  "tours": [
+    { "id": "tour_volga", "title": "Тур: Волга (РФ)", "cost_soft": 500, "duration_minutes": 30, "species_bonus": {"zander": 1.2, "asp": 1.15} },
+    { "id": "tour_balkan_lake", "title": "Тур: Балканы (озеро)", "cost_soft": 700, "duration_minutes": 30, "species_bonus": {"common_carp": 1.25} }
+  ]
+}
