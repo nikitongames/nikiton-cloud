@@ -1,0 +1,12 @@
+{
+  "id": "tench",
+  "title": "Линь",
+  "average_weight_kg": 1.0,
+  "trophy_weight_kg": 4.0,
+  "activity": { "day": 0.6, "night": 0.8 },
+  "preferred_depth_m": [0.8, 2.0],
+  "preferred_baits": ["worm", "corn", "dough"],
+  "gear_suggestions": { "rod_power": "light", "line_test_kg": [2, 4], "hook_sizes": [8, 10] },
+  "fight_profile": { "runouts": "low", "stamina": "medium" },
+  "notes": "Обитает в стоячих и слабопроточных водах, активен в сумерках."
+}
