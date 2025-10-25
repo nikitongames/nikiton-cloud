@@ -1,0 +1,27 @@
+{
+  "id": "tobol",
+  "title": "Река Тобол",
+  "description": "Средняя река с узкими протоками. Хорош для донной ловли и ночного судака.",
+  "water_type": "river",
+  "min_level": 50,
+  "weather_profile": "continental",
+  "time_profile": "24h",
+  "spots": [
+    { "id": "narrow_reach", "title": "Узкий перекат", "depth_m": [1.0, 3.0], "snags": 0.14 },
+    { "id": "bend_hole", "title": "Яма на повороте", "depth_m": [3.0, 7.0], "snags": 0.18 },
+    { "id": "slow_bank", "title": "Медленное побережье", "depth_m": [0.8, 2.0], "snags": 0.12 }
+  ],
+  "species_weights": {
+    "zander": 0.30,
+    "asp": 0.20,
+    "pike": 0.18,
+    "common_carp": 0.14,
+    "roach": 0.10,
+    "catfish": 0.08
+  },
+  "allowed_tackle": ["feeder", "bottom", "spinning"],
+  "events": {
+    "daily_peak_hours": ["20:00-23:30", "04:30-06:30"],
+    "flow_strength": "medium"
+  }
+}
