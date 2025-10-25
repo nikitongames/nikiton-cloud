@@ -1,0 +1,12 @@
+{
+  "id": "ripus",
+  "title": "Рипус",
+  "average_weight_kg": 1.0,
+  "trophy_weight_kg": 4.0,
+  "activity": { "day": 0.5, "night": 0.6 },
+  "preferred_depth_m": [5.0, 15.0],
+  "preferred_baits": ["bloodworm", "small_insect"],
+  "gear_suggestions": { "rod_power": "light", "line_test_kg": [2, 4], "hook_sizes": [8, 10] },
+  "fight_profile": { "runouts": "medium", "stamina": "medium" },
+  "notes": "Северная озёрная рыба; предпочитает чистую, холодную воду."
+}
