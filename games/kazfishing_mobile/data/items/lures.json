@@ -1,7 +1,10 @@
 {
-  "lures": [
-    { "id": "spoon_silver", "title": "Блесна серебристая", "type": "spoon", "weight_g": 18, "price": 40, "targets": ["pike", "zander", "asp"] },
-    { "id": "spinner_red",  "title": "Вертушка красная",   "type": "spinner", "weight_g": 12, "price": 35, "targets": ["pike", "asp"] },
-    { "id": "wobbler_90",   "title": "Воблер 90F",         "type": "wobbler", "weight_g": 10, "price": 70, "targets": ["pike", "zander"] }
-  ]
+  "spinner": { "title": "Вертушка", "effective_for": ["pike","perch","asp"], "efficiency": 0.85, "best_weather": ["sunny","cloudy"], "best_time": ["day"], "xp_bonus": 1.1 },
+  "wobbler": { "title": "Воблер", "effective_for": ["zander","asp","pike"], "efficiency": 0.88, "best_weather": ["cloudy","rain"], "best_time": ["evening","night"], "xp_bonus": 1.2 },
+  "soft_plastic": { "title": "Силикон", "effective_for": ["zander","catfish","perch"], "efficiency": 0.86, "best_weather": ["overcast"], "best_time": ["day"], "xp_bonus": 1.1 },
+  "spoon": { "title": "Блесна", "effective_for": ["pike","trout_brown","trout_rainbow"], "efficiency": 0.9, "best_weather": ["sunny"], "best_time": ["day","evening"], "xp_bonus": 1.15 },
+  "jerkbait": { "title": "Джеркбейт", "effective_for": ["pike","zander"], "efficiency": 0.93, "best_weather": ["clear","cloudy"], "best_time": ["day"], "xp_bonus": 1.2 },
+  "popper": { "title": "Поппер", "effective_for": ["asp","pike"], "efficiency": 0.84, "best_weather": ["sunny"], "best_time": ["morning"], "xp_bonus": 1.05 },
+  "fly": { "title": "Мушка", "effective_for": ["grayling","trout_rainbow","trout_brown"], "efficiency": 0.92, "best_weather": ["sunny","overcast"], "best_time": ["day"], "xp_bonus": 1.2 },
+  "wobbler_small": { "title": "Малый воблер", "effective_for": ["perch","chub","asp"], "efficiency": 0.83, "best_weather": ["sunny"], "best_time": ["morning"], "xp_bonus": 1.05 }
 }
