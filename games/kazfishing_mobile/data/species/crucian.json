@@ -1,0 +1,12 @@
+{
+  "id": "crucian",
+  "title": "Карась серебряный",
+  "average_weight_kg": 0.5,
+  "trophy_weight_kg": 2.0,
+  "activity": { "day": 0.9, "night": 0.4 },
+  "preferred_depth_m": [0.5, 2.5],
+  "preferred_baits": ["worm", "bread", "corn"],
+  "gear_suggestions": { "rod_power": "light", "line_test_kg": [1, 3], "hook_sizes": [8, 10] },
+  "fight_profile": { "runouts": "low", "stamina": "low" },
+  "notes": "Повсеместно распространён, предпочитает стоячие и заболоченные водоёмы."
+}
