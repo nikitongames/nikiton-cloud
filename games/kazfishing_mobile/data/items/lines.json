@@ -1,0 +1,10 @@
+{
+  "lines": [
+    { "id": "mono_0_18", "title": "Моно 0.18", "break_kg": 3.2, "durability": 80, "price": 20 },
+    { "id": "mono_0_25", "title": "Моно 0.25", "break_kg": 5.5, "durability": 85, "price": 35 },
+    { "id": "braid_0_12","title": "Шнур 0.12", "break_kg": 8.0, "durability": 95, "price": 70 }
+  ],
+  "leaders": [
+    { "id": "leader_steel", "title": "Поводок стальной", "break_kg": 9.0, "price": 25 }
+  ]
+}
