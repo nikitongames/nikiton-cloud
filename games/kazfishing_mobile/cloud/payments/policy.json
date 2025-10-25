@@ -1,0 +1,7 @@
+{
+  "refund_policy_url": "https://support.google.com/googleplay/answer/2479637",
+  "country_restrictions": [],
+  "gdpr": { "dpo_email": "privacy@nikiton.games", "data_portability": true },
+  "receipts": { "store_signature_required": true, "server_validation": true },
+  "notes": "Соответствие правилам Google Play и локальному законодательству."
+}
