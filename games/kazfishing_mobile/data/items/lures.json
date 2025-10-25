@@ -1,0 +1,7 @@
+{
+  "lures": [
+    { "id": "spoon_silver", "title": "Блесна серебристая", "type": "spoon", "weight_g": 18, "price": 40, "targets": ["pike", "zander", "asp"] },
+    { "id": "spinner_red",  "title": "Вертушка красная",   "type": "spinner", "weight_g": 12, "price": 35, "targets": ["pike", "asp"] },
+    { "id": "wobbler_90",   "title": "Воблер 90F",         "type": "wobbler", "weight_g": 10, "price": 70, "targets": ["pike", "zander"] }
+  ]
+}
