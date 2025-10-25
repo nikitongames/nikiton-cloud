@@ -1,0 +1,12 @@
+{
+  "id": "golden_dorado",
+  "title": "Дорадо золотой",
+  "average_weight_kg": 7.0,
+  "trophy_weight_kg": 25.0,
+  "activity": { "day": 0.8, "night": 0.4 },
+  "preferred_depth_m": [1.0, 4.0],
+  "preferred_lures": ["spinner", "wobbler", "fly"],
+  "gear_suggestions": { "rod_power": "medium_heavy", "line_test_kg": [10, 20], "hook_sizes": [4, 6] },
+  "fight_profile": { "runouts": "very_high", "stamina": "very_high" },
+  "notes": "Хищник туровых локаций Южной Америки; агрессивен и зрелищен при вываживании."
+}
