@@ -1,0 +1,28 @@
+{
+  "id": "alakol",
+  "title": "Озеро Алаколь",
+  "description": "Прозрачная вода, каменистые берега и осторожная рыба. Требует тонких снастей.",
+  "water_type": "lake",
+  "min_level": 15,
+  "weather_profile": "clear_cold_nights",
+  "time_profile": "24h",
+  "spots": [
+    { "id": "rock_ledge", "title": "Каменный уступ", "depth_m": [2.0, 6.0], "snags": 0.08 },
+    { "id": "shallow_bay", "title": "Мелководная бухта", "depth_m": [0.6, 2.0], "snags": 0.12 },
+    { "id": "dropoff", "title": "Свал в глубину", "depth_m": [4.0, 12.0], "snags": 0.06 }
+  ],
+  "species_weights": {
+    "common_carp": 0.25,
+    "roach": 0.35,
+    "pike": 0.12,
+    "zander": 0.12,
+    "asp": 0.10,
+    "catfish": 0.06
+  },
+  "allowed_tackle": ["float", "spinning", "feeder"],
+  "events": {
+    "daily_peak_hours": ["05:30-08:00", "19:00-21:30"],
+    "clarity": "high",
+    "wind_sensitive": true
+  }
+}
