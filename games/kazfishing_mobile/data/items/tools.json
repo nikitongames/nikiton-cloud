@@ -1,0 +1,7 @@
+{
+  "tools": [
+    { "id": "disgorger", "title": "Экстрактор крючка", "price": 20 },
+    { "id": "weigher", "title": "Весы", "price": 35 },
+    { "id": "stringer", "title": "Кукан", "price": 25 }
+  ]
+}
