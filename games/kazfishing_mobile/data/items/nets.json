@@ -1,0 +1,5 @@
+{
+  "keepers": [
+    { "id": "keeper_basic", "title": "Подсачек базовый", "durability": 80, "price": 60 }
+  ]
+}
