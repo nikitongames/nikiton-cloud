@@ -1,0 +1,12 @@
+{
+  "id": "dace",
+  "title": "Пескарь",
+  "average_weight_kg": 0.08,
+  "trophy_weight_kg": 0.3,
+  "activity": { "day": 0.8, "night": 0.4 },
+  "preferred_depth_m": [0.3, 2.0],
+  "preferred_baits": ["worm", "maggot"],
+  "gear_suggestions": { "rod_power": "ultra_light", "line_test_kg": [0.5, 1.5], "hook_sizes": [10, 12] },
+  "fight_profile": { "runouts": "low", "stamina": "low" },
+  "notes": "Обычный обитатель песчаных отмелей. Хорош для тренировок."
+}
