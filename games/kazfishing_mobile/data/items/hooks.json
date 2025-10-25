@@ -1,0 +1,7 @@
+{
+  "hooks": [
+    { "id": "hook_6", "title": "Крючок №6", "size": 6, "durability": 60, "price": 5 },
+    { "id": "hook_8", "title": "Крючок №8", "size": 8, "durability": 60, "price": 5 },
+    { "id": "hook_2", "title": "Крючок №2", "size": 2, "durability": 70, "price": 7 }
+  ]
+}
