@@ -1,0 +1,8 @@
+{
+  "default_location": "balkhash",
+  "locations": [
+    { "id": "balkhash", "title": "Озеро Балхаш", "min_level": 1 },
+    { "id": "irtysh",   "title": "Река Иртыш",   "min_level": 5 },
+    { "id": "kapchagay","title": "Водохранилище Капчагай", "min_level": 10 }
+  ]
+}
