@@ -1,0 +1,27 @@
+{
+  "id": "tengiz",
+  "title": "Озеро Тенгиз",
+  "description": "Солоноватая вода и особая экосистема. Рыба осторожна, клёв нестабилен.",
+  "water_type": "salty_lake",
+  "min_level": 25,
+  "weather_profile": "arid_windy",
+  "time_profile": "24h",
+  "spots": [
+    { "id": "salt_flat", "title": "Солёная отмель", "depth_m": [0.4, 1.2], "snags": 0.04 },
+    { "id": "channel_edge", "title": "Кромка канала", "depth_m": [1.5, 4.0], "snags": 0.06 },
+    { "id": "island_shade", "title": "Тень островка", "depth_m": [0.8, 2.5], "snags": 0.05 }
+  ],
+  "species_weights": {
+    "zander": 0.26,
+    "asp": 0.20,
+    "pike": 0.16,
+    "roach": 0.18,
+    "common_carp": 0.12,
+    "catfish": 0.08
+  },
+  "allowed_tackle": ["spinning", "float", "feeder"],
+  "events": {
+    "daily_peak_hours": ["04:30-07:30", "18:30-22:00"],
+    "salinity_note": "bite_randomness_high"
+  }
+}
