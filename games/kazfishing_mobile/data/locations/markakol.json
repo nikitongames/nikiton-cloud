@@ -1,0 +1,27 @@
+{
+  "id": "markakol",
+  "title": "Озеро Маркаколь",
+  "description": "Очень чистая вода, рыба крайне осторожна. Требуется маскировка и тонкие лески.",
+  "water_type": "lake",
+  "min_level": 45,
+  "weather_profile": "clear_cold",
+  "time_profile": "24h",
+  "spots": [
+    { "id": "delta", "title": "Дельта ручьёв", "depth_m": [0.7, 2.2], "snags": 0.07 },
+    { "id": "stone_bank", "title": "Каменистый берег", "depth_m": [1.0, 4.0], "snags": 0.06 },
+    { "id": "deep_center", "title": "Глубокий центр", "depth_m": [5.0, 14.0], "snags": 0.05 }
+  ],
+  "species_weights": {
+    "roach": 0.34,
+    "common_carp": 0.22,
+    "pike": 0.14,
+    "zander": 0.12,
+    "asp": 0.10,
+    "catfish": 0.08
+  },
+  "allowed_tackle": ["float", "spinning", "feeder"],
+  "events": {
+    "daily_peak_hours": ["05:30-08:00", "19:00-21:00"],
+    "clarity": "very_high"
+  }
+}
