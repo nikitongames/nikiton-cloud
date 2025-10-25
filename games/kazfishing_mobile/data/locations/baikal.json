@@ -1,0 +1,28 @@
+{
+  "id": "baikal",
+  "title": "Озеро Байкал",
+  "description": "Очень глубокое и холодное озеро. Редкие трофеи, требовательные условия.",
+  "water_type": "deep_lake",
+  "min_level": 70,
+  "weather_profile": "cold_clear",
+  "time_profile": "24h",
+  "spots": [
+    { "id": "deep_trench", "title": "Глубокая траншея", "depth_m": [20.0, 60.0], "snags": 0.03 },
+    { "id": "shelf_edge", "title": "Кромка шельфа", "depth_m": [8.0, 20.0], "snags": 0.04 },
+    { "id": "stony_beach", "title": "Каменистый пляж", "depth_m": [1.0, 6.0], "snags": 0.05 }
+  ],
+  "species_weights": {
+    "zander": 0.24,
+    "pike": 0.18,
+    "asp": 0.12,
+    "roach": 0.16,
+    "common_carp": 0.14,
+    "catfish": 0.16
+  },
+  "allowed_tackle": ["spinning", "feeder", "boat_trolling"],
+  "events": {
+    "daily_peak_hours": ["05:00-07:30", "19:30-22:00"],
+    "clarity": "very_high",
+    "temperature_note": "cold_penalty_medium"
+  }
+}
