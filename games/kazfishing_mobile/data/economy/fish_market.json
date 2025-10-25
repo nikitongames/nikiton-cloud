@@ -1,0 +1,28 @@
+{
+  "pricing_source": "fish_prices.json",
+  "sell_rules": {
+    "tax_rate": 0.05,
+    "daily_sell_limit_kg": 300,
+    "min_quality_factor": 0.8,
+    "freshness_hours_full_price": 6,
+    "freshness_decay_per_hour": 0.03
+  },
+  "dynamic_modifiers": {
+    "demand_events": {
+      "winter_fest": { "burbot": 1.15, "whitefish": 1.1, "vendace": 1.1 },
+      "summer_carp_cup": { "common_carp": 1.1, "carp_mirror": 1.1, "white_amur": 1.08 }
+    },
+    "region": {
+      "kazakhstan": 1.0,
+      "north": 1.05,
+      "mountain": 1.08,
+      "tropical": 1.12
+    }
+  },
+  "anti_exploit": {
+    "repeat_sell_decay_after": 50,
+    "decay_factor": 0.85,
+    "cooldown_minutes": 15
+  },
+  "notes": "NPC-рынок. Игрок продаёт рыбу системе по базовым ценам с поправкой на свежесть/события/регион. Никаких P2P сделок рыбой."
+}
