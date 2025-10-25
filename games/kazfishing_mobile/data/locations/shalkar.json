@@ -1,0 +1,27 @@
+{
+  "id": "shalkar",
+  "title": "Озеро Шалкар",
+  "description": "Переменная погода: туман, ветер, резкие перепады клёва.",
+  "water_type": "lake",
+  "min_level": 40,
+  "weather_profile": "foggy_windy",
+  "time_profile": "24h",
+  "spots": [
+    { "id": "fog_bay", "title": "Туманная бухта", "depth_m": [1.0, 2.5], "snags": 0.10 },
+    { "id": "reeds", "title": "Тростники", "depth_m": [0.6, 1.8], "snags": 0.16 },
+    { "id": "sudden_drop", "title": "Резкий свал", "depth_m": [3.0, 9.0], "snags": 0.08 }
+  ],
+  "species_weights": {
+    "common_carp": 0.28,
+    "roach": 0.28,
+    "pike": 0.18,
+    "zander": 0.12,
+    "asp": 0.08,
+    "catfish": 0.06
+  },
+  "allowed_tackle": ["float", "spinning", "feeder"],
+  "events": {
+    "daily_peak_hours": ["07:00-09:00", "18:00-21:00"],
+    "fog_penalty": 0.9
+  }
+}
