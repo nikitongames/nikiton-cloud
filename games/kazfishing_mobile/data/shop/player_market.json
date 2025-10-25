@@ -1,0 +1,55 @@
+{
+  "market_config": {
+    "currencies_allowed": ["ngt"],
+    "tax_rate_percent": 8,
+    "min_listing_price_ngt": 1,
+    "max_listing_price_ngt": 500,
+    "listing_duration_hours": 72,
+    "max_active_listings_per_player": 10,
+    "escrow_enabled": true,
+    "auto_return_unsold": true,
+    "moderation_enabled": true,
+    "prohibit_fish": true,
+    "anti_speculation_rules": {
+      "price_ceiling_multiplier": 2.5,
+      "repeat_listing_limit": 2,
+      "cooldown_after_cancel_hours": 6
+    },
+    "rating_system": {
+      "enabled": true,
+      "rating_scale": 5,
+      "min_transactions_for_rating": 3,
+      "weight_recent": 0.6,
+      "decay_days": 30
+    },
+    "search_filters": ["category", "rarity", "condition", "seller_rating"],
+    "linked_with": ["inventory", "durability.json", "upgrades.json"]
+  },
+
+  "categories": {
+    "items": { "title": "Снасти", "allow_bulk": false, "fee_percent": 8,
+      "allowed_ids": ["rods","reels","lines","hooks","accessories","upgrades"] },
+    "baits": { "title": "Наживки/прикормки", "allow_bulk": true, "fee_percent": 6,
+      "allowed_ids": ["baits","feed"] },
+    "lures": { "title": "Приманки", "allow_bulk": true, "fee_percent": 7,
+      "allowed_ids": ["lures"] },
+    "skins": { "title": "Косметика", "allow_bulk": false, "fee_percent": 10,
+      "allowed_ids": ["skins"] }
+  },
+
+  "security": {
+    "fraud_check_enabled": true,
+    "duplicate_item_block": true,
+    "region_lock": "auto",
+    "report_system": { "enabled": true, "max_reports_per_day": 5, "auto_suspend_threshold": 3 }
+  },
+
+  "notifications": {
+    "sale_success": "🎉 Продажа завершена: {item_name}. NGT зачислены (минус комиссия).",
+    "item_returned": "📦 Лот {item_name} возвращён (не продан).",
+    "buyer_message": "💬 Новый запрос/вопрос по лоту {item_name}.",
+    "reputation_up": "⭐ Новый уровень репутации: {level}!"
+  },
+
+  "notes": "P2P-рынок только для предметов/косметики и только за NGT. Рыбу продавать на этом рынке запрещено."
+}
