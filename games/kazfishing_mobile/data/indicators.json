@@ -1,0 +1,16 @@
+{
+  "hud": {
+    "line_tension": { "type": "bar", "range": [0, 120], "warn_above": 95 },
+    "rod_durability": { "type": "bar", "range": [0, 100], "color_logic": "green>60,yellow>30,red" },
+    "reel_durability": { "type": "bar", "range": [0, 100], "color_logic": "green>60,yellow>30,red" },
+    "time_of_day": { "type": "clock" },
+    "weather": { "type": "icon" },
+    "fish_radar": { "type": "pulse", "enabled": true }
+  },
+  "notifications": {
+    "fish_bite": "Внимание! Поклёвка!",
+    "line_critical": "Внимание! Леска на пределе!",
+    "snag": "Зацеп!",
+    "trophy": "Трофейный экземпляр!"
+  }
+}
