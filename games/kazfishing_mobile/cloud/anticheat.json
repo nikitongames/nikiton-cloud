@@ -1,0 +1,7 @@
+{
+  "client_protections": { "checksum_assets": true, "obfuscation": true, "root_detection": true },
+  "server_monitors": { "xp_gain_rate": "3sigma", "income_spikes": "3sigma", "ngt_purchases_match_receipts": true },
+  "actions": { "shadow_flag": true, "temp_lock": true, "ban": true },
+  "appeal": "support://appeal",
+  "notes": "Комбинированный подход: клиентские проверки + серверные аномалии."
+}
