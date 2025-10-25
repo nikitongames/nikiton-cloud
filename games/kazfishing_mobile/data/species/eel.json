@@ -1,0 +1,12 @@
+{
+  "id": "eel",
+  "title": "Европейский угорь",
+  "average_weight_kg": 1.5,
+  "trophy_weight_kg": 5.0,
+  "activity": { "day": 0.2, "night": 1.0 },
+  "preferred_depth_m": [2.0, 8.0],
+  "preferred_baits": ["worm", "fish_meat"],
+  "gear_suggestions": { "rod_power": "medium", "line_test_kg": [5, 10], "hook_sizes": [6, 8] },
+  "fight_profile": { "runouts": "twist_escape", "stamina": "high" },
+  "notes": "Ночная рыба; часто клюёт после дождя, любит илистое дно."
+}
