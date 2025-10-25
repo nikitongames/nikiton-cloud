@@ -1,0 +1,11 @@
+{
+  "filters": { "profanity": "strict", "hate": "strict", "ads": "block" },
+  "actions": {
+    "warn": { "threshold": 1 },
+    "mute_24h": { "threshold": 2 },
+    "ban_7d": { "threshold": 3 },
+    "permanent_ban": { "threshold": 5 }
+  },
+  "appeal_link": "support://appeal",
+  "notes": "Единая политика для чатов и никнеймов. Логи уезжают в Cloud Audit."
+}
