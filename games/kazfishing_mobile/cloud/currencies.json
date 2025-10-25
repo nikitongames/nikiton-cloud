@@ -1,0 +1,20 @@
+{
+  "currencies": {
+    "KZC": { "title": "Kaz Coins", "type": "soft", "source": ["fishing", "quests", "cafe_orders", "fish_market"], "sink": ["equipment_store", "repairs", "fees"], "convertible_to": [], "notes": "Внутриигровая. Не покупается за деньги." },
+    "NGT": { "title": "Nikiton Game Tokens", "type": "hard", "source": ["purchase", "bundles", "event_rewards_late_game"], "sink": ["donation_store", "license_store_special", "player_market", "tours_premium"], "convertible_to": [], "notes": "Донатная. P2P сделки ТОЛЬКО в NGT." },
+    "TP":  { "title": "Trophy Points", "type": "score", "source": ["tournaments", "events", "achievements"], "sink": ["trade_store"], "convertible_to": [], "notes": "Очки турниров. Не покупаются, не продаются." },
+    "EVT": { "title": "Event Tokens", "type": "event", "source": ["special_events"], "sink": ["event_store"], "convertible_to": [], "notes": "У каждой ротации своё имя/скин." }
+  },
+  "exchange_rules": {
+    "allow_soft_to_hard": false,
+    "allow_hard_to_soft": false,
+    "allow_tp_to_any": false,
+    "allow_evt_to_any": false
+  },
+  "fees": {
+    "player_market_sale_ngt": 0.08,
+    "donation_store_tax": 0.0,
+    "fish_market_tax": 0.05
+  },
+  "notes": "Жёсткое разделение валют. Нет прямых конверсий KZC↔NGT и т.д."
+}
