@@ -1,0 +1,11 @@
+{
+  "channels": [
+    { "id": "global", "title": "Глобальный чат", "rate_limit_sec": 10, "auto_translate": true, "moderation": "strict" },
+    { "id": "local",  "title": "Локальный чат локации", "rate_limit_sec": 8, "auto_translate": true, "moderation": "standard" },
+    { "id": "tournament", "title": "Чат турнира", "rate_limit_sec": 12, "auto_translate": true, "moderation": "strict" }
+  ],
+  "mentions_enabled": true,
+  "links_policy": "whitelist",
+  "p2p_trade_in_chat": false,
+  "notes": "Чаты с автопереводом и модерацией. Торговля только через Player Market."
+}
