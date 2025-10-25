@@ -1,0 +1,24 @@
+{
+  "currencies": {
+    "soft": "KZC",
+    "hard": "NGP"
+  },
+  "prices": {
+    "license_day": 50,
+    "boat_rent_day": 120
+  },
+  "repairs": {
+    "rod_per_point": 1.0,
+    "reel_per_point": 1.2
+  },
+  "sell_rates": {
+    "fish_per_kg": {
+      "common_carp": 8,
+      "pike": 14,
+      "zander": 16,
+      "asp": 12,
+      "catfish": 18,
+      "roach": 4
+    }
+  }
+}
