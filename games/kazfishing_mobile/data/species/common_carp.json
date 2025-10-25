@@ -1,0 +1,12 @@
+{
+  "id": "common_carp",
+  "title": "Сазан (карп)",
+  "average_weight_kg": 2.5,
+  "trophy_weight_kg": 12.0,
+  "activity": { "day": 0.9, "night": 0.5 },
+  "preferred_depth_m": [1.0, 3.0],
+  "preferred_baits": ["corn", "boilies_sweet", "worm"],
+  "disliked_baits": ["spinner", "wobbler"],
+  "gear_suggestions": { "rod_power": "medium", "line_test_kg": [4, 8], "hook_sizes": [6, 8] },
+  "fight_profile": { "runouts": "medium", "stamina": "high" }
+}
