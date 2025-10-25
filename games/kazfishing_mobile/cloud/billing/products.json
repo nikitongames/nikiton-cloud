@@ -1,0 +1,27 @@
+{
+  "platform": "google_play",
+  "packages": {
+    "consumables": [
+      { "sku": "ngt_pack_small",  "price_usd": 0.99,  "grants": { "NGT": 50 } },
+      { "sku": "ngt_pack_medium", "price_usd": 3.99,  "grants": { "NGT": 275 } },
+      { "sku": "ngt_pack_large",  "price_usd": 9.99,  "grants": { "NGT": 1200 } },
+      { "sku": "ngt_pack_mega",   "price_usd": 39.99, "grants": { "NGT": 6750 } }
+    ],
+    "subscriptions": [
+      {
+        "sku": "premium_pass_monthly",
+        "price_usd": 4.99,
+        "duration_days": 30,
+        "grants_daily": { "xp": 25, "KZC": 50, "NGT": 1 },
+        "flags": ["auto_repair_enabled", "discount_shop_10", "xp_15"]
+      }
+    ],
+    "non_consumables": [
+      { "sku": "tour_ticket_elite_pack", "price_usd": 6.99, "grants": { "tour_ticket": "elite_7d" } }
+    ]
+  },
+  "regional_pricing": "auto",
+  "tax_handling": "platform_default",
+  "fraud_protection": { "signature_required": true, "server_verify": true },
+  "notes": "Связка со Store Listing в Google Play Console. SKU должны совпадать."
+}
