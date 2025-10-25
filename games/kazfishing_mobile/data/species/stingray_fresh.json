@@ -1,0 +1,12 @@
+{
+  "id": "stingray_fresh",
+  "title": "Пресноводный скат",
+  "average_weight_kg": 15.0,
+  "trophy_weight_kg": 40.0,
+  "activity": { "day": 0.5, "night": 0.8 },
+  "preferred_depth_m": [3.0, 10.0],
+  "preferred_baits": ["fish_meat", "shrimp"],
+  "gear_suggestions": { "rod_power": "heavy", "line_test_kg": [20, 35], "hook_sizes": [2, 4] },
+  "fight_profile": { "runouts": "slow_heavy", "stamina": "high" },
+  "notes": "Амазонка; осторожная донная рыба, часто прижимается к дну."
+}
