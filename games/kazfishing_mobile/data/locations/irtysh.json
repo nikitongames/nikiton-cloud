@@ -1,0 +1,27 @@
+{
+  "id": "irtysh",
+  "title": "Река Иртыш",
+  "description": "Широкая река с сильным течением и хищником у бровок.",
+  "water_type": "river",
+  "min_level": 5,
+  "weather_profile": "continental",
+  "time_profile": "24h",
+  "spots": [
+    { "id": "main_stream", "title": "Главное течение", "depth_m": [2.0, 6.0], "snags": 0.20 },
+    { "id": "eddy_zone", "title": "Заводь", "depth_m": [1.5, 3.0], "snags": 0.18 },
+    { "id": "sand_bar", "title": "Песчаная коса", "depth_m": [0.8, 2.0], "snags": 0.12 }
+  ],
+  "species_weights": {
+    "pike": 0.25,
+    "zander": 0.25,
+    "asp": 0.20,
+    "roach": 0.15,
+    "catfish": 0.10,
+    "common_carp": 0.05
+  },
+  "allowed_tackle": ["spinning", "feeder"],
+  "events": {
+    "daily_peak_hours": [ "06:00-09:00", "17:00-20:00" ],
+    "flow_strength": "high"
+  }
+}
