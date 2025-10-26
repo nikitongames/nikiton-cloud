@@ -1,0 +1,41 @@
+{
+  "durability_loss": {
+    "per_fish": 0.5,
+    "per_big_fish": 1.5,
+    "per_trophy_fish": 3.0
+  },
+  "repair_effect": {
+    "repair_small": 20,
+    "repair_big": 60
+  },
+  "fish_sell_price": {
+    "common": [5, 25],
+    "rare": [30, 90],
+    "epic": [100, 300],
+    "legendary": [500, 1500]
+  },
+  "level_progression": {
+    "exp_per_fish": 10,
+    "exp_per_rare": 25,
+    "exp_per_epic": 50,
+    "exp_per_legendary": 100,
+    "exp_per_level": [0, 200, 500, 900, 1500, 2200, 3000, 3900, 4900, 6000]
+  },
+  "weather_effects": {
+    "rain": -0.1,
+    "wind": -0.05,
+    "night": -0.15,
+    "good_weather_bonus": 0.1
+  },
+  "economy": {
+    "daily_bonus": 200,
+    "quest_bonus": 300,
+    "tournament_bonus": 1000,
+    "vip_bonus_multiplier": 1.5
+  },
+  "limits": {
+    "max_inventory_slots": 100,
+    "max_storage_weight": 200.0,
+    "max_bait_stack": 50
+  }
+}
