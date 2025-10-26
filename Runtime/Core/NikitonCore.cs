@@ -1,0 +1,42 @@
+using System.Collections;
+using System.Threading.Tasks;
+using UnityEngine;
+using Unity.Services.Core;
+using Unity.Services.Authentication;
+using Unity.Services.RemoteConfig;
+using Unity.Services.CloudSave;
+
+namespace Nikiton.Cloud
+{
+    public static class NikitonCore
+    {
+        public static string GameId { get; private set; } = "";
+        public static bool IsReady { get; private set; }
+
+        public static async Task InitializeAsync(string gameId)
+        {
+            if (IsReady) return;
+            GameId = gameId;
+
+            // 1) UGS
+            await UnityServices.InitializeAsync();
+            if (!AuthenticationService.Instance.IsSignedIn)
+                await AuthenticationService.Instance.SignInAnonymouslyAsync();
+
+            // 2) Remote Config
+            var tcs = new TaskCompletionSource<bool>();
+            RemoteConfigService.Instance.LoadCompleted += _ => tcs.TrySetResult(true);
+            RemoteConfigService.Instance.FetchConfigs(new user(), new app());
+            await tcs.Task;
+
+            // 3) Cloud Save "ping"
+            try { await CloudSaveService.Instance.Data.ForceSaveAsync(); } catch { /* ok */ }
+
+            IsReady = true;
+            Debug.Log($"[NikitonCore] Ready for {GameId}");
+        }
+
+        struct user { }
+        struct app { }
+    }
+}
