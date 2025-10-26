@@ -1,0 +1,130 @@
+[
+  {
+    "id": "ili_delta",
+    "name_ru": "Дельта реки Или",
+    "min_level": 1,
+    "tour_price": 0,
+    "fish_table": ["roach","bream","perch","pike","zander"],
+    "weather_profile": "steppe_river"
+  },
+  {
+    "id": "balkhash",
+    "name_ru": "Озеро Балхаш",
+    "min_level": 3,
+    "tour_price": 200,
+    "fish_table": ["carp_common","catfish","zander","bream","asp"],
+    "weather_profile": "large_lake"
+  },
+  {
+    "id": "irtysh",
+    "name_ru": "Река Иртыш",
+    "min_level": 5,
+    "tour_price": 400,
+    "fish_table": ["grayling","trout","lenok","pike","ide"],
+    "weather_profile": "cold_river"
+  },
+  {
+    "id": "kapchagay",
+    "name_ru": "Капчагайское водохранилище",
+    "min_level": 8,
+    "tour_price": 700,
+    "fish_table": ["carp_common","asp","pike","bream","zander"],
+    "weather_profile": "large_lake"
+  },
+  {
+    "id": "chilik",
+    "name_ru": "Река Чилик",
+    "min_level": 10,
+    "tour_price": 900,
+    "fish_table": ["trout","grayling","lenok","roach"],
+    "weather_profile": "mountain_river"
+  },
+  {
+    "id": "alakul",
+    "name_ru": "Озеро Алакуль",
+    "min_level": 12,
+    "tour_price": 1200,
+    "fish_table": ["bream","carp_common","perch","pike"],
+    "weather_profile": "steppe_lake"
+  },
+  {
+    "id": "tobol",
+    "name_ru": "Река Тобол",
+    "min_level": 14,
+    "tour_price": 1500,
+    "fish_table": ["bream","pike","zander","catfish"],
+    "weather_profile": "cold_river"
+  },
+  {
+    "id": "syrdarya",
+    "name_ru": "Река Сырдарья",
+    "min_level": 17,
+    "tour_price": 1800,
+    "fish_table": ["carp_common","catfish","roach","bream","pike"],
+    "weather_profile": "warm_river"
+  },
+  {
+    "id": "esil",
+    "name_ru": "Река Есиль",
+    "min_level": 19,
+    "tour_price": 2000,
+    "fish_table": ["perch","pike","zander","ide"],
+    "weather_profile": "cold_river"
+  },
+  {
+    "id": "usturt",
+    "name_ru": "Плато Устюрт (солёные озёра)",
+    "min_level": 21,
+    "tour_price": 2300,
+    "fish_table": ["carp_common","bream","catfish"],
+    "weather_profile": "semi_desert"
+  },
+  {
+    "id": "caspian",
+    "name_ru": "Каспийское побережье",
+    "min_level": 25,
+    "tour_price": 3000,
+    "fish_table": ["mullet","sturgeon","beluga","catfish"],
+    "weather_profile": "sea_coast"
+  },
+  {
+    "id": "altai",
+    "name_ru": "Горы Алтая",
+    "min_level": 27,
+    "tour_price": 3400,
+    "fish_table": ["grayling","trout","lenok","hucho"],
+    "weather_profile": "mountain_river"
+  },
+  {
+    "id": "turgen",
+    "name_ru": "Река Турген",
+    "min_level": 29,
+    "tour_price": 3800,
+    "fish_table": ["grayling","trout","roach"],
+    "weather_profile": "mountain_river"
+  },
+  {
+    "id": "tour_asia",
+    "name_ru": "Тур: Южная Азия",
+    "min_level": 31,
+    "tour_price": 5000,
+    "fish_table": ["carp_mirror","trout_golden","catfish","piranha"],
+    "weather_profile": "tropical_river"
+  },
+  {
+    "id": "tour_europe",
+    "name_ru": "Тур: Европа (Норвегия, Финляндия)",
+    "min_level": 33,
+    "tour_price": 5500,
+    "fish_table": ["salmon","trout","whitefish","pike"],
+    "weather_profile": "northern_river"
+  },
+  {
+    "id": "tour_ocean",
+    "name_ru": "Тур: Тихий океан",
+    "min_level": 35,
+    "tour_price": 6000,
+    "fish_table": ["tuna","shark","barracuda","grouper"],
+    "weather_profile": "tropical_sea"
+  }
+]
