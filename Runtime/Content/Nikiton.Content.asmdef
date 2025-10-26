@@ -1,0 +1,5 @@
+{
+  "name": "Nikiton.Content",
+  "references": [ "Nikiton.Core" ],
+  "autoReferenced": true
+}
