@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "features": {
+    "chat_enabled": true,
+    "auto_translate": true,
+    "iap_enabled": true,
+    "durability_enabled": true,
+    "weather_enabled": true,
+    "tours_enabled": true
+  },
+  "content": {
+    "catalog_base_url": "https://raw.githubusercontent.com/nikitongames/nikiton-cloud/main/games/kazfishing_mobile/catalogs/",
+    "localization_base_url": "https://raw.githubusercontent.com/nikitongames/nikiton-cloud/main/games/kazfishing_mobile/localization/"
+  }
+}
