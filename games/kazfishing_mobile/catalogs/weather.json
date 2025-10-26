@@ -1,0 +1,103 @@
+{
+  "profiles": [
+    {
+      "id": "steppe_river",
+      "name_ru": "Степная река",
+      "temperature_range": [10, 35],
+      "rain_chance": 0.3,
+      "wind_range": [1, 8],
+      "fish_activity": {"day": 1.0, "night": 0.7},
+      "notes": "Тёплая погода, умеренный клёв, высокая активность карповых."
+    },
+    {
+      "id": "large_lake",
+      "name_ru": "Крупное озеро",
+      "temperature_range": [8, 28],
+      "rain_chance": 0.4,
+      "wind_range": [2, 10],
+      "fish_activity": {"day": 0.9, "night": 0.8},
+      "notes": "Умеренно ветреная местность, клёв стабилен в утренние часы."
+    },
+    {
+      "id": "cold_river",
+      "name_ru": "Холодная река",
+      "temperature_range": [-5, 18],
+      "rain_chance": 0.5,
+      "wind_range": [2, 12],
+      "fish_activity": {"day": 0.7, "night": 0.6},
+      "notes": "Активность в дневные часы низкая, преимущественно форель и хариус."
+    },
+    {
+      "id": "mountain_river",
+      "name_ru": "Горная река",
+      "temperature_range": [2, 20],
+      "rain_chance": 0.6,
+      "wind_range": [1, 6],
+      "fish_activity": {"day": 0.8, "night": 0.5},
+      "notes": "Прохладный климат, высокая активность лососевых."
+    },
+    {
+      "id": "steppe_lake",
+      "name_ru": "Степное озеро",
+      "temperature_range": [5, 30],
+      "rain_chance": 0.2,
+      "wind_range": [0, 5],
+      "fish_activity": {"day": 0.9, "night": 0.7},
+      "notes": "Редкие осадки, высокая активность мирной рыбы."
+    },
+    {
+      "id": "semi_desert",
+      "name_ru": "Полупустыня",
+      "temperature_range": [15, 40],
+      "rain_chance": 0.1,
+      "wind_range": [3, 10],
+      "fish_activity": {"day": 0.6, "night": 0.4},
+      "notes": "Жаркий климат, клёв снижен, рыба активна утром и вечером."
+    },
+    {
+      "id": "warm_river",
+      "name_ru": "Тёплая река",
+      "temperature_range": [15, 35],
+      "rain_chance": 0.3,
+      "wind_range": [0, 6],
+      "fish_activity": {"day": 1.0, "night": 0.9},
+      "notes": "Тёплая вода, стабильный клёв круглосуточно."
+    },
+    {
+      "id": "sea_coast",
+      "name_ru": "Морское побережье",
+      "temperature_range": [10, 35],
+      "rain_chance": 0.4,
+      "wind_range": [3, 15],
+      "fish_activity": {"day": 0.8, "night": 0.7},
+      "notes": "Сильный ветер, активность морских рыб выше в дневное время."
+    },
+    {
+      "id": "tropical_river",
+      "name_ru": "Тропическая река",
+      "temperature_range": [20, 40],
+      "rain_chance": 0.6,
+      "wind_range": [0, 5],
+      "fish_activity": {"day": 1.1, "night": 0.9},
+      "notes": "Жаркий климат, высокая активность хищных рыб."
+    },
+    {
+      "id": "tropical_sea",
+      "name_ru": "Тропическое море",
+      "temperature_range": [22, 38],
+      "rain_chance": 0.5,
+      "wind_range": [2, 10],
+      "fish_activity": {"day": 1.0, "night": 0.8},
+      "notes": "Идеальные условия для морской рыбалки, высокая активность хищников."
+    },
+    {
+      "id": "northern_river",
+      "name_ru": "Северная река",
+      "temperature_range": [-10, 10],
+      "rain_chance": 0.3,
+      "wind_range": [1, 8],
+      "fish_activity": {"day": 0.6, "night": 0.5},
+      "notes": "Холодный климат, низкая активность, клёв преимущественно днём."
+    }
+  ]
+}
