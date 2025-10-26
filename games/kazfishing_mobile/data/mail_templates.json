@@ -1,9 +1,0 @@
-{
-  "categories": ["system","rewards","purchase","tournament"],
-  "templates": [
-    { "id": "daily_reward", "category": "rewards", "subject": "Ежедневная награда", "body": "Спасибо за вход! Вот твои предметы: {items}." },
-    { "id": "purchase_receipt", "category": "purchase", "subject": "Покупка оформлена", "body": "Вы приобрели: {item_name}. Приятной рыбалки!" },
-    { "id": "tournament_result", "category": "tournament", "subject": "Результаты турнира", "body": "Поздравляем! Место: {place}. Награда: {reward}." }
-  ],
-  "favorites_enabled": true
-}

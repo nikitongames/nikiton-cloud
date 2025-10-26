@@ -1,7 +1,0 @@
-{
-  "achievements": [
-    { "id": "first_fish", "title": "Первая рыба", "desc": "Поймай первую рыбу", "reward_soft": 50 },
-    { "id": "trophy_carp", "title": "Трофейный сазан", "desc": "Поймай сазана > 10 кг", "reward_soft": 300, "reward_hard": 10 },
-    { "id": "spinner_master", "title": "Мастер спиннинга", "desc": "Поймай 50 хищников", "reward_soft": 500 }
-  ]
-}

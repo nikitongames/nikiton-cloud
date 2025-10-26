@@ -1,8 +1,0 @@
-{
-  "enabled": true,
-  "provider": "nikiton_cloud_translate",
-  "detect_language": true,
-  "ui_languages": ["ru","en","kk","tr","es","pt","de","fr"],
-  "glossary": { "NGT": "NGT", "KZC": "Kaz Coins" },
-  "privacy": { "anonymize_user_id": true }
-}

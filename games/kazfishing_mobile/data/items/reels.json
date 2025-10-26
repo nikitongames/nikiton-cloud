@@ -1,7 +1,0 @@
-{
-  "reels": [
-    { "id": "reel_2000", "title": "Катушка 2000", "drag_kg": 4, "durability": 110, "lvl": 1, "price": 80 },
-    { "id": "reel_3000", "title": "Катушка 3000", "drag_kg": 7, "durability": 130, "lvl": 5, "price": 160 },
-    { "id": "reel_4000", "title": "Катушка 4000", "drag_kg": 10, "durability": 150, "lvl": 9, "price": 280 }
-  ]
-}
