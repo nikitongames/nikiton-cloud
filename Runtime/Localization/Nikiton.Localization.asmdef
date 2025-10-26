@@ -1,0 +1,5 @@
+{
+  "name": "Nikiton.Localization",
+  "references": [ "Nikiton.Core" ],
+  "autoReferenced": true
+}
