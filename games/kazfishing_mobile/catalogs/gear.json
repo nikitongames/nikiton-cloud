@@ -1,0 +1,106 @@
+{
+  "rods": [
+    /* ---- Маховые удилища (10 шт.) ---- */
+    {"id":"match_3m","name_ru":"Маховое 3 м","max_tension":2.0,"durability":100,"price":120},
+    {"id":"match_4m","name_ru":"Маховое 4 м","max_tension":3.0,"durability":110,"price":180},
+    {"id":"match_5m","name_ru":"Маховое 5 м","max_tension":4.0,"durability":120,"price":250},
+    {"id":"match_6m","name_ru":"Маховое 6 м","max_tension":5.0,"durability":130,"price":320},
+    {"id":"match_7m","name_ru":"Маховое 7 м","max_tension":6.0,"durability":140,"price":390},
+    {"id":"match_8m","name_ru":"Маховое 8 м","max_tension":7.0,"durability":150,"price":460},
+    {"id":"match_9m","name_ru":"Маховое 9 м","max_tension":8.0,"durability":160,"price":530},
+    {"id":"match_10m","name_ru":"Маховое 10 м","max_tension":9.0,"durability":170,"price":600},
+    {"id":"match_pro","name_ru":"Маховое Pro 11 м","max_tension":10.0,"durability":180,"price":750},
+    {"id":"match_elite","name_ru":"Маховое Elite 12 м","max_tension":12.0,"durability":200,"price":900},
+
+    /* ---- Фидерные удилища (15 шт.) ---- */
+    {"id":"feeder_light_1","name_ru":"Фидер лёгкий 1","max_tension":5.0,"durability":130,"price":300},
+    {"id":"feeder_light_2","name_ru":"Фидер лёгкий 2","max_tension":6.0,"durability":140,"price":350},
+    {"id":"feeder_medium_1","name_ru":"Фидер средний 1","max_tension":8.0,"durability":150,"price":420},
+    {"id":"feeder_medium_2","name_ru":"Фидер средний 2","max_tension":9.0,"durability":160,"price":480},
+    {"id":"feeder_heavy_1","name_ru":"Фидер тяжёлый 1","max_tension":10.0,"durability":170,"price":550},
+    {"id":"feeder_heavy_2","name_ru":"Фидер тяжёлый 2","max_tension":11.0,"durability":180,"price":620},
+    {"id":"feeder_elite","name_ru":"Фидер Elite","max_tension":12.0,"durability":190,"price":700},
+    {"id":"picker_1","name_ru":"Пикер короткий","max_tension":4.0,"durability":130,"price":280},
+    {"id":"picker_2","name_ru":"Пикер средний","max_tension":5.0,"durability":140,"price":310},
+    {"id":"picker_3","name_ru":"Пикер длинный","max_tension":6.0,"durability":150,"price":350},
+    {"id":"carp_feeder_1","name_ru":"Карповый фидер","max_tension":15.0,"durability":210,"price":900},
+    {"id":"carp_feeder_2","name_ru":"Карповый фидер Pro","max_tension":18.0,"durability":230,"price":1100},
+    {"id":"feeder_tournament","name_ru":"Фидер турнирный","max_tension":20.0,"durability":250,"price":1300},
+    {"id":"feeder_elite_pro","name_ru":"Фидер Elite Pro","max_tension":22.0,"durability":260,"price":1500},
+    {"id":"feeder_max","name_ru":"Фидер Max","max_tension":25.0,"durability":280,"price":1700},
+
+    /* ---- Спиннинги (20 шт.) ---- */
+    {"id":"spin_ultralight_1","name_ru":"Спиннинг ультралайт 1","max_tension":2.0,"durability":100,"price":200},
+    {"id":"spin_ultralight_2","name_ru":"Спиннинг ультралайт 2","max_tension":3.0,"durability":110,"price":240},
+    {"id":"spin_light_1","name_ru":"Спиннинг лёгкий 1","max_tension":4.0,"durability":120,"price":280},
+    {"id":"spin_light_2","name_ru":"Спиннинг лёгкий 2","max_tension":5.0,"durability":130,"price":320},
+    {"id":"spin_medium_1","name_ru":"Спиннинг средний 1","max_tension":6.0,"durability":140,"price":380},
+    {"id":"spin_medium_2","name_ru":"Спиннинг средний 2","max_tension":7.0,"durability":150,"price":420},
+    {"id":"spin_medium_3","name_ru":"Спиннинг средний 3","max_tension":8.0,"durability":160,"price":470},
+    {"id":"spin_heavy_1","name_ru":"Спиннинг тяжёлый 1","max_tension":10.0,"durability":170,"price":520},
+    {"id":"spin_heavy_2","name_ru":"Спиннинг тяжёлый 2","max_tension":12.0,"durability":180,"price":580},
+    {"id":"spin_heavy_3","name_ru":"Спиннинг тяжёлый 3","max_tension":15.0,"durability":200,"price":650},
+    {"id":"spin_carbon_1","name_ru":"Спиннинг карбоновый 1","max_tension":18.0,"durability":210,"price":750},
+    {"id":"spin_carbon_2","name_ru":"Спиннинг карбоновый 2","max_tension":20.0,"durability":230,"price":850},
+    {"id":"spin_elite_1","name_ru":"Спиннинг Elite 1","max_tension":22.0,"durability":240,"price":950},
+    {"id":"spin_elite_2","name_ru":"Спиннинг Elite 2","max_tension":25.0,"durability":260,"price":1100},
+    {"id":"spin_sea_1","name_ru":"Спиннинг морской 1","max_tension":30.0,"durability":280,"price":1300},
+    {"id":"spin_sea_2","name_ru":"Спиннинг морской 2","max_tension":35.0,"durability":300,"price":1500},
+    {"id":"spin_sea_pro","name_ru":"Спиннинг морской Pro","max_tension":40.0,"durability":320,"price":1800},
+    {"id":"spin_tournament","name_ru":"Спиннинг турнирный","max_tension":45.0,"durability":340,"price":2000},
+    {"id":"spin_elite_max","name_ru":"Спиннинг Elite Max","max_tension":50.0,"durability":360,"price":2300}
+  ],
+
+  "reels": [
+    {"id":"reel_spin_1000","name_ru":"Безинерционная 1000","drag":2.0,"durability":100,"price":150},
+    {"id":"reel_spin_2000","name_ru":"Безинерционная 2000","drag":3.5,"durability":120,"price":220},
+    {"id":"reel_spin_3000","name_ru":"Безинерционная 3000","drag":5.0,"durability":140,"price":280},
+    {"id":"reel_spin_4000","name_ru":"Безинерционная 4000","drag":6.0,"durability":150,"price":350},
+    {"id":"reel_baitcast_1","name_ru":"Байткастинговая 1","drag":7.0,"durability":150,"price":400},
+    {"id":"reel_baitcast_2","name_ru":"Байткастинговая 2","drag":8.5,"durability":160,"price":500},
+    {"id":"reel_baitcast_3","name_ru":"Байткастинговая 3","drag":10.0,"durability":170,"price":600},
+    {"id":"reel_multiplier_1","name_ru":"Мультипликаторная 1","drag":12.0,"durability":200,"price":700},
+    {"id":"reel_multiplier_2","name_ru":"Мультипликаторная 2","drag":15.0,"durability":230,"price":900},
+    {"id":"reel_multiplier_3","name_ru":"Мультипликаторная 3","drag":18.0,"durability":260,"price":1100},
+    {"id":"reel_carp_1","name_ru":"Карповая катушка 1","drag":20.0,"durability":240,"price":1000},
+    {"id":"reel_carp_2","name_ru":"Карповая катушка 2","drag":25.0,"durability":260,"price":1200},
+    {"id":"reel_sea_1","name_ru":"Морская катушка 1","drag":30.0,"durability":280,"price":1500},
+    {"id":"reel_sea_2","name_ru":"Морская катушка 2","drag":35.0,"durability":320,"price":1700},
+    {"id":"reel_elite","name_ru":"Катушка Elite","drag":40.0,"durability":350,"price":2000}
+  ],
+
+  "lines": [
+    {"id":"line_2kg","name_ru":"Леска 2 кг","strength":2.0,"durability":100,"price":40},
+    {"id":"line_5kg","name_ru":"Леска 5 кг","strength":5.0,"durability":120,"price":80},
+    {"id":"line_10kg","name_ru":"Леска 10 кг","strength":10.0,"durability":150,"price":120},
+    {"id":"line_20kg","name_ru":"Леска 20 кг","strength":20.0,"durability":180,"price":180},
+    {"id":"line_40kg","name_ru":"Леска 40 кг","strength":40.0,"durability":220,"price":250}
+  ],
+
+  "hooks": [
+    {"id":"hook_10","name_ru":"Крючок №10","size":10,"durability":80,"price":20},
+    {"id":"hook_8","name_ru":"Крючок №8","size":8,"durability":100,"price":25},
+    {"id":"hook_6","name_ru":"Крючок №6","size":6,"durability":120,"price":30},
+    {"id":"hook_4","name_ru":"Крючок №4","size":4,"durability":140,"price":35},
+    {"id":"hook_2","name_ru":"Крючок №2","size":2,"durability":160,"price":40}
+  ],
+
+  "baits": [
+    {"id":"worm","name_ru":"Червь","type":"natural"},
+    {"id":"maggot","name_ru":"Мотыль","type":"natural"},
+    {"id":"bread","name_ru":"Хлеб","type":"plant"},
+    {"id":"corn","name_ru":"Кукуруза","type":"plant"},
+    {"id":"boilies","name_ru":"Бойлы","type":"carp"},
+    {"id":"spinner","name_ru":"Блесна","type":"lure"},
+    {"id":"wobbler","name_ru":"Воблер","type":"lure"},
+    {"id":"jig","name_ru":"Джиг","type":"lure"},
+    {"id":"fly","name_ru":"Мушка","type":"fly"},
+    {"id":"livebait","name_ru":"Живец","type":"natural"}
+  ],
+
+  "consumables": [
+    {"id":"repair_kit_small","name_ru":"Набор ремонта (малый)","effect":"repair_small","price":150},
+    {"id":"repair_kit_big","name_ru":"Набор ремонта (большой)","effect":"repair_big","price":300},
+    {"id":"bait_box","name_ru":"Коробка наживки","effect":"storage","price":200}
+  ]
+}
