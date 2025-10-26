@@ -1,0 +1,9 @@
+ui_play=Играть
+ui_shop=Магазин
+ui_chat=Чат
+ui_legal_continue=Продолжить
+ui_legal_tos=Условия использования
+ui_legal_privacy=Политика конфиденциальности
+ui_legal_eula=Лицензионное соглашение
+status_ready=Готово
+status_broken=Снасть сломана
