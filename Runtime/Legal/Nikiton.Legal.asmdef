@@ -1,7 +1,0 @@
-{
-  "name": "Nikiton.Legal",
-  "references": [
-    "Nikiton.Core"
-  ],
-  "autoReferenced": true
-}

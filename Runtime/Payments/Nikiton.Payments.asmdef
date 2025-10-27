@@ -1,5 +1,0 @@
-{
-  "name": "Nikiton.Payments",
-  "references": [ "Nikiton.Core" ],
-  "autoReferenced": true
-}
