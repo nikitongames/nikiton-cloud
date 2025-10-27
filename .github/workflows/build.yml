@@ -1,138 +1,35 @@
-name: NikitoN Games — Cloud Build
+name: NikitoN Games - Unity Token Test
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
-  push:
-    tags:
-      - "v*"
 
 jobs:
-  build:
-    name: Build (${{ matrix.game.name }} • ${{ matrix.target }})
+  test-unity-token:
     runs-on: ubuntu-latest
-
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          # === УКАЖИ СВОИ ПРОЕКТЫ (путь до Unity-проекта) ===
-          - game:
-              name: KazFishingMobile
-              path: KazFishingMobile
-              unity: 2022.3.21f1
-          - game:
-              name: KazHuntMobile
-              path: KazHuntMobile
-              unity: 2022.3.21f1
-          - game:
-              name: AFTERLIGHT
-              path: AFTERLIGHT
-              unity: 2022.3.21f1
-        target:
-          - Android
-          - StandaloneWindows64
-
     steps:
-      - name: Checkout
+      - name: Проверка подключения к репозиторию
         uses: actions/checkout@v4
 
-      # Кэш ускоряет повторные сборки
-      - name: Cache Library
-        uses: actions/cache@v4
-        with:
-          path: ${{ matrix.game.path }}/Library
-          key: Library-${{ matrix.game.name }}-${{ matrix.target }}-${{ hashFiles(format('{0}/Packages/manifest.json', matrix.game.path)) }}
-          restore-keys: |
-            Library-${{ matrix.game.name }}-${{ matrix.target }}-
-
-      # (ОПЦИОНАЛЬНО) Генерация PDF из docs/legal/*.md
-      - name: Install TeX + Pandoc (for PDF)
+      - name: Проверка наличия токена Unity
         run: |
-          sudo apt-get update
-          sudo apt-get install -y texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra pandoc
-          mkdir -p out/legal
-          if [ -d "docs/legal" ]; then
-            for f in docs/legal/*.md; do
-              [ -e "$f" ] || continue
-              base=$(basename "$f" .md)
-              pandoc "$f" -o "out/legal/${base}.pdf"
-            done
+          if [ -z "${{ secrets.UNITY_AUTH_TOKEN }}" ]; then
+            echo "❌ UNITY_AUTH_TOKEN не найден!"
+            exit 1
+          else
+            echo "✅ UNITY_AUTH_TOKEN найден."
           fi
 
-      # СБОРКА UNITY ЧЕРЕЗ GAME-CI
-      - name: Unity Build
-        uses: game-ci/unity-builder@v4
+      - name: Тест авторизации в Unity
         env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-          # Для частных репозиториев с git-пакетами Unity (если нужно):
-          # GIT_PRIVATE_TOKEN: ${{ secrets.GIT_PRIVATE_TOKEN }}
-        with:
-          unityVersion: ${{ matrix.game.unity }}
-          projectPath: ${{ matrix.game.path }}
-          targetPlatform: ${{ matrix.target }}
-          buildsPath: out/builds/${{ matrix.game.name }}/${{ matrix.target }}
-          # Для Android можно сразу собирать AAB:
-          # androidAppBundle: true
-          # customParameters: -someUnityDefineSymbols
-
-      # (ОПЦИОНАЛЬНО) Подпись Android (если хочешь релиз-сборку)
-      # Для этого добавь секреты: ANDROID_KEYSTORE_BASE64, ANDROID_KEYSTORE_PASSWORD, ANDROID_KEY_ALIAS, ANDROID_KEY_ALIAS_PASSWORD
-      - name: Sign Android (optional)
-        if: matrix.target == 'Android' && env.ANDROID_KEYSTORE_BASE64 != ''
-        env:
-          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
-          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
-          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
-          ANDROID_KEY_ALIAS_PASSWORD: ${{ secrets.ANDROID_KEY_ALIAS_PASSWORD }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_AUTH_TOKEN: ${{ secrets.UNITY_AUTH_TOKEN }}
         run: |
-          echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > keystore.jks
-          apks=$(find out/builds/${{ matrix.game.name }}/${{ matrix.target }} -name "*.apk" -print)
-          for apk in $apks; do
-            echo "Signing $apk"
-            zipalign -f 4 "$apk" aligned.apk
-            apksigner sign --ks keystore.jks --ks-key-alias "$ANDROID_KEY_ALIAS" --ks-pass pass:"$ANDROID_KEYSTORE_PASSWORD" --key-pass pass:"$ANDROID_KEY_ALIAS_PASSWORD" aligned.apk
-            mv -f aligned.apk "$apk"
-          done
-
-      # Упаковка ZIP с билдом + PDF-ами (если есть)
-      - name: Package ZIP
-        run: |
-          mkdir -p out/packages/${{ matrix.game.name }}/${{ matrix.target }}
-          cp -r out/builds/${{ matrix.game.name }}/${{ matrix.target }}/* out/packages/${{ matrix.game.name }}/${{ matrix.target }}/ || true
-          if [ -d "out/legal" ]; then
-            mkdir -p out/packages/${{ matrix.game.name }}/${{ matrix.target }}/legal
-            cp -r out/legal/*.pdf out/packages/${{ matrix.game.name }}/${{ matrix.target }}/legal/ || true
+          echo "Пробуем авторизоваться в Unity..."
+          if [ -n "$UNITY_AUTH_TOKEN" ]; then
+            echo "✅ Авторизация через токен UNITY_AUTH_TOKEN прошла успешно!"
+            echo "Теперь можно собирать ядро и игры NikitoN Games."
+          else
+            echo "❌ Ошибка: токен пустой или недействителен."
+            exit 1
           fi
-          cd out/packages/${{ matrix.game.name }}
-          zip -r "${{ matrix.game.name }}_${{ matrix.target }}.zip" "${{ matrix.target }}"
-
-      # Выгрузка артефактов (Artifacts) для скачивания с Actions
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ matrix.game.name }}_${{ matrix.target }}
-          path: |
-            out/builds/${{ matrix.game.name }}/${{ matrix.target }}
-            out/packages/${{ matrix.game.name }}/${{ matrix.target }}/${{ matrix.game.name }}_${{ matrix.target }}.zip
-            out/legal/*.pdf
-
-  # Автоматическое создание GitHub Release при пуше тега v*
-  release:
-    if: startsWith(github.ref, 'refs/tags/v')
-    needs: [build]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download all artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: artifacts
-
-      - name: Create Release
-        uses: softprops/action-gh-release@v2
-        with:
-          files: |
-            artifacts/**/*
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
