@@ -1,0 +1,24 @@
+{
+  "_": [
+    {"k":"hello","v":"Ciao"},
+    {"k":"good_luck","v":"Buona fortuna!"},
+    {"k":"fish_bite","v":"Abbocca!"},
+    {"k":"nice_catch","v":"Bella presa!"},
+    {"k":"connected","v":"Connesso"},
+    {"k":"disconnected","v":"Disconnesso"},
+    {"k":"new_content_available","v":"Nuovo contenuto disponibile"},
+    {"k":"download_now","v":"Scarica ora"},
+    {"k":"download_later","v":"Più tardi"},
+    {"k":"downloading","v":"Download in corso..."},
+    {"k":"install_complete","v":"Installazione completata"},
+    {"k":"shop","v":"Negozio"},
+    {"k":"market","v":"Mercato (giocatore-giocatore)"},
+    {"k":"exchange","v":"Cambio valuta"},
+    {"k":"purchase_success","v":"Acquisto riuscito"},
+    {"k":"purchase_failed","v":"Acquisto fallito"},
+    {"k":"insufficient_funds","v":"Fondi insufficienti"},
+    {"k":"tour_started","v":"Tour iniziato"},
+    {"k":"tour_ended","v":"Tour terminato"},
+    {"k":"reward_received","v":"Ricompensa ricevuta"}
+  ]
+}
