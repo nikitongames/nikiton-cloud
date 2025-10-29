@@ -1,0 +1,62 @@
+{
+  "mail_system": {
+    "max_mailbox_size": 50,
+    "mail_expiration_days": 30,
+    "categories": ["system", "event", "reward", "friend", "admin", "favorite"],
+    "mails": [
+      {
+        "id": "MAIL-2025-10-29-001",
+        "category": "reward",
+        "title": "🎣 Награда за участие в турнире",
+        "message": "Поздравляем! Вы заняли 3 место и получаете 500 золота.",
+        "attachments": { "gold": 500 },
+        "sender": "Nikiton Cloud",
+        "timestamp": "2025-10-29T20:00:00Z",
+        "is_read": false,
+        "is_favorite": false
+      },
+      {
+        "id": "MAIL-2025-10-29-002",
+        "category": "system",
+        "title": "Добро пожаловать в KazFishing Mobile!",
+        "message": "Благодарим за установку игры. Удачного клёва и больших трофеев!",
+        "attachments": { "item": "starter_rod" },
+        "sender": "Nikiton Games",
+        "timestamp": "2025-10-29T12:00:00Z",
+        "is_read": true,
+        "is_favorite": true
+      }
+    ]
+  },
+  "mechanics": {
+    "allow_attachments": true,
+    "auto_collect_rewards_on_open": false,
+    "auto_delete_expired_mails": true,
+    "notify_on_new_mail": true,
+    "enable_favorite_filter": true,
+    "mail_sorting_mode": "by_date_desc",
+    "allow_mass_delete": true
+  },
+  "display_settings": {
+    "show_unread_counter": true,
+    "show_sender_name": true,
+    "highlight_unread": true,
+    "animate_reward_claim": true,
+    "group_by_category": true,
+    "show_attachment_icons": true
+  },
+  "security": {
+    "validate_mail_id": true,
+    "block_fake_rewards": true,
+    "prevent_duplicate_claims": true,
+    "encrypt_mail_content": true,
+    "log_mail_attachments": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 15,
+    "refresh_on_new_mail": true,
+    "archive_old_mail_on_server": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
