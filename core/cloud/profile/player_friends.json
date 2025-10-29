@@ -1,0 +1,54 @@
+{
+  "player_friends": {
+    "friends_list": [],
+    "friend_requests": [],
+    "blocked_users": [],
+    "recent_players": [],
+    "social_competitions": []
+  },
+  "mechanics": {
+    "max_friends": 100,
+    "max_pending_requests": 20,
+    "allow_friend_gifting": true,
+    "gift_cooldown_hours": 12,
+    "allow_duels": true,
+    "duel_reward_gold": 300,
+    "duel_reward_ncoin": 5
+  },
+  "friend_gifting": {
+    "enabled": true,
+    "giftable_items": ["basic_bait", "worm_bait", "premium_bait", "event_boost_nauryz"],
+    "limit_per_day": 3
+  },
+  "competition_system": {
+    "create_competition": {
+      "enabled": true,
+      "max_duration_hours": 24,
+      "entry_fee_gold": 500,
+      "winner_prize_gold": 2000,
+      "winner_prize_ncoin": 20
+    },
+    "join_competition": {
+      "allow_public_join": true,
+      "min_level_required": 3
+    }
+  },
+  "display_settings": {
+    "show_online_status": true,
+    "show_vip_badges": true,
+    "highlight_friends_online": true,
+    "show_duel_invitations": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 5,
+    "save_on_add_or_remove": true
+  },
+  "chat": {
+    "private_chat_enabled": true,
+    "auto_translate_enabled": true,
+    "message_history_limit": 100,
+    "language_detection": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
