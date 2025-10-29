@@ -1,0 +1,87 @@
+{
+  "special_offers": [
+    {
+      "id": "winter_legendary_pack",
+      "title": "Легендарный зимний набор ❄️",
+      "description": "Редкий набор, доступный только во время зимних событий. Включает улучшенные снасти и донатную валюту.",
+      "available_from": "2025-12-20T00:00:00Z",
+      "available_to": "2026-01-10T23:59:00Z",
+      "price_real": {
+        "KZT": 4500,
+        "RUB": 900,
+        "USD": 9.99,
+        "EUR": 9.49
+      },
+      "contents": {
+        "gold": 10000,
+        "ncoin": 300,
+        "items": ["frost_rod", "winter_bait", "ice_hook"]
+      },
+      "limit_per_user": 1,
+      "active": true
+    },
+    {
+      "id": "spring_blessing_pack",
+      "title": "Весеннее благословение 🌸",
+      "description": "Тёплый сезонный набор со скидкой. Включает снасти для рек и донатную валюту.",
+      "available_from": "2026-03-10T00:00:00Z",
+      "available_to": "2026-03-31T23:59:00Z",
+      "price_real": {
+        "KZT": 3000,
+        "RUB": 600,
+        "USD": 6.49,
+        "EUR": 6.29
+      },
+      "contents": {
+        "gold": 6000,
+        "ncoin": 150,
+        "items": ["nauryz_bait", "flower_hook"]
+      },
+      "limit_per_user": 2,
+      "active": true
+    },
+    {
+      "id": "dragon_year_bundle",
+      "title": "Набор Года Дракона 🐉",
+      "description": "Праздничный набор в честь китайского Нового года. Включает эксклюзивную приманку и удочку.",
+      "available_from": "2026-02-01T00:00:00Z",
+      "available_to": "2026-02-20T23:59:00Z",
+      "price_real": {
+        "KZT": 4000,
+        "RUB": 800,
+        "USD": 8.99,
+        "EUR": 8.79
+      },
+      "contents": {
+        "gold": 8000,
+        "ncoin": 250,
+        "items": ["dragon_hook", "red_bait", "dragon_rod"]
+      },
+      "limit_per_user": 1,
+      "active": true
+    },
+    {
+      "id": "summer_tournament_pack",
+      "title": "Летний турнирный набор ☀️",
+      "description": "Набор для состязаний и турниров. Включает турнирную экипировку и донатную валюту.",
+      "available_from": "2026-06-05T00:00:00Z",
+      "available_to": "2026-06-25T23:59:00Z",
+      "price_real": {
+        "KZT": 3500,
+        "RUB": 700,
+        "USD": 7.49,
+        "EUR": 7.29
+      },
+      "contents": {
+        "gold": 9000,
+        "ncoin": 200,
+        "items": ["marine_rod", "summer_hat", "fish_trophy"]
+      },
+      "limit_per_user": 2,
+      "active": true
+    }
+  ],
+  "auto_update": true,
+  "sync_interval_hours": 12,
+  "last_update": "2025-10-30T00:00:00Z"
+}
