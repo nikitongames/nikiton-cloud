@@ -1,0 +1,79 @@
+{
+  "seasons": [
+    {
+      "id": "spring_festival",
+      "title": "Весенний сезон 🌸",
+      "description": "Время цветения, рыбалки и обновления природы. Игроки получают бонус к улову на всех речных локациях.",
+      "start_month": 3,
+      "end_month": 5,
+      "bonuses": {
+        "catch_rate_multiplier": 1.2,
+        "event_item_drop": ["spring_flower_bait", "fresh_water_hook"]
+      },
+      "season_rewards": {
+        "gold": 3000,
+        "ncoin": 50,
+        "unique_item": "spring_emblem"
+      },
+      "active": true
+    },
+    {
+      "id": "summer_season",
+      "title": "Летний сезон ☀️",
+      "description": "Пик активности рыбы. Повышенный шанс поймать редкие виды на озёрных и морских локациях.",
+      "start_month": 6,
+      "end_month": 8,
+      "bonuses": {
+        "rare_fish_chance": 1.5,
+        "event_item_drop": ["summer_bait", "tropical_hook"]
+      },
+      "season_rewards": {
+        "gold": 4000,
+        "ncoin": 75,
+        "unique_item": "summer_medal"
+      },
+      "active": true
+    },
+    {
+      "id": "autumn_harvest",
+      "title": "Осенний сезон 🍂",
+      "description": "Сезон сбора урожая и подготовки к зиме. Повышенные награды за турниры и состязания.",
+      "start_month": 9,
+      "end_month": 11,
+      "bonuses": {
+        "tournament_reward_multiplier": 1.3,
+        "event_item_drop": ["autumn_bait", "leaf_hook"]
+      },
+      "season_rewards": {
+        "gold": 3500,
+        "ncoin": 60,
+        "unique_item": "autumn_trophy"
+      },
+      "active": true
+    },
+    {
+      "id": "winter_frost",
+      "title": "Зимний сезон ❄️",
+      "description": "Сезон подлёдной рыбалки и зимних соревнований. Появляются редкие локации с уникальной рыбой.",
+      "start_month": 12,
+      "end_month": 2,
+      "bonuses": {
+        "frozen_lake_spawn": true,
+        "event_item_drop": ["ice_bait", "frost_hook"]
+      },
+      "season_rewards": {
+        "gold": 5000,
+        "ncoin": 100,
+        "unique_item": "winter_badge"
+      },
+      "active": true
+    }
+  ],
+  "rotation": {
+    "auto_switch": true,
+    "switch_day": 1,
+    "sync_with_region": true
+  },
+  "auto_update": true,
+  "last_update": "2025-10-30T00:00:00Z"
+}
