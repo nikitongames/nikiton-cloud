@@ -1,0 +1,77 @@
+{
+  "player_statistics": {
+    "general": {
+      "total_playtime_hours": 0,
+      "total_logins": 0,
+      "total_fish_caught": 0,
+      "total_weight_caught_kg": 0,
+      "total_tournaments_won": 0,
+      "total_events_participated": 0,
+      "max_fish_weight_kg": 0,
+      "last_login": null
+    },
+    "records": {
+      "largest_fish": {
+        "species": null,
+        "weight_kg": 0,
+        "location": null,
+        "date": null
+      },
+      "most_fish_in_day": {
+        "count": 0,
+        "date": null
+      },
+      "highest_tournament_rank": {
+        "rank": null,
+        "event_name": null
+      }
+    },
+    "progress": {
+      "current_streak_days": 0,
+      "longest_streak_days": 0,
+      "weekly_goals_completed": 0,
+      "monthly_goals_completed": 0
+    },
+    "social": {
+      "friends_count": 0,
+      "competitions_joined": 0,
+      "competitions_created": 0,
+      "messages_sent": 0
+    },
+    "ratings": {
+      "player_rank_global": 0,
+      "player_rank_regional": 0,
+      "rating_points": 0,
+      "tournament_points": 0
+    },
+    "achievements_progress": {
+      "common": 0,
+      "uncommon": 0,
+      "rare": 0,
+      "epic": 0,
+      "legendary": 0
+    }
+  },
+  "tracking": {
+    "auto_update_interval_minutes": 10,
+    "sync_on_login": true,
+    "sync_on_logout": true,
+    "upload_to_leaderboards": true
+  },
+  "leaderboard_settings": {
+    "global_refresh_interval_hours": 1,
+    "regional_refresh_interval_hours": 2,
+    "display_fields": [
+      "username",
+      "player_rank_global",
+      "total_weight_caught_kg",
+      "tournament_points"
+    ]
+  },
+  "display_settings": {
+    "show_medals": true,
+    "highlight_new_records": true,
+    "animate_rank_up": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
