@@ -45,7 +45,6 @@ public class DonationManager : MonoBehaviour
 
     public async void RegisterDonation(float amountKZT, int ncoinReceived)
     {
-        // Создание записи транзакции
         DonationTransaction newTx = new DonationTransaction
         {
             id = System.Guid.NewGuid().ToString(),
@@ -59,7 +58,6 @@ public class DonationManager : MonoBehaviour
         totalNcoin += ncoinReceived;
         gratitudeLevel = CalculateGratitudeLevel(totalSpentKZT);
 
-        // Обновление профиля и валюты
         PlayerProfile.Instance.AddNcoin(ncoinReceived);
         await UpdateCloudData();
         await GrantGratitudeRewards();
@@ -97,22 +95,31 @@ public class DonationManager : MonoBehaviour
         {
             case 1:
                 await PlayerMailbox.Instance.SendSystemMail(mailTitle, mailBody, gold: 250, ncoin: 25);
+                DonationCongratsUI.Show(1, "Поздравляем! Уровень благодарности 1 🎉", "Спасибо за поддержку Nikiton Games!", 250, 25);
                 break;
+
             case 2:
                 await PlayerMailbox.Instance.SendSystemMail(mailTitle, mailBody, gold: 1500, ncoin: 150, item: "vip_badge_bronze");
                 PlayerProfile.Instance.UnlockVIP(1);
+                DonationCongratsUI.Show(2, "VIP Bronze активирован 🌟", "Открыт бронзовый VIP и начислены награды.", 1500, 150);
                 break;
+
             case 3:
                 await PlayerMailbox.Instance.SendSystemMail(mailTitle, mailBody, gold: 5000, ncoin: 400, item: "vip_badge_silver");
                 PlayerProfile.Instance.UnlockVIP(2);
+                DonationCongratsUI.Show(3, "Новый уровень благодарности 💎", "Доступ к эксклюзивным событиям усилен.", 5000, 400);
                 break;
+
             case 4:
                 await PlayerMailbox.Instance.SendSystemMail(mailTitle, mailBody, gold: 15000, ncoin: 1200, item: "vip_badge_gold");
                 PlayerProfile.Instance.UnlockVIP(3);
+                DonationCongratsUI.Show(4, "VIP Gold 👑", "Золотой статус и уникальные привилегии!", 15000, 1200);
                 break;
+
             case 5:
                 await PlayerMailbox.Instance.SendSystemMail(mailTitle, mailBody, gold: 30000, ncoin: 3000, item: "founder_badge");
                 PlayerProfile.Instance.UnlockVIP(4);
+                DonationCongratsUI.Show(5, "Партнёр Nikiton Games 🏅", "Наивысший уровень благодарности. Спасибо!", 30000, 3000);
                 break;
         }
 
