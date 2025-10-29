@@ -1,0 +1,12 @@
+{
+  "default_country": "KZ",
+  "countries": {
+    "KZ": {"currency":"KZT","locale":"ru-KZ"},
+    "RU": {"currency":"RUB","locale":"ru-RU"},
+    "UA": {"currency":"UAH","locale":"uk-UA"},
+    "BY": {"currency":"BYN","locale":"ru-BY"},
+    "CN": {"currency":"CNY","locale":"zh-CN"},
+    "US": {"currency":"USD","locale":"en-US"},
+    "EU": {"currency":"EUR","locale":"de-DE"}
+  }
+}
