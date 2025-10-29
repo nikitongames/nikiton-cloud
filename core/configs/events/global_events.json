@@ -1,0 +1,104 @@
+{
+  "events": [
+    {
+      "id": "new_year_global",
+      "name": "Новый год",
+      "region_origin": "GLOBAL",
+      "start": "2025-12-31",
+      "end": "2026-01-03",
+      "description": "Празднуем Новый год! Уникальные зимние наборы, праздничные украшения и бонусы для всех игроков NikitoN Games.",
+      "rewards": ["bundle_new_year_fishset", "avatar_santa_hat"],
+      "banner": "event_new_year.png"
+    },
+    {
+      "id": "chinese_new_year_2026",
+      "name": "Китайский Новый год",
+      "region_origin": "CN",
+      "start": "2026-02-08",
+      "end": "2026-02-15",
+      "description": "Праздничное событие в честь Китайского Нового года! Красные фонари, золотые монеты и особые подарки.",
+      "rewards": ["bundle_cny_gold", "item_lantern"],
+      "banner": "event_chinese_new_year.png"
+    },
+    {
+      "id": "nowruz_2026",
+      "name": "Наурыз",
+      "region_origin": "KZ",
+      "start": "2026-03-21",
+      "end": "2026-03-25",
+      "description": "Праздник весны и обновления природы! Наурыз объединяет всех игроков. Весенние наборы и редкая рыба в водоёмах.",
+      "rewards": ["bundle_nowruz_spring", "avatar_flower_hat"],
+      "banner": "event_nowruz.png"
+    },
+    {
+      "id": "easter_2026",
+      "name": "Пасха",
+      "region_origin": "GLOBAL",
+      "start": "2026-04-05",
+      "end": "2026-04-10",
+      "description": "Праздничное событие Пасхи — редкие предметы, яркие яйца и особые бонусы!",
+      "rewards": ["bundle_easter_basket", "item_egg_skin"],
+      "banner": "event_easter.png"
+    },
+    {
+      "id": "victory_day_ru",
+      "name": "День Победы",
+      "region_origin": "RU",
+      "start": "2026-05-09",
+      "end": "2026-05-12",
+      "description": "Событие ко Дню Победы. Специальные награды и тематические предметы в честь героев.",
+      "rewards": ["bundle_victory_gear", "avatar_medal"],
+      "banner": "event_victory_day.png"
+    },
+    {
+      "id": "independence_day_us",
+      "name": "День независимости США",
+      "region_origin": "US",
+      "start": "2026-07-04",
+      "end": "2026-07-07",
+      "description": "Отмечаем День независимости США! Огни, салюты и праздничные наборы для всех игроков.",
+      "rewards": ["bundle_independence", "item_firework"],
+      "banner": "event_us_independence.png"
+    },
+    {
+      "id": "fisherman_day_global",
+      "name": "День рыбака",
+      "region_origin": "GLOBAL",
+      "start": "2026-07-13",
+      "end": "2026-07-16",
+      "description": "Главный праздник всех рыбаков! Увеличенный шанс на крупную рыбу и особые турниры.",
+      "rewards": ["bundle_fisherman_day", "item_fishing_trophy"],
+      "banner": "event_fisherman_day.png"
+    },
+    {
+      "id": "oktoberfest_2026",
+      "name": "Октоберфест",
+      "region_origin": "DE",
+      "start": "2026-09-21",
+      "end": "2026-09-30",
+      "description": "Праздничное осеннее событие — Октоберфест! Весёлые задания, праздничные костюмы и наборы.",
+      "rewards": ["bundle_oktoberfest", "avatar_beer_hat"],
+      "banner": "event_oktoberfest.png"
+    },
+    {
+      "id": "halloween_2026",
+      "name": "Хэллоуин",
+      "region_origin": "GLOBAL",
+      "start": "2026-10-25",
+      "end": "2026-10-31",
+      "description": "Страшно весёлое событие! Тематические украшения, тыквенные призы и бонусы за охоту на редкую рыбу.",
+      "rewards": ["bundle_halloween", "avatar_pumpkin_mask"],
+      "banner": "event_halloween.png"
+    },
+    {
+      "id": "christmas_2026",
+      "name": "Рождество",
+      "region_origin": "GLOBAL",
+      "start": "2026-12-24",
+      "end": "2026-12-28",
+      "description": "Рождественское событие: снег, подарки и праздничные наборы для всех игроков.",
+      "rewards": ["bundle_christmas", "avatar_santa_scarf"],
+      "banner": "event_christmas.png"
+    }
+  ]
+}
