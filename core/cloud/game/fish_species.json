@@ -1,0 +1,168 @@
+{
+  "fish_species": {
+    "regions": [
+      {
+        "region_id": "kazakhstan",
+        "fish": [
+          {
+            "id": "carp",
+            "name": "Карп",
+            "rarity": "common",
+            "max_weight_kg": 12,
+            "base_value_gold": 25,
+            "preferred_bait": ["worm_bait", "premium_bait"],
+            "active_hours": [6, 20],
+            "habitat": "озёра и водохранилища",
+            "description": "Популярная рыба, встречающаяся в большинстве водоёмов Казахстана."
+          },
+          {
+            "id": "pike",
+            "name": "Щука",
+            "rarity": "uncommon",
+            "max_weight_kg": 18,
+            "base_value_gold": 40,
+            "preferred_bait": ["premium_bait"],
+            "active_hours": [4, 19],
+            "habitat": "реки и озёра с чистой водой",
+            "description": "Хищная рыба, предпочитающая крупную приманку и активный клёв утром."
+          },
+          {
+            "id": "catfish",
+            "name": "Сом",
+            "rarity": "rare",
+            "max_weight_kg": 60,
+            "base_value_gold": 90,
+            "preferred_bait": ["worm_bait", "nauryz_bait"],
+            "active_hours": [20, 4],
+            "habitat": "глубокие участки рек и водохранилищ",
+            "description": "Крупный донный хищник. Клюёт преимущественно ночью."
+          }
+        ]
+      },
+      {
+        "region_id": "russia",
+        "fish": [
+          {
+            "id": "sturgeon",
+            "name": "Осётр",
+            "rarity": "rare",
+            "max_weight_kg": 100,
+            "base_value_gold": 200,
+            "preferred_bait": ["premium_bait"],
+            "active_hours": [5, 18],
+            "habitat": "глубокие холодные воды",
+            "description": "Дорогая и редкая рыба, особенно ценная за икру."
+          },
+          {
+            "id": "pike_perch",
+            "name": "Судак",
+            "rarity": "uncommon",
+            "max_weight_kg": 10,
+            "base_value_gold": 35,
+            "preferred_bait": ["worm_bait"],
+            "active_hours": [6, 22],
+            "habitat": "чистые водоёмы с песчаным дном",
+            "description": "Популярный трофей среди рыболовов России."
+          }
+        ]
+      },
+      {
+        "region_id": "belarus",
+        "fish": [
+          {
+            "id": "roach",
+            "name": "Плотва",
+            "rarity": "common",
+            "max_weight_kg": 1.5,
+            "base_value_gold": 10,
+            "preferred_bait": ["worm_bait"],
+            "active_hours": [7, 21],
+            "habitat": "спокойные озёра и пруды"
+          },
+          {
+            "id": "tench",
+            "name": "Линь",
+            "rarity": "uncommon",
+            "max_weight_kg": 4,
+            "base_value_gold": 20,
+            "preferred_bait": ["worm_bait", "premium_bait"],
+            "active_hours": [8, 18],
+            "habitat": "озёра с илистым дном"
+          }
+        ]
+      },
+      {
+        "region_id": "ukraine",
+        "fish": [
+          {
+            "id": "bream",
+            "name": "Лещ",
+            "rarity": "common",
+            "max_weight_kg": 3.5,
+            "base_value_gold": 15,
+            "preferred_bait": ["worm_bait"],
+            "active_hours": [6, 19],
+            "habitat": "широкие медленные реки"
+          },
+          {
+            "id": "ide",
+            "name": "Язь",
+            "rarity": "uncommon",
+            "max_weight_kg": 5,
+            "base_value_gold": 30,
+            "preferred_bait": ["premium_bait"],
+            "active_hours": [5, 20],
+            "habitat": "чистые проточные воды"
+          }
+        ]
+      },
+      {
+        "region_id": "europe",
+        "fish": [
+          {
+            "id": "trout",
+            "name": "Форель",
+            "rarity": "rare",
+            "max_weight_kg": 7,
+            "base_value_gold": 80,
+            "preferred_bait": ["premium_bait", "event_bait_dragon"],
+            "active_hours": [6, 19],
+            "habitat": "горные реки и холодные ручьи"
+          },
+          {
+            "id": "salmon",
+            "name": "Лосось",
+            "rarity": "legendary",
+            "max_weight_kg": 20,
+            "base_value_gold": 200,
+            "preferred_bait": ["premium_bait", "dragon_bait"],
+            "active_hours": [5, 18],
+            "habitat": "океанические устья и фьорды",
+            "description": "Элитный трофей, доступный только в премиум-турах."
+          }
+        ]
+      }
+    ]
+  },
+  "mechanics": {
+    "random_size_variation_percent": 15,
+    "catch_difficulty_factor": 1.0,
+    "event_bonus_catch_rate": 1.25,
+    "night_activity_multiplier": 1.5,
+    "max_fish_per_session": 50,
+    "xp_per_kg": 3,
+    "gold_per_kg": 5
+  },
+  "display_settings": {
+    "show_rarity_colors": true,
+    "show_weight_range": true,
+    "show_preferred_bait_icons": true,
+    "highlight_event_fish": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 15,
+    "refresh_on_event_change": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
