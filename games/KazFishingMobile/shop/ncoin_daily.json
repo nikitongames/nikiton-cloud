@@ -1,0 +1,7 @@
+{
+  "daily":[
+    {"id":"daily_common","title":"Обычный дневной набор","ncoin":200},
+    {"id":"daily_rare","title":"Редкий дневной набор","ncoin":500}
+  ],
+  "market":{"enabled":true}
+}
