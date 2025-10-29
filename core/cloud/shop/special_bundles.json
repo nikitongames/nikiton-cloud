@@ -1,0 +1,87 @@
+{
+  "special_bundles": [
+    {
+      "id": "holiday_bundle",
+      "title": "Праздничный комплект 🎉",
+      "description": "Специальный набор, доступный в праздничные дни. Содержит премиум снасти и редкие наживки.",
+      "available_from": "2025-12-24T00:00:00Z",
+      "available_to": "2026-01-05T23:59:00Z",
+      "price_real": {
+        "KZT": 4000,
+        "RUB": 799,
+        "USD": 7.99,
+        "EUR": 7.69
+      },
+      "contents": {
+        "gold": 8000,
+        "ncoin": 250,
+        "items": ["holiday_rod", "gift_bait", "snow_hook"]
+      },
+      "discount_percent": 25,
+      "active": true
+    },
+    {
+      "id": "tournament_starter",
+      "title": "Турнирный старт 🏆",
+      "description": "Набор для участия в турнирах. Включает снасти, улучшения и валюту для вступительного взноса.",
+      "available_from": "2026-06-01T00:00:00Z",
+      "available_to": "2026-06-30T23:59:00Z",
+      "price_real": {
+        "KZT": 3500,
+        "RUB": 699,
+        "USD": 6.99,
+        "EUR": 6.59
+      },
+      "contents": {
+        "gold": 7000,
+        "ncoin": 150,
+        "items": ["tournament_rod", "advanced_line", "energy_drink"]
+      },
+      "discount_percent": 20,
+      "active": true
+    },
+    {
+      "id": "traveler_pack",
+      "title": "Набор Путешественника 🌍",
+      "description": "Особый комплект для туров по странам Европы. Включает временные снасти и бонус к опыту.",
+      "available_from": "2026-04-01T00:00:00Z",
+      "available_to": "2026-04-30T23:59:00Z",
+      "price_real": {
+        "KZT": 5000,
+        "RUB": 999,
+        "USD": 9.99,
+        "EUR": 9.49
+      },
+      "contents": {
+        "gold": 10000,
+        "ncoin": 400,
+        "items": ["euro_rod", "travel_pass", "experience_boost"]
+      },
+      "discount_percent": 15,
+      "active": true
+    },
+    {
+      "id": "donation_bonus_pack",
+      "title": "Бонусный донат-пакет 💠",
+      "description": "При покупке этого набора игрок получает 25% бонусных N-Coin к стандартным наборам.",
+      "available_from": "2025-11-01T00:00:00Z",
+      "available_to": "2026-11-01T00:00:00Z",
+      "price_real": {
+        "KZT": 3000,
+        "RUB": 599,
+        "USD": 5.99,
+        "EUR": 5.79
+      },
+      "contents": {
+        "gold": 0,
+        "ncoin": 200,
+        "bonus_ncoin": 50
+      },
+      "discount_percent": 0,
+      "active": true
+    }
+  ],
+  "auto_update": true,
+  "sync_interval_hours": 6,
+  "last_update": "2025-10-30T00:00:00Z"
+}
