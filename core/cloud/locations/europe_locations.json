@@ -1,0 +1,91 @@
+{
+  "europe_locations": [
+    {
+      "id": "loch_ness",
+      "country": "Scotland",
+      "region": "EU",
+      "name": "Озеро Лох-Несс",
+      "type": "freshwater",
+      "difficulty": 5,
+      "currency": "ncoin",
+      "entry_fee": 500,
+      "fish_species": ["pike", "salmon", "perch", "trout"],
+      "description": "Таинственное шотландское озеро. Говорят, здесь водится Лох-Несское чудовище.",
+      "tour_available": true,
+      "scenery": "foggy_lake",
+      "weather_variants": ["foggy", "cloudy", "rainy"]
+    },
+    {
+      "id": "lake_geneva",
+      "country": "Switzerland",
+      "region": "EU",
+      "name": "Женевское озеро",
+      "type": "freshwater",
+      "difficulty": 6,
+      "currency": "ncoin",
+      "entry_fee": 700,
+      "fish_species": ["whitefish", "char", "trout", "pike"],
+      "description": "Живописное озеро у подножия Альп. Идеальное место для рыбалки с катера.",
+      "tour_available": true,
+      "scenery": "alpine_valley",
+      "weather_variants": ["clear", "evening", "stormy"]
+    },
+    {
+      "id": "norwegian_fjords",
+      "country": "Norway",
+      "region": "EU",
+      "name": "Норвежские фьорды",
+      "type": "saltwater",
+      "difficulty": 7,
+      "currency": "ncoin",
+      "entry_fee": 1000,
+      "fish_species": ["cod", "halibut", "sea_bass", "herring"],
+      "description": "Морская рыбалка в живописных фьордах. Доступна только для опытных рыбаков.",
+      "tour_available": true,
+      "scenery": "fjord_sunset",
+      "weather_variants": ["clear", "foggy", "night"]
+    },
+    {
+      "id": "baltic_coast",
+      "country": "Germany",
+      "region": "EU",
+      "name": "Балтийское побережье",
+      "type": "saltwater",
+      "difficulty": 6,
+      "currency": "ncoin",
+      "entry_fee": 900,
+      "fish_species": ["flounder", "sea_bass", "salmon", "cod"],
+      "description": "Пляжи и морская рыбалка на побережье Балтийского моря.",
+      "tour_available": true,
+      "scenery": "coastal_view",
+      "weather_variants": ["sunny", "windy", "evening"]
+    },
+    {
+      "id": "mediterranean_boat",
+      "country": "Spain",
+      "region": "EU",
+      "name": "Средиземное море (катерный тур)",
+      "type": "saltwater",
+      "difficulty": 8,
+      "currency": "real_money",
+      "entry_fee": {
+        "KZT": 2000,
+        "RUB": 399,
+        "USD": 3.99,
+        "EUR": 3.69
+      },
+      "fish_species": ["tuna", "marlin", "sea_bass", "barracuda"],
+      "description": "Элитный морской тур с катера в Средиземном море. Доступен только за реальные деньги.",
+      "tour_available": true,
+      "scenery": "open_sea",
+      "weather_variants": ["clear", "stormy", "night"]
+    }
+  ],
+  "requirements": {
+    "min_player_level": 10,
+    "vip_or_tour_access_required": true,
+    "limit_one_tour_active": true
+  },
+  "auto_update": true,
+  "last_update": "2025-10-30T00:00:00Z"
+}
