@@ -1,0 +1,12 @@
+{
+  "fish": [
+    { "id": "pike", "title": "Щука", "weight_min": 0.8, "weight_max": 12.0,
+      "spots": ["kz_charyn","kz_ili","ru_volga","by_neman","ua_dnepr"] },
+
+    { "id": "carp", "title": "Карп", "weight_min": 0.5, "weight_max": 18.0,
+      "spots": ["kz_balkhash","kz_ili","ru_volga","ua_dnepr"] },
+
+    { "id": "zander", "title": "Судак", "weight_min": 0.6, "weight_max": 8.0,
+      "spots": ["kz_charyn","kz_balkhash","ru_volga","by_neman"] }
+  ]
+}
