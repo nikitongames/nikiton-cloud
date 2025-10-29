@@ -6,7 +6,8 @@ using System;
 
 public class NikitonUpdater : MonoBehaviour
 {
-    private static readonly string updateUrl = "https://cloud.nikiton.games/updates/";
+    // URL к обновлениям внутри твоего GitHub-репозитория
+    private static readonly string updateUrl = "https://raw.githubusercontent.com/nikitongames/nikiton-cloud/main/updates/";
     private static readonly string localVersionFile = "core/configs/system/core_config.json";
     private static readonly string localPatchDir = "core/patches/";
 
@@ -59,13 +60,25 @@ public class NikitonUpdater : MonoBehaviour
         string patchFile = $"{updateUrl}{version}/update.zip";
         string localFile = $"{localPatchDir}update_{version}.zip";
 
+        Debug.Log($"Загружаем обновление {patchFile}...");
+
         using (WebClient client = new WebClient())
         {
             client.DownloadFile(patchFile, localFile);
         }
 
-        // Разархивировать обновление
-        System.IO.Compression.ZipFile.ExtractToDirectory(localFile, Application.dataPath, true);
+        Debug.Log("✅ Архив скачан. Распаковываем...");
+
+        try
+        {
+            System.IO.Compression.ZipFile.ExtractToDirectory(localFile, Application.dataPath, true);
+            Debug.Log("✅ Обновление установлено успешно!");
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("Ошибка при распаковке обновления: " + ex.Message);
+        }
+
         yield return null;
     }
 
