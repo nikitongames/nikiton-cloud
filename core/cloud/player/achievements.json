@@ -1,0 +1,129 @@
+{
+  "achievements": {
+    "categories": [
+      {
+        "id": "fishing_mastery",
+        "name": "Мастер рыбалки 🎣",
+        "description": "Достижения, связанные с ловлей рыбы.",
+        "achievements": [
+          {
+            "id": "catch_first_fish",
+            "name": "Первая рыба!",
+            "description": "Поймай свою первую рыбу.",
+            "reward": { "gold": 100 },
+            "points": 10,
+            "rarity": "common",
+            "unlocked": false
+          },
+          {
+            "id": "catch_100_fish",
+            "name": "Сотня улова",
+            "description": "Поймай 100 рыб.",
+            "reward": { "gold": 500, "item": "premium_bait" },
+            "points": 25,
+            "rarity": "uncommon",
+            "unlocked": false
+          },
+          {
+            "id": "catch_rare_fish",
+            "name": "Редкая находка",
+            "description": "Поймай редкий вид рыбы.",
+            "reward": { "gold": 1000 },
+            "points": 50,
+            "rarity": "rare",
+            "unlocked": false
+          },
+          {
+            "id": "catch_legendary_fish",
+            "name": "Легендарный улов",
+            "description": "Поймай легендарную рыбу.",
+            "reward": { "item": "event_trophy_gold", "ncoin": 20 },
+            "points": 100,
+            "rarity": "legendary",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "tournament_glory",
+        "name": "Слава турниров 🏆",
+        "description": "Достижения, связанные с турнирами.",
+        "achievements": [
+          {
+            "id": "win_first_tournament",
+            "name": "Первая победа!",
+            "description": "Выиграй свой первый турнир.",
+            "reward": { "gold": 2000 },
+            "points": 50,
+            "rarity": "rare",
+            "unlocked": false
+          },
+          {
+            "id": "win_10_tournaments",
+            "name": "Серия побед",
+            "description": "Выиграй 10 турниров подряд.",
+            "reward": { "item": "vip_badge_silver", "ncoin": 50 },
+            "points": 150,
+            "rarity": "legendary",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "community_support",
+        "name": "Сообщество 🤝",
+        "description": "Достижения за взаимодействие с другими игроками.",
+        "achievements": [
+          {
+            "id": "add_5_friends",
+            "name": "Пять друзей",
+            "description": "Добавь 5 друзей в игру.",
+            "reward": { "gold": 300 },
+            "points": 20,
+            "rarity": "common",
+            "unlocked": false
+          },
+          {
+            "id": "send_10_gifts",
+            "name": "Щедрость",
+            "description": "Отправь 10 подарков друзьям.",
+            "reward": { "gold": 800, "item": "vip_badge_bronze" },
+            "points": 40,
+            "rarity": "uncommon",
+            "unlocked": false
+          }
+        ]
+      }
+    ],
+    "total_points": 0,
+    "achievements_unlocked": [],
+    "achievements_in_progress": []
+  },
+  "mechanics": {
+    "auto_unlock_on_completion": true,
+    "notify_on_unlock": true,
+    "show_progress_bar": true,
+    "calculate_total_points": true,
+    "sync_with_statistics": true
+  },
+  "display_settings": {
+    "show_category_icons": true,
+    "show_rarity_colors": true,
+    "animate_unlock": true,
+    "show_points_value": true,
+    "highlight_new_achievements": true
+  },
+  "security": {
+    "validate_completion_server_side": true,
+    "prevent_manual_unlock": true,
+    "encrypt_progress_data": true,
+    "log_achievement_changes": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 15,
+    "upload_on_unlock": true,
+    "restore_on_login": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
