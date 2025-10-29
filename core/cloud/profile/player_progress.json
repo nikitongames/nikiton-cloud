@@ -1,0 +1,85 @@
+{
+  "player_progress": {
+    "missions": {
+      "active": [],
+      "completed": [],
+      "daily": [
+        {
+          "id": "catch_10_fish",
+          "title": "Поймай 10 рыб",
+          "reward": { "gold": 500, "xp": 50 },
+          "progress": 0,
+          "goal": 10
+        },
+        {
+          "id": "sell_5_items",
+          "title": "Продай 5 предметов",
+          "reward": { "gold": 300, "xp": 30 },
+          "progress": 0,
+          "goal": 5
+        }
+      ],
+      "weekly": [
+        {
+          "id": "catch_rare_fish",
+          "title": "Поймай 3 редкие рыбы",
+          "reward": { "gold": 2000, "ncoin": 20, "xp": 150 },
+          "progress": 0,
+          "goal": 3
+        },
+        {
+          "id": "win_tournament",
+          "title": "Выиграй турнир",
+          "reward": { "gold": 5000, "ncoin": 50 },
+          "progress": 0,
+          "goal": 1
+        }
+      ]
+    },
+    "events": {
+      "current_event_id": null,
+      "completed_events": [],
+      "milestones": [],
+      "points": 0,
+      "last_event_reward_claimed": null
+    },
+    "tournaments": {
+      "joined": [],
+      "won": [],
+      "last_joined": null,
+      "active_competition": null
+    },
+    "exploration": {
+      "locations_unlocked": ["kazakhstan_start_zone"],
+      "tours_completed": [],
+      "discoveries": []
+    },
+    "research": {
+      "technologies_unlocked": [],
+      "upgrade_points": 0,
+      "current_project": null
+    },
+    "equipment_levels": {
+      "rods": {},
+      "reels": {},
+      "lines": {},
+      "hooks": {}
+    },
+    "achievements_progress": {},
+    "trophies_unlocked": [],
+    "xp_gained": 0,
+    "level_gained": false
+  },
+  "mechanics": {
+    "auto_save_on_task_complete": true,
+    "sync_with_profile": true,
+    "mission_reset_time": "00:00",
+    "weekly_reset_day": "Monday"
+  },
+  "display_settings": {
+    "show_completed_tasks": true,
+    "highlight_new_rewards": true,
+    "show_event_timer": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
