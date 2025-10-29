@@ -1,0 +1,57 @@
+{
+  "shop_catalog": {
+    "categories": [
+      {
+        "id": "daily",
+        "title": "Ежедневные товары",
+        "refresh_hours": 24,
+        "currency": "gold",
+        "items": [
+          { "id": "basic_bait_pack", "name": "Набор наживок", "price": 300, "stock": 0 },
+          { "id": "silver_hook", "name": "Серебряный крючок", "price": 500, "stock": 0 },
+          { "id": "repair_kit", "name": "Ремонтный набор", "price": 700, "stock": 0 }
+        ]
+      },
+      {
+        "id": "premium",
+        "title": "Премиум-магазин",
+        "refresh_hours": 48,
+        "currency": "ncoin",
+        "items": [
+          { "id": "premium_rod", "name": "Премиум удилище", "price": 200, "stock": 1 },
+          { "id": "golden_reel", "name": "Золотая катушка", "price": 150, "stock": 1 },
+          { "id": "advanced_line", "name": "Продвинутая леска", "price": 100, "stock": 1 }
+        ]
+      },
+      {
+        "id": "event",
+        "title": "Событийные товары",
+        "refresh_hours": 12,
+        "currency": "ncoin",
+        "items": [
+          { "id": "spring_bait", "name": "Весенняя наживка", "price": 80, "stock": 1 },
+          { "id": "winter_hook", "name": "Зимний крючок", "price": 90, "stock": 1 },
+          { "id": "dragon_rod", "name": "Удочка Дракона", "price": 250, "stock": 1 }
+        ]
+      },
+      {
+        "id": "tournament",
+        "title": "Турнирный магазин",
+        "refresh_hours": 72,
+        "currency": "gold",
+        "items": [
+          { "id": "trophy_cup", "name": "Кубок чемпиона", "price": 5000, "stock": 0 },
+          { "id": "tournament_flag", "name": "Флаг турнира", "price": 2500, "stock": 0 }
+        ]
+      }
+    ],
+    "shop_settings": {
+      "auto_refresh_enabled": true,
+      "display_out_of_stock": false,
+      "allow_bulk_purchase": true,
+      "region_price_sync": true,
+      "sync_interval_hours": 6
+    }
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
