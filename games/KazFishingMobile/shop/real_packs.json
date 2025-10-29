@@ -1,0 +1,9 @@
+{
+  "packs":[
+    {"id":"starter_small","title":"Стартовый малый","base_kzt":2000},
+    {"id":"event_cny","title":"Набор: Китайский Новый год","base_kzt":4500},
+    {"id":"premium_boat_hour","title":"Тур (реал) 1 час","base_kzt":2000},
+    {"id":"premium_boat_3h","title":"Тур (реал) 3 часа","base_kzt":3000},
+    {"id":"premium_boat_5h","title":"Тур (реал) 5 часов","base_kzt":4500}
+  ]
+}
