@@ -1,0 +1,94 @@
+{
+  "global_game_rules": {
+    "general": {
+      "max_player_level": 100,
+      "max_inventory_slots": 300,
+      "max_active_tournaments": 3,
+      "max_friend_list_size": 100,
+      "daily_login_reward_streak_days": 7,
+      "xp_to_level_multiplier": 1.25
+    },
+    "timers": {
+      "daily_reset_time": "00:00:00",
+      "mail_expiration_days": 30,
+      "tournament_refresh_hours": 24,
+      "event_check_interval_minutes": 30,
+      "autosave_interval_minutes": 5,
+      "anti_afk_timer_minutes": 15
+    },
+    "seasonal": {
+      "active_season_id": "autumn_2025",
+      "season_name": "Осень 2025 🍂",
+      "season_start": "2025-09-01T00:00:00Z",
+      "season_end": "2025-12-01T00:00:00Z",
+      "season_rewards": {
+        "top1": { "ncoin": 1500, "item": "season_trophy_gold" },
+        "top10": { "ncoin": 500, "item": "season_trophy_silver" },
+        "top100": { "gold": 1000 }
+      },
+      "season_pass": {
+        "enabled": true,
+        "price_kzt": 2000,
+        "bonus_xp_percent": 15,
+        "bonus_gold_percent": 10
+      }
+    },
+    "limits": {
+      "max_fish_per_day": 200,
+      "max_tournament_entries_per_day": 5,
+      "max_donations_per_day": 10,
+      "max_chat_messages_per_minute": 10,
+      "max_mailbox_items": 50
+    },
+    "penalties": {
+      "afk_warning_after_minutes": 10,
+      "afk_kick_after_minutes": 20,
+      "disconnect_penalty_gold": 50,
+      "market_tax_percent": 5,
+      "violation_penalties": {
+        "minor": "mute_30min",
+        "moderate": "ban_24h",
+        "severe": "permaban"
+      }
+    },
+    "bonuses": {
+      "vip_bonus_gold_percent": 10,
+      "vip_bonus_xp_percent": 10,
+      "event_bonus_stackable": true,
+      "friend_support_bonus_percent": 5,
+      "donation_gratitude_multiplier": 1.1
+    },
+    "economy": {
+      "gold_to_usd_rate": 0.01,
+      "ncoin_to_usd_rate": 0.1,
+      "dynamic_price_adjustment": true,
+      "regional_price_multiplier": {
+        "kazakhstan": 1.0,
+        "russia": 1.1,
+        "belarus": 1.05,
+        "ukraine": 0.95,
+        "eu": 1.2,
+        "asia": 0.9
+      }
+    },
+    "safety": {
+      "require_terms_acceptance": true,
+      "require_privacy_acceptance": true,
+      "require_eula_acceptance": true,
+      "auto_revoke_if_policy_changed": true,
+      "warn_on_policy_update": true
+    },
+    "display_settings": {
+      "show_season_timer": true,
+      "show_daily_reset_timer": true,
+      "show_global_notifications": true,
+      "highlight_policy_warnings": true
+    },
+    "sync_settings": {
+      "auto_sync": true,
+      "sync_interval_minutes": 60,
+      "refresh_on_season_change": true
+    },
+    "last_update": "2025-10-30T00:00:00Z"
+  }
+}
