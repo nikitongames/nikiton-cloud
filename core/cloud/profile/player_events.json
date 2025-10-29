@@ -1,0 +1,95 @@
+{
+  "player_events": {
+    "active_events": [],
+    "completed_events": [],
+    "event_progress": {},
+    "event_rewards_claimed": [],
+    "event_points": 0
+  },
+  "event_definitions": [
+    {
+      "id": "nauryz_2026",
+      "name": "Праздник Наурыз 🌸",
+      "region": "global",
+      "start_date": "2026-03-15T00:00:00Z",
+      "end_date": "2026-03-31T23:59:00Z",
+      "description": "Весенний праздник обновления и щедрости. Участвуй в рыбалке, выполняй задания и получай праздничные награды.",
+      "rewards": {
+        "milestone_1": { "points_required": 100, "gold": 1500, "items": ["nauryz_bait"] },
+        "milestone_2": { "points_required": 300, "gold": 3000, "ncoin": 50 },
+        "milestone_3": { "points_required": 600, "gold": 5000, "items": ["nauryz_trophy"] }
+      },
+      "special_items": ["nauryz_bait", "nauryz_trophy"],
+      "boosts": ["event_boost_nauryz"],
+      "is_global": true
+    },
+    {
+      "id": "chinese_new_year_2026",
+      "name": "Фестиваль Дракона 🐉",
+      "region": "global",
+      "start_date": "2026-02-01T00:00:00Z",
+      "end_date": "2026-02-15T23:59:00Z",
+      "description": "Отмечай Китайский Новый год с легендарной Рыбой-Драконом! Специальные туры и призы для всех участников.",
+      "rewards": {
+        "milestone_1": { "points_required": 150, "gold": 2000, "items": ["dragon_bait"] },
+        "milestone_2": { "points_required": 400, "gold": 4000, "ncoin": 80 },
+        "milestone_3": { "points_required": 800, "gold": 8000, "items": ["dragon_trophy"] }
+      },
+      "special_items": ["dragon_bait", "dragon_trophy"],
+      "boosts": ["dragon_festival_boost"],
+      "is_global": true
+    },
+    {
+      "id": "new_year_2026",
+      "name": "Новый Год 2026 🎆",
+      "region": "global",
+      "start_date": "2025-12-25T00:00:00Z",
+      "end_date": "2026-01-07T23:59:00Z",
+      "description": "Новогодние чудеса! Участвуй в праздничных заданиях и получай редкие морозные снасти.",
+      "rewards": {
+        "milestone_1": { "points_required": 100, "gold": 1000, "items": ["winter_bait"] },
+        "milestone_2": { "points_required": 300, "gold": 2500, "ncoin": 50 },
+        "milestone_3": { "points_required": 600, "gold": 5000, "items": ["frost_hook"] }
+      },
+      "special_items": ["winter_bait", "frost_hook"],
+      "boosts": ["durability_boost"],
+      "is_global": true
+    },
+    {
+      "id": "fishing_festival_2026",
+      "name": "Всемирный фестиваль рыбалки 🌍",
+      "region": "global",
+      "start_date": "2026-07-01T00:00:00Z",
+      "end_date": "2026-07-15T23:59:00Z",
+      "description": "Международное событие! Игроки всех регионов соревнуются за звание лучшего рыбака мира.",
+      "rewards": {
+        "milestone_1": { "points_required": 200, "gold": 3000 },
+        "milestone_2": { "points_required": 500, "gold": 7000, "ncoin": 100 },
+        "milestone_3": { "points_required": 1000, "gold": 12000, "items": ["tournament_trophy"] }
+      },
+      "special_items": ["tournament_trophy"],
+      "boosts": ["gold_boost", "exp_boost_large"],
+      "is_global": true
+    }
+  ],
+  "mechanics": {
+    "auto_activate_on_date": true,
+    "grant_rewards_on_completion": true,
+    "allow_global_events": true,
+    "allow_region_events": true,
+    "sync_with_calendar": true,
+    "display_event_notifications": true
+  },
+  "display_settings": {
+    "show_event_timer": true,
+    "highlight_active_events": true,
+    "show_global_broadcasts": true,
+    "display_event_rewards_preview": true
+  },
+  "sync_settings": {
+    "auto_save": true,
+    "sync_with_profile": true,
+    "refresh_interval_minutes": 15
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
