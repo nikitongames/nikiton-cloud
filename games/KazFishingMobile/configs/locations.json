@@ -1,0 +1,14 @@
+{
+  "start_region": "KZ",
+  "locations": [
+    { "id": "kz_charyn", "title": "Озеро Чарын", "region": "KZ", "type": "base", "min_level": 1, "unlock_cost_gold": 0 },
+    { "id": "kz_ili",    "title": "Река Или",   "region": "KZ", "type": "base", "min_level": 3, "unlock_cost_gold": 1500 },
+    { "id": "kz_balkhash","title": "Озеро Балхаш","region": "KZ","type": "base","min_level": 5,"unlock_cost_gold": 3000 },
+
+    { "id": "ru_volga",  "title": "Волга (тур)", "region": "RU", "type": "tour_gold", "unlock_cost_gold": 2500 },
+    { "id": "by_neman",  "title": "Нёман (тур)","region": "BY", "type": "tour_gold", "unlock_cost_gold": 2200 },
+    { "id": "ua_dnepr",  "title": "Днепр (тур)","region": "UA", "type": "tour_gold", "unlock_cost_gold": 2400 },
+
+    { "id": "eu_boat",   "title": "Европа: рыбалка с катера", "region": "EU", "type": "tour_donate" }
+  ]
+}
