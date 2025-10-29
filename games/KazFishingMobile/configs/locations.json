@@ -2,13 +2,24 @@
   "start_region": "KZ",
   "locations": [
     { "id": "kz_charyn", "title": "Озеро Чарын", "region": "KZ", "type": "base", "min_level": 1, "unlock_cost_gold": 0 },
-    { "id": "kz_ili",    "title": "Река Или",   "region": "KZ", "type": "base", "min_level": 3, "unlock_cost_gold": 1500 },
-    { "id": "kz_balkhash","title": "Озеро Балхаш","region": "KZ","type": "base","min_level": 5,"unlock_cost_gold": 3000 },
+    { "id": "kz_ili", "title": "Река Или", "region": "KZ", "type": "base", "min_level": 2, "unlock_cost_gold": 1500 },
+    { "id": "kz_balkhash", "title": "Озеро Балхаш", "region": "KZ", "type": "base", "min_level": 4, "unlock_cost_gold": 3000 },
+    { "id": "kz_alakol", "title": "Озеро Алаколь", "region": "KZ", "type": "base", "min_level": 6, "unlock_cost_gold": 4500 },
+    { "id": "kz_kapchagay", "title": "Капчагайское вдхр.", "region": "KZ", "type": "base", "min_level": 8, "unlock_cost_gold": 6000 },
 
-    { "id": "ru_volga",  "title": "Волга (тур)", "region": "RU", "type": "tour_gold", "unlock_cost_gold": 2500 },
-    { "id": "by_neman",  "title": "Нёман (тур)","region": "BY", "type": "tour_gold", "unlock_cost_gold": 2200 },
-    { "id": "ua_dnepr",  "title": "Днепр (тур)","region": "UA", "type": "tour_gold", "unlock_cost_gold": 2400 },
+    { "id": "ru_volga", "title": "Волга (тур)", "region": "RU", "type": "tour_gold", "unlock_cost_gold": 2500 },
+    { "id": "ru_ladoga", "title": "Ладога (тур)", "region": "RU", "type": "tour_gold", "unlock_cost_gold": 2600 },
 
-    { "id": "eu_boat",   "title": "Европа: рыбалка с катера", "region": "EU", "type": "tour_donate" }
+    { "id": "by_neman", "title": "Нёман (тур)", "region": "BY", "type": "tour_gold", "unlock_cost_gold": 2200 },
+    { "id": "by_braslaw", "title": "Браславские озёра (тур)", "region": "BY", "type": "tour_gold", "unlock_cost_gold": 2400 },
+
+    { "id": "ua_dnepr", "title": "Днепр (тур)", "region": "UA", "type": "tour_gold", "unlock_cost_gold": 2400 },
+    { "id": "ua_dniester", "title": "Днестр (тур)", "region": "UA", "type": "tour_gold", "unlock_cost_gold": 2300 },
+
+    { "id": "eu_seine", "title": "Сена (Франция) — катер", "region": "EU", "type": "tour_donate" },
+    { "id": "eu_garda", "title": "Гарда (Италия) — катер", "region": "EU", "type": "tour_donate" },
+    { "id": "eu_vanern", "title": "Венерн (Швеция) — катер", "region": "EU", "type": "tour_donate" },
+    { "id": "eu_lomond", "title": "Ломонд (Шотландия) — катер", "region": "EU", "type": "tour_donate" },
+    { "id": "eu_danube", "title": "Дунай (Австрия/Венгрия) — катер", "region": "EU", "type": "tour_donate" }
   ]
 }
