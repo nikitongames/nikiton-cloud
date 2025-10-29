@@ -1,0 +1,84 @@
+{
+  "leaderboards": {
+    "types": [
+      {
+        "id": "global_total_weight",
+        "name": "Глобальный рейтинг по весу улова",
+        "description": "Лучшие рыбаки мира по суммарному весу пойманной рыбы.",
+        "update_interval_hours": 1,
+        "sort_order": "desc",
+        "display_limit": 100,
+        "reward_top": {
+          "1": { "ncoin": 1000, "title": "🏆 Чемпион Nikiton Fishing" },
+          "2": { "ncoin": 750 },
+          "3": { "ncoin": 500 },
+          "10": { "ncoin": 250 }
+        }
+      },
+      {
+        "id": "regional_weight",
+        "name": "Региональный рейтинг по весу улова",
+        "description": "Рейтинг среди игроков одной страны или региона.",
+        "update_interval_hours": 1,
+        "sort_order": "desc",
+        "display_limit": 50,
+        "reward_top": {
+          "1": { "gold": 3000 },
+          "2": { "gold": 2000 },
+          "3": { "gold": 1000 }
+        }
+      },
+      {
+        "id": "event_rankings",
+        "name": "Рейтинги событий",
+        "description": "Рейтинг участников активных событий и фестивалей.",
+        "update_interval_hours": 0.5,
+        "sort_order": "desc",
+        "display_limit": 100,
+        "reward_top": {
+          "1": { "item": "event_trophy_gold" },
+          "2": { "item": "event_trophy_silver" },
+          "3": { "item": "event_trophy_bronze" }
+        }
+      },
+      {
+        "id": "vip_ranking",
+        "name": "VIP-рейтинг",
+        "description": "Лучшие донаторы и меценаты Nikiton Games.",
+        "update_interval_hours": 6,
+        "sort_order": "desc",
+        "display_limit": 20,
+        "reward_top": {
+          "1": { "title": "💎 Главный Покровитель", "item": "founder_badge" },
+          "5": { "gold": 5000 }
+        }
+      }
+    ]
+  },
+  "mechanics": {
+    "auto_region_detection": true,
+    "allow_player_lookup": true,
+    "update_on_catch": true,
+    "update_on_event_end": true,
+    "sync_interval_minutes": 30,
+    "reward_distribution_delay_minutes": 5
+  },
+  "display_settings": {
+    "show_country_flags": true,
+    "show_vip_icons": true,
+    "highlight_player_position": true,
+    "animate_rank_up": true,
+    "show_time_to_next_update": true
+  },
+  "security": {
+    "validate_scores_server_side": true,
+    "anti_cheat_enabled": true,
+    "ban_on_suspicious_data": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "refresh_on_event_change": true,
+    "sync_with_profile": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
