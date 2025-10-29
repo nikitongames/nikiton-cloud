@@ -1,0 +1,12 @@
+{
+  "_": [
+    {"k":"hello","v":"Cześć"},
+    {"k":"good_luck","v":"Powodzenia!"},
+    {"k":"fish_bite","v":"Branie!"},
+    {"k":"nice_catch","v":"Dobry połów!"},
+    {"k":"connected","v":"Połączono"},
+    {"k":"disconnected","v":"Rozłączono"},
+    {"k":"shop","v":"Sklep"},
+    {"k":"reward_received","v":"Otrzymano nagrodę"}
+  ]
+}
