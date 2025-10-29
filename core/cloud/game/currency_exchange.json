@@ -1,0 +1,55 @@
+{
+  "currency_exchange": {
+    "enabled": true,
+    "exchange_directions": {
+      "ncoin_to_gold": {
+        "allowed": true,
+        "rate": 1,
+        "result": 100,
+        "min_amount": 1,
+        "max_amount": 10000,
+        "tax_percent": 0,
+        "cooldown_minutes": 0,
+        "description": "1 Ncoin = 100 Gold. Обратный обмен невозможен."
+      },
+      "gold_to_ncoin": {
+        "allowed": false,
+        "rate": 0,
+        "result": 0,
+        "description": "Обратный обмен запрещён правилами экономики Nikiton Games."
+      }
+    },
+    "vip_bonuses": {
+      "enabled": true,
+      "vip1_bonus_percent": 5,
+      "vip2_bonus_percent": 10,
+      "vip3_bonus_percent": 15,
+      "vip4_bonus_percent": 20,
+      "vip5_bonus_percent": 25
+    },
+    "transaction_rules": {
+      "allow_bulk_exchange": true,
+      "rounding_mode": "floor",
+      "max_daily_exchanges": 10,
+      "log_all_operations": true,
+      "require_confirmation_popup": true
+    }
+  },
+  "security": {
+    "prevent_negative_balance": true,
+    "check_suspicious_activity": true,
+    "ban_on_illegal_conversion": true
+  },
+  "display_settings": {
+    "show_current_rate": true,
+    "show_vip_bonus_info": true,
+    "highlight_unavailable_direction": true,
+    "show_conversion_preview": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 5,
+    "sync_with_profile": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
