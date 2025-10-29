@@ -1,0 +1,5 @@
+{
+  "ru_volga": { "gold_per_entry": 1200, "duration_minutes": 60 },
+  "by_neman": { "gold_per_entry": 1000, "duration_minutes": 60 },
+  "ua_dnepr": { "gold_per_entry": 1100, "duration_minutes": 60 }
+}
