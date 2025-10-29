@@ -1,0 +1,162 @@
+{
+  "market_items": {
+    "categories": [
+      {
+        "id": "rods",
+        "name": "Удилища",
+        "description": "Различные удилища, доступные для продажи между игроками.",
+        "items": [
+          {
+            "id": "starter_rod",
+            "name": "Базовое удилище",
+            "rarity": "common",
+            "min_price_ncoin": 5,
+            "max_price_ncoin": 50,
+            "tradeable": true
+          },
+          {
+            "id": "carbon_rod",
+            "name": "Карповое карбоновое удилище",
+            "rarity": "rare",
+            "min_price_ncoin": 50,
+            "max_price_ncoin": 400,
+            "tradeable": true
+          },
+          {
+            "id": "legendary_rod",
+            "name": "Легендарное удилище мастера",
+            "rarity": "legendary",
+            "min_price_ncoin": 500,
+            "max_price_ncoin": 3000,
+            "tradeable": true
+          }
+        ]
+      },
+      {
+        "id": "reels",
+        "name": "Катушки",
+        "description": "Катушки разных классов, совместимые с большинством удилищ.",
+        "items": [
+          {
+            "id": "starter_reel",
+            "name": "Катушка новичка",
+            "rarity": "common",
+            "min_price_ncoin": 5,
+            "max_price_ncoin": 60,
+            "tradeable": true
+          },
+          {
+            "id": "premium_reel",
+            "name": "Премиум катушка",
+            "rarity": "rare",
+            "min_price_ncoin": 80,
+            "max_price_ncoin": 600,
+            "tradeable": true
+          }
+        ]
+      },
+      {
+        "id": "lines",
+        "name": "Лески",
+        "description": "Различные виды лесок, различающиеся по прочности и редкости.",
+        "items": [
+          {
+            "id": "strong_line",
+            "name": "Усиленная леска",
+            "rarity": "uncommon",
+            "min_price_ncoin": 10,
+            "max_price_ncoin": 100,
+            "tradeable": true
+          },
+          {
+            "id": "titan_line",
+            "name": "Титановая леска",
+            "rarity": "legendary",
+            "min_price_ncoin": 150,
+            "max_price_ncoin": 800,
+            "tradeable": true
+          }
+        ]
+      },
+      {
+        "id": "baits",
+        "name": "Приманки",
+        "description": "Стандартные и премиум-приманки.",
+        "items": [
+          {
+            "id": "worm_bait",
+            "name": "Червь",
+            "rarity": "common",
+            "min_price_ncoin": 1,
+            "max_price_ncoin": 10,
+            "tradeable": true
+          },
+          {
+            "id": "premium_bait",
+            "name": "Премиум наживка",
+            "rarity": "rare",
+            "min_price_ncoin": 5,
+            "max_price_ncoin": 50,
+            "tradeable": true
+          }
+        ]
+      },
+      {
+        "id": "trophies",
+        "name": "Редкие трофеи",
+        "description": "Награды и коллекционные предметы, получаемые за события и турниры.",
+        "items": [
+          {
+            "id": "nauryz_trophy",
+            "name": "Трофей Наурыз",
+            "rarity": "event",
+            "min_price_ncoin": 100,
+            "max_price_ncoin": 1000,
+            "tradeable": true
+          },
+          {
+            "id": "dragon_trophy",
+            "name": "Трофей Дракона",
+            "rarity": "event",
+            "min_price_ncoin": 200,
+            "max_price_ncoin": 1500,
+            "tradeable": true
+          },
+          {
+            "id": "event_trophy_gold",
+            "name": "Золотой трофей события",
+            "rarity": "legendary",
+            "min_price_ncoin": 500,
+            "max_price_ncoin": 3000,
+            "tradeable": true
+          }
+        ]
+      }
+    ]
+  },
+  "mechanics": {
+    "allow_bulk_sales": false,
+    "restrict_event_items_to_post_event": true,
+    "validate_item_condition_before_listing": true,
+    "show_price_trends_in_ui": true,
+    "log_all_sales": true
+  },
+  "display_settings": {
+    "show_rarity_colors": true,
+    "show_price_range": true,
+    "show_tradeable_icon": true,
+    "highlight_event_items": true
+  },
+  "security": {
+    "verify_item_ownership": true,
+    "ban_on_fake_listing": true,
+    "prevent_duplicate_trades": true,
+    "server_side_validation": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 10,
+    "sync_with_inventory": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
