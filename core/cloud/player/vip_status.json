@@ -1,0 +1,91 @@
+{
+  "vip_status": {
+    "enabled": true,
+    "vip_levels": [
+      {
+        "level": 0,
+        "title": "Новичок",
+        "min_donation_kzt": 0,
+        "bonus_percent_gold": 0,
+        "bonus_percent_xp": 0,
+        "bonus_percent_trade_discount": 0,
+        "badge_color": "#AAAAAA",
+        "reward": null
+      },
+      {
+        "level": 1,
+        "title": "Поддержавший",
+        "min_donation_kzt": 1000,
+        "bonus_percent_gold": 2,
+        "bonus_percent_xp": 2,
+        "bonus_percent_trade_discount": 1,
+        "badge_color": "#8BC34A",
+        "reward": { "item": "vip_badge_bronze", "ncoin": 50 }
+      },
+      {
+        "level": 2,
+        "title": "Друг проекта",
+        "min_donation_kzt": 5000,
+        "bonus_percent_gold": 5,
+        "bonus_percent_xp": 5,
+        "bonus_percent_trade_discount": 2,
+        "badge_color": "#2196F3",
+        "reward": { "item": "vip_badge_silver", "ncoin": 100 }
+      },
+      {
+        "level": 3,
+        "title": "Меценат",
+        "min_donation_kzt": 15000,
+        "bonus_percent_gold": 10,
+        "bonus_percent_xp": 10,
+        "bonus_percent_trade_discount": 3,
+        "badge_color": "#9C27B0",
+        "reward": { "item": "vip_badge_gold", "ncoin": 250 }
+      },
+      {
+        "level": 4,
+        "title": "Покровитель",
+        "min_donation_kzt": 45000,
+        "bonus_percent_gold": 15,
+        "bonus_percent_xp": 15,
+        "bonus_percent_trade_discount": 5,
+        "badge_color": "#FFC107",
+        "reward": { "item": "vip_trophy_elite", "ncoin": 500 }
+      },
+      {
+        "level": 5,
+        "title": "Главный Благодаритель 💎",
+        "min_donation_kzt": 100000,
+        "bonus_percent_gold": 25,
+        "bonus_percent_xp": 25,
+        "bonus_percent_trade_discount": 10,
+        "badge_color": "#FF5722",
+        "reward": { "item": "founder_trophy", "ncoin": 1000, "title": "Основатель Nikiton Games" }
+      }
+    ]
+  },
+  "mechanics": {
+    "auto_upgrade_on_donation": true,
+    "auto_notify_player_on_level_up": true,
+    "show_progress_to_next_level": true,
+    "convert_donation_to_region_currency": true,
+    "apply_vip_bonuses_globally": true
+  },
+  "display_settings": {
+    "show_vip_badge_in_profile": true,
+    "show_vip_rank_color": true,
+    "show_total_donation_value": true,
+    "animate_level_up": true
+  },
+  "security": {
+    "verify_donation_source": true,
+    "log_all_vip_changes": true,
+    "prevent_manual_vip_edit": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 15,
+    "refresh_on_donation": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
