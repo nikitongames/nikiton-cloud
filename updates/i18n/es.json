@@ -1,0 +1,21 @@
+{
+  "_": [
+    {"k":"hello","v":"Hola"},
+    {"k":"good_luck","v":"¡Buena suerte!"},
+    {"k":"fish_bite","v":"¡Pica!"},
+    {"k":"nice_catch","v":"¡Buena captura!"},
+    {"k":"connected","v":"Conectado"},
+    {"k":"disconnected","v":"Desconectado"},
+    {"k":"new_content_available","v":"Nuevo contenido disponible"},
+    {"k":"download_now","v":"Descargar ahora"},
+    {"k":"download_later","v":"Más tarde"},
+    {"k":"downloading","v":"Descargando..."},
+    {"k":"install_complete","v":"Instalación completada"},
+    {"k":"shop","v":"Tienda"},
+    {"k":"market","v":"Mercado (jugador a jugador)"},
+    {"k":"exchange","v":"Cambio de moneda"},
+    {"k":"purchase_success","v":"Compra realizada"},
+    {"k":"purchase_failed","v":"Error en la compra"},
+    {"k":"reward_received","v":"Recompensa recibida"}
+  ]
+}
