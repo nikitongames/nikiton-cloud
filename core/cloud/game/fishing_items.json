@@ -1,0 +1,175 @@
+{
+  "fishing_items": {
+    "categories": [
+      {
+        "id": "rods",
+        "name": "Удилища",
+        "items": [
+          {
+            "id": "starter_rod",
+            "name": "Базовое удилище",
+            "durability": 100,
+            "max_load_kg": 2,
+            "rarity": "common",
+            "price_gold": 100,
+            "repair_cost_gold": 20,
+            "description": "Простое удилище для начинающих рыбаков."
+          },
+          {
+            "id": "carbon_rod",
+            "name": "Карповое карбоновое удилище",
+            "durability": 250,
+            "max_load_kg": 8,
+            "rarity": "rare",
+            "price_gold": 500,
+            "repair_cost_gold": 50,
+            "description": "Лёгкое, но прочное удилище из углеволокна."
+          },
+          {
+            "id": "legendary_rod",
+            "name": "Легендарное удилище мастера",
+            "durability": 500,
+            "max_load_kg": 20,
+            "rarity": "legendary",
+            "price_ncoin": 150,
+            "repair_cost_gold": 200,
+            "description": "Эксклюзивное удилище с усиленным строем и редкой гравировкой."
+          }
+        ]
+      },
+      {
+        "id": "reels",
+        "name": "Катушки",
+        "items": [
+          {
+            "id": "starter_reel",
+            "name": "Катушка новичка",
+            "durability": 100,
+            "max_load_kg": 2,
+            "rarity": "common",
+            "price_gold": 50,
+            "repair_cost_gold": 15
+          },
+          {
+            "id": "premium_reel",
+            "name": "Премиум катушка",
+            "durability": 300,
+            "max_load_kg": 12,
+            "rarity": "rare",
+            "price_gold": 800,
+            "repair_cost_gold": 70
+          }
+        ]
+      },
+      {
+        "id": "lines",
+        "name": "Лески",
+        "items": [
+          {
+            "id": "light_line",
+            "name": "Тонкая леска",
+            "durability": 50,
+            "max_load_kg": 1.5,
+            "rarity": "common",
+            "price_gold": 25
+          },
+          {
+            "id": "strong_line",
+            "name": "Усиленная леска",
+            "durability": 120,
+            "max_load_kg": 4,
+            "rarity": "uncommon",
+            "price_gold": 75
+          },
+          {
+            "id": "titan_line",
+            "name": "Титановая леска",
+            "durability": 300,
+            "max_load_kg": 12,
+            "rarity": "legendary",
+            "price_ncoin": 30
+          }
+        ]
+      },
+      {
+        "id": "baits",
+        "name": "Приманки",
+        "items": [
+          {
+            "id": "worm_bait",
+            "name": "Червь",
+            "rarity": "common",
+            "quantity_per_use": 1,
+            "price_gold": 5,
+            "description": "Подходит для большинства видов рыбы."
+          },
+          {
+            "id": "premium_bait",
+            "name": "Премиум наживка",
+            "rarity": "rare",
+            "quantity_per_use": 1,
+            "price_ncoin": 2,
+            "description": "Увеличивает шанс поймать редкую рыбу."
+          },
+          {
+            "id": "nauryz_bait",
+            "name": "Наживка Наурыз",
+            "rarity": "event",
+            "quantity_per_use": 1,
+            "price_gold": 10,
+            "event_only": true,
+            "description": "Доступна во время события Наурыз. Повышает шанс поймать крупную рыбу."
+          }
+        ]
+      },
+      {
+        "id": "hooks",
+        "name": "Крючки",
+        "items": [
+          {
+            "id": "basic_hook",
+            "name": "Обычный крючок",
+            "durability": 100,
+            "rarity": "common",
+            "price_gold": 10
+          },
+          {
+            "id": "barbed_hook",
+            "name": "Крючок с бородкой",
+            "durability": 150,
+            "rarity": "rare",
+            "price_gold": 25
+          },
+          {
+            "id": "dragon_hook",
+            "name": "Крючок Дракона",
+            "durability": 300,
+            "rarity": "event",
+            "price_ncoin": 15,
+            "event_only": true
+          }
+        ]
+      }
+    ]
+  },
+  "mechanics": {
+    "enable_wear_system": true,
+    "wear_per_use_percent": 0.5,
+    "break_on_overload": true,
+    "repair_available": true,
+    "repair_discount_vip_percent": 20,
+    "show_condition_bar": true
+  },
+  "display_settings": {
+    "show_rarity_colors": true,
+    "show_durability_icons": true,
+    "highlight_event_items": true,
+    "show_auto_repair_button": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 10,
+    "sync_with_inventory": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
