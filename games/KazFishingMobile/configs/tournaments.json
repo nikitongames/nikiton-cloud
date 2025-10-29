@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "modes": [
+    { "id": "weight_total_30m", "title": "Суммарный вес (30 мин)", "duration_min": 30, "scoring": "total_weight" },
+    { "id": "biggest_fish_20m", "title": "Крупнейшая рыба (20 мин)", "duration_min": 20, "scoring": "max_single" }
+  ],
+  "rewards": {
+    "weight_total_30m": { "gold": 5000, "ncoin": 100 },
+    "biggest_fish_20m": { "gold": 3000, "ncoin": 50 }
+  }
+}
