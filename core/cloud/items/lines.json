@@ -1,0 +1,106 @@
+{
+  "lines": [
+    {
+      "id": "basic_line",
+      "name": "Базовая леска",
+      "rarity": "common",
+      "max_strength_kg": 4,
+      "elasticity": 0.9,
+      "durability": 100,
+      "repair_cost_gold": 30,
+      "available_from_level": 1,
+      "price_gold": 300,
+      "description": "Простая леска, подходящая для небольшой рыбы."
+    },
+    {
+      "id": "strong_line",
+      "name": "Прочная леска",
+      "rarity": "uncommon",
+      "max_strength_kg": 8,
+      "elasticity": 0.85,
+      "durability": 120,
+      "repair_cost_gold": 60,
+      "available_from_level": 2,
+      "price_gold": 700,
+      "description": "Повышенная прочность и устойчивость к обрыву."
+    },
+    {
+      "id": "braided_line",
+      "name": "Плетёная леска",
+      "rarity": "rare",
+      "max_strength_kg": 12,
+      "elasticity": 0.8,
+      "durability": 150,
+      "repair_cost_gold": 90,
+      "available_from_level": 4,
+      "price_gold": 1200,
+      "description": "Баланс между гибкостью и прочностью, идеально подходит для крупных трофеев."
+    },
+    {
+      "id": "carbon_line",
+      "name": "Карбоновая леска",
+      "rarity": "epic",
+      "max_strength_kg": 16,
+      "elasticity": 0.7,
+      "durability": 200,
+      "repair_cost_gold": 120,
+      "available_from_level": 6,
+      "price_ncoin": 80,
+      "description": "Премиальная леска с минимальной растяжимостью и максимальной чувствительностью."
+    },
+    {
+      "id": "tournament_line",
+      "name": "Турнирная леска",
+      "rarity": "legendary",
+      "max_strength_kg": 20,
+      "elasticity": 0.6,
+      "durability": 250,
+      "repair_cost_gold": 150,
+      "available_from_level": 9,
+      "price_ncoin": 120,
+      "description": "Создана для профессиональных состязаний. Исключительно надёжна при вываживании трофейной рыбы."
+    },
+    {
+      "id": "frost_line",
+      "name": "Морозная леска",
+      "rarity": "event",
+      "max_strength_kg": 14,
+      "elasticity": 0.75,
+      "durability": 180,
+      "repair_cost_gold": 100,
+      "available_from_level": 1,
+      "price_ncoin": 50,
+      "special_event": "new_year_2026",
+      "description": "Устойчива к холоду и замерзанию. Используется во время зимней рыбалки."
+    },
+    {
+      "id": "dragon_line",
+      "name": "Леска Дракона",
+      "rarity": "event",
+      "max_strength_kg": 18,
+      "elasticity": 0.7,
+      "durability": 220,
+      "repair_cost_gold": 110,
+      "available_from_level": 5,
+      "price_ncoin": 90,
+      "special_event": "chinese_new_year_2026",
+      "description": "Легендарная леска, символизирующая силу и выносливость."
+    }
+  ],
+  "repair_system": {
+    "enabled": true,
+    "durability_loss_per_use": 0.3,
+    "auto_repair_option": true
+  },
+  "break_chance_system": {
+    "enabled": true,
+    "formula": "if (fish_weight > max_strength_kg) then chance = (fish_weight - max_strength_kg) * 10 else chance = 0",
+    "min_break_chance": 0,
+    "max_break_chance": 95
+  },
+  "display_settings": {
+    "show_durability_bar": true,
+    "show_strength_value": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
