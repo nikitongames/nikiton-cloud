@@ -1,0 +1,58 @@
+{
+  "vip_levels": [
+    {
+      "level": 1,
+      "name": "VIP Bronze 💫",
+      "requirements": { "total_spent_kzt": 2000 },
+      "daily_rewards": { "gold": 500, "ncoin": 10 },
+      "bonuses": {
+        "xp_multiplier": 1.05,
+        "gold_multiplier": 1.05,
+        "repair_discount": 0.95
+      },
+      "exclusive_access": ["vip_chat", "vip_frame"],
+      "description": "Начальный уровень VIP. Небольшие бонусы и ежедневные подарки."
+    },
+    {
+      "level": 2,
+      "name": "VIP Silver 🌟",
+      "requirements": { "total_spent_kzt": 5000 },
+      "daily_rewards": { "gold": 1000, "ncoin": 25 },
+      "bonuses": {
+        "xp_multiplier": 1.1,
+        "gold_multiplier": 1.1,
+        "repair_discount": 0.9
+      },
+      "exclusive_access": ["vip_chat", "vip_frame", "early_event_access"],
+      "description": "Увеличенные бонусы и ранний доступ к событиям."
+    },
+    {
+      "level": 3,
+      "name": "VIP Gold 👑",
+      "requirements": { "total_spent_kzt": 10000 },
+      "daily_rewards": { "gold": 2500, "ncoin": 50 },
+      "bonuses": {
+        "xp_multiplier": 1.2,
+        "gold_multiplier": 1.25,
+        "repair_discount": 0.85
+      },
+      "exclusive_access": ["vip_chat", "vip_frame", "early_event_access", "exclusive_shop"],
+      "description": "Золотой статус с максимальными бонусами и эксклюзивным магазином."
+    }
+  ],
+  "mechanics": {
+    "auto_upgrade_on_threshold": true,
+    "retain_vip_benefits_if_inactive_days": 7,
+    "apply_bonuses_globally": true
+  },
+  "display_settings": {
+    "show_vip_badge_on_profile": true,
+    "show_next_tier_progress": true,
+    "highlight_daily_rewards": true
+  },
+  "sync_settings": {
+    "auto_save": true,
+    "sync_with_cloud": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
