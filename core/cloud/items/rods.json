@@ -1,0 +1,110 @@
+{
+  "rods": [
+    {
+      "id": "basic_rod",
+      "name": "Базовое удилище",
+      "rarity": "common",
+      "max_load_kg": 5,
+      "durability": 100,
+      "repair_cost_gold": 50,
+      "description": "Простое и надёжное удилище для начинающих.",
+      "available_from_level": 1,
+      "price_gold": 500,
+      "special_event": null
+    },
+    {
+      "id": "silver_rod",
+      "name": "Серебряное удилище",
+      "rarity": "uncommon",
+      "max_load_kg": 10,
+      "durability": 150,
+      "repair_cost_gold": 100,
+      "description": "Более прочное удилище для опытных рыбаков.",
+      "available_from_level": 3,
+      "price_gold": 1200,
+      "special_event": null
+    },
+    {
+      "id": "strong_rod",
+      "name": "Прочное удилище",
+      "rarity": "rare",
+      "max_load_kg": 18,
+      "durability": 200,
+      "repair_cost_gold": 150,
+      "description": "Мощное удилище, выдерживающее даже крупную рыбу.",
+      "available_from_level": 5,
+      "price_gold": 2500,
+      "special_event": null
+    },
+    {
+      "id": "premium_rod",
+      "name": "Премиум удилище",
+      "rarity": "epic",
+      "max_load_kg": 25,
+      "durability": 300,
+      "repair_cost_gold": 250,
+      "description": "Элитное удилище с отличным балансом и дальностью заброса.",
+      "available_from_level": 8,
+      "price_ncoin": 150,
+      "special_event": null
+    },
+    {
+      "id": "tournament_rod",
+      "name": "Турнирное удилище",
+      "rarity": "legendary",
+      "max_load_kg": 35,
+      "durability": 400,
+      "repair_cost_gold": 400,
+      "description": "Используется профессионалами на турнирах. Обеспечивает максимальную точность заброса.",
+      "available_from_level": 10,
+      "price_ncoin": 250,
+      "special_event": "summer_tournament_2026"
+    },
+    {
+      "id": "frost_rod",
+      "name": "Морозное удилище",
+      "rarity": "event",
+      "max_load_kg": 20,
+      "durability": 250,
+      "repair_cost_gold": 200,
+      "description": "Особое зимнее удилище, доступное только во время новогодних событий.",
+      "available_from_level": 1,
+      "price_ncoin": 100,
+      "special_event": "new_year_2026"
+    },
+    {
+      "id": "dragon_rod",
+      "name": "Удочка Дракона",
+      "rarity": "event",
+      "max_load_kg": 30,
+      "durability": 300,
+      "repair_cost_gold": 250,
+      "description": "Создана к празднику китайского Нового года. Увеличивает шанс поймать редкую рыбу.",
+      "available_from_level": 5,
+      "price_ncoin": 200,
+      "special_event": "chinese_new_year_2026"
+    },
+    {
+      "id": "euro_rod",
+      "name": "Европейское удилище",
+      "rarity": "exclusive",
+      "max_load_kg": 28,
+      "durability": 280,
+      "repair_cost_gold": 220,
+      "description": "Временное удилище, выдаваемое игрокам во время туров по странам Европы.",
+      "available_from_level": 6,
+      "price_ncoin": 0,
+      "special_event": "traveler_pack"
+    }
+  ],
+  "repair_system": {
+    "enabled": true,
+    "durability_loss_per_use": 0.5,
+    "auto_repair_option": true
+  },
+  "display_settings": {
+    "show_durability_bar": true,
+    "show_max_load": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
