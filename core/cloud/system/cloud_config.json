@@ -1,0 +1,42 @@
+{
+  "cloud_config": {
+    "auto_sync_enabled": true,
+    "sync_interval_minutes": 10,
+    "max_retry_attempts": 3,
+    "retry_delay_seconds": 15,
+    "conflict_resolution": "prefer_newer",
+    "compression_enabled": true,
+    "encryption_enabled": true,
+    "encryption_method": "AES-256",
+    "bandwidth_limit_kbps": 500,
+    "allow_background_sync": true,
+    "sync_on_game_exit": true,
+    "sync_on_app_resume": true
+  },
+  "regions": {
+    "default": "kazakhstan",
+    "available": ["kazakhstan", "russia", "belarus", "ukraine", "eu", "asia"],
+    "auto_detect_region": true
+  },
+  "api_endpoints": {
+    "primary": "https://cloud.nikiton.games/api/v1/",
+    "backup": "https://backup.nikiton.games/api/v1/"
+  },
+  "security": {
+    "auth_token_required": true,
+    "session_timeout_minutes": 30,
+    "max_devices_per_account": 3,
+    "require_email_verification": true
+  },
+  "storage": {
+    "max_save_size_mb": 15,
+    "max_daily_uploads": 100,
+    "data_expiration_days": 365
+  },
+  "display_settings": {
+    "show_sync_notifications": true,
+    "show_error_popups": true,
+    "show_backup_reminders": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
