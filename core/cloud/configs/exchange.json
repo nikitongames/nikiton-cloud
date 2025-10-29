@@ -1,0 +1,17 @@
+{
+  "exchange_rules": {
+    "donation_to_game": {
+      "rate": 100,
+      "min": 1,
+      "max": 10000,
+      "fee_percent": 0,
+      "description": "Каждая 1 донатная валюта (N-Coin) конвертируется в 100 внутриигровых монет (Gold)."
+    },
+    "game_to_donation": {
+      "allowed": false,
+      "reason": "Обратный обмен запрещён, чтобы сохранить баланс и ценность донатной валюты."
+    }
+  },
+  "auto_update": true,
+  "last_update": "2025-10-30T00:00:00Z"
+}
