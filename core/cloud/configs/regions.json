@@ -1,0 +1,77 @@
+{
+  "regions": [
+    {
+      "code": "KZ",
+      "name": "Kazakhstan",
+      "currency": "KZT",
+      "symbol": "₸",
+      "language": "ru",
+      "fallback_language": "en",
+      "timezone": "+05:00",
+      "price_adjustment": 1.0
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
+      "currency": "RUB",
+      "symbol": "₽",
+      "language": "ru",
+      "fallback_language": "en",
+      "timezone": "+03:00",
+      "price_adjustment": 1.1
+    },
+    {
+      "code": "BY",
+      "name": "Belarus",
+      "currency": "BYN",
+      "symbol": "Br",
+      "language": "ru",
+      "fallback_language": "en",
+      "timezone": "+03:00",
+      "price_adjustment": 1.05
+    },
+    {
+      "code": "UA",
+      "name": "Ukraine",
+      "currency": "UAH",
+      "symbol": "₴",
+      "language": "uk",
+      "fallback_language": "ru",
+      "timezone": "+02:00",
+      "price_adjustment": 0.95
+    },
+    {
+      "code": "EU",
+      "name": "Europe",
+      "currency": "EUR",
+      "symbol": "€",
+      "language": "en",
+      "fallback_language": "de",
+      "timezone": "+01:00",
+      "price_adjustment": 1.2
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "currency": "USD",
+      "symbol": "$",
+      "language": "en",
+      "fallback_language": "es",
+      "timezone": "-05:00",
+      "price_adjustment": 1.3
+    },
+    {
+      "code": "CN",
+      "name": "China",
+      "currency": "CNY",
+      "symbol": "¥",
+      "language": "zh",
+      "fallback_language": "en",
+      "timezone": "+08:00",
+      "price_adjustment": 0.9
+    }
+  ],
+  "default_region": "KZ",
+  "auto_detect_region": true,
+  "fallback_region": "US"
+}
