@@ -1,0 +1,80 @@
+{
+  "donation_packs": [
+    {
+      "id": "starter_pack",
+      "title": "Стартовый набор 🎣",
+      "description": "Идеален для новых игроков! Содержит снасти, немного золота и N-Coin.",
+      "price_real": {
+        "KZT": 1000,
+        "RUB": 199,
+        "USD": 1.99,
+        "EUR": 1.79
+      },
+      "contents": {
+        "gold": 2000,
+        "ncoin": 50,
+        "items": ["basic_rod", "starter_reel", "starter_bait"]
+      },
+      "limit_per_user": 1,
+      "active": true
+    },
+    {
+      "id": "fisherman_pack",
+      "title": "Набор Рыбака 🐟",
+      "description": "Популярный пакет: отличные снасти, бонус золота и редкая приманка.",
+      "price_real": {
+        "KZT": 2500,
+        "RUB": 499,
+        "USD": 4.99,
+        "EUR": 4.79
+      },
+      "contents": {
+        "gold": 6000,
+        "ncoin": 150,
+        "items": ["silver_hook", "medium_reel", "strong_line"]
+      },
+      "limit_per_user": 2,
+      "active": true
+    },
+    {
+      "id": "premium_pack",
+      "title": "Премиум набор 💎",
+      "description": "Для настоящих ценителей рыбалки — мощные снасти и донатная валюта.",
+      "price_real": {
+        "KZT": 5000,
+        "RUB": 999,
+        "USD": 9.99,
+        "EUR": 9.49
+      },
+      "contents": {
+        "gold": 12000,
+        "ncoin": 400,
+        "items": ["premium_rod", "golden_reel", "ultra_line"]
+      },
+      "limit_per_user": 1,
+      "active": true
+    },
+    {
+      "id": "vip_subscription",
+      "title": "VIP Подписка 🪙",
+      "description": "Ежемесячная подписка. Даёт 10% бонус ко всем наградам, уникальные предметы и ежедневный бонус.",
+      "price_real": {
+        "KZT": 3500,
+        "RUB": 699,
+        "USD": 6.99,
+        "EUR": 6.59
+      },
+      "duration_days": 30,
+      "contents": {
+        "daily_bonus_gold": 500,
+        "daily_bonus_ncoin": 10,
+        "unique_items": ["vip_badge", "vip_rod_skin"]
+      },
+      "renewable": true,
+      "active": true
+    }
+  ],
+  "auto_sync": true,
+  "sync_interval_hours": 12,
+  "last_update": "2025-10-30T00:00:00Z"
+}
