@@ -1,9 +1,17 @@
 {
   "game_name": "KazFishing Mobile",
-  "game_version": "1.0.0",
+  "game_id": "com.nikiton.kazfishing.mobile",
+  "version": "1.0.0",
+  "orientation": "landscape",
   "default_language": "ru",
   "available_languages": ["ru", "en"],
   "background_loading_image": "background.png",
-  "region_pricing": true,
-  "allow_in_app_purchases": true
+  "economy": {
+    "starting_gold": 5000,
+    "starting_ncoin": 200
+  },
+  "progression": {
+    "start_level": 1,
+    "xp_per_level": 1000
+  }
 }
