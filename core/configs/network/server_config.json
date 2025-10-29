@@ -1,0 +1,20 @@
+{
+  "chat": {
+    "ws_url": "wss://cloud.nikiton.games/ws/chat", 
+    "http_url": "https://cloud.nikiton.games/api/chat",
+    "poll_fallback": true,
+    "poll_url": "https://raw.githubusercontent.com/nikitongames/nikiton-cloud/main/updates/chat/global.json",
+    "poll_interval_sec": 5
+  },
+  "matchmaking": {
+    "http_url": "https://cloud.nikiton.games/api/mm"
+  },
+  "market": {
+    "http_url": "https://cloud.nikiton.games/api/market"
+  },
+  "translate": {
+    "mode": "hybrid",
+    "remote_url": "https://cloud.nikiton.games/api/translate",
+    "local_dict_url": "https://raw.githubusercontent.com/nikitongames/nikiton-cloud/main/updates/i18n"
+  }
+}
