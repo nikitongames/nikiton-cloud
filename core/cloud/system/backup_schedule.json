@@ -1,0 +1,40 @@
+{
+  "backup_schedule": {
+    "auto_backup_enabled": true,
+    "backup_interval_hours": 12,
+    "max_backups_per_day": 2,
+    "retain_days": 14,
+    "backup_time_preference": "night_local_time",
+    "trigger_on_app_exit": true,
+    "trigger_on_manual_request": true,
+    "compression": "zip",
+    "encryption": "AES-256",
+    "include_player_profile": true,
+    "include_inventory": true,
+    "include_progress": true,
+    "include_mailbox": true,
+    "include_friends_list": true,
+    "include_tournaments": true
+  },
+  "cloud_paths": {
+    "primary_backup_path": "https://cloud.nikiton.games/backups/",
+    "redundant_storage_path": "https://backup.nikiton.games/storage/",
+    "local_temp_path": "/local/backups/temp/"
+  },
+  "recovery": {
+    "allow_manual_restore": true,
+    "verify_restore_integrity": true,
+    "allow_cross_device_restore": true,
+    "notify_on_restore_complete": true
+  },
+  "display_settings": {
+    "show_backup_notifications": true,
+    "show_restore_confirmation": true,
+    "show_last_backup_time": true
+  },
+  "last_backup": {
+    "timestamp": null,
+    "status": "never"
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
