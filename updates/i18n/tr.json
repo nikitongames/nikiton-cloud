@@ -1,0 +1,12 @@
+{
+  "_": [
+    {"k":"hello","v":"Merhaba"},
+    {"k":"good_luck","v":"İyi şanslar!"},
+    {"k":"fish_bite","v":"Balık yakalandı!"},
+    {"k":"nice_catch","v":"Güzel av!"},
+    {"k":"connected","v":"Bağlandı"},
+    {"k":"disconnected","v":"Bağlantı kesildi"},
+    {"k":"shop","v":"Mağaza"},
+    {"k":"reward_received","v":"Ödül alındı"}
+  ]
+}
