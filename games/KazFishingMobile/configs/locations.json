@@ -1,25 +1,28 @@
 {
   "start_region": "KZ",
   "locations": [
-    { "id": "kz_charyn", "title": "Озеро Чарын", "region": "KZ", "type": "base", "min_level": 1, "unlock_cost_gold": 0 },
-    { "id": "kz_ili", "title": "Река Или", "region": "KZ", "type": "base", "min_level": 2, "unlock_cost_gold": 1500 },
-    { "id": "kz_balkhash", "title": "Озеро Балхаш", "region": "KZ", "type": "base", "min_level": 4, "unlock_cost_gold": 3000 },
-    { "id": "kz_alakol", "title": "Озеро Алаколь", "region": "KZ", "type": "base", "min_level": 6, "unlock_cost_gold": 4500 },
-    { "id": "kz_kapchagay", "title": "Капчагайское вдхр.", "region": "KZ", "type": "base", "min_level": 8, "unlock_cost_gold": 6000 },
+    { "id": "kz_charyn",     "title": "Озеро Чарын",             "region": "KZ", "type": "base",       "min_level": 1,  "unlock_cost_gold": 0   },
+    { "id": "kz_ili",        "title": "Река Или",                "region": "KZ", "type": "base",       "min_level": 2,  "unlock_cost_gold": 1500},
+    { "id": "kz_balkhash",   "title": "Озеро Балхаш",            "region": "KZ", "type": "base",       "min_level": 4,  "unlock_cost_gold": 3000},
+    { "id": "kz_alakol",     "title": "Озеро Алаколь",           "region": "KZ", "type": "base",       "min_level": 6,  "unlock_cost_gold": 4500},
+    { "id": "kz_kapchagay",  "title": "Капчагайское водохранилище","region": "KZ","type":"base",       "min_level": 8,  "unlock_cost_gold": 6000},
+    { "id": "kz_irtysh",     "title": "Иртыш",                   "region": "KZ", "type": "base",       "min_level": 9,  "unlock_cost_gold": 7000},
+    { "id": "kz_esil",       "title": "Есиль",                   "region": "KZ", "type": "base",       "min_level": 10, "unlock_cost_gold": 8000},
 
-    { "id": "ru_volga", "title": "Волга (тур)", "region": "RU", "type": "tour_gold", "unlock_cost_gold": 2500 },
-    { "id": "ru_ladoga", "title": "Ладога (тур)", "region": "RU", "type": "tour_gold", "unlock_cost_gold": 2600 },
+    { "id": "ru_volga",      "title": "Волга (тур)",             "region": "RU", "type": "tour_gold",  "unlock_cost_gold": 2500 },
+    { "id": "ru_ladoga",     "title": "Ладожское озеро (тур)",   "region": "RU", "type": "tour_gold",  "unlock_cost_gold": 2600 },
+    { "id": "ru_don",        "title": "Дон (тур)",               "region": "RU", "type": "tour_gold",  "unlock_cost_gold": 2400 },
 
-    { "id": "by_neman", "title": "Нёман (тур)", "region": "BY", "type": "tour_gold", "unlock_cost_gold": 2200 },
-    { "id": "by_braslaw", "title": "Браславские озёра (тур)", "region": "BY", "type": "tour_gold", "unlock_cost_gold": 2400 },
+    { "id": "by_neman",      "title": "Нёман (тур)",             "region": "BY", "type": "tour_gold",  "unlock_cost_gold": 2200 },
+    { "id": "by_braslaw",    "title": "Браславские озёра (тур)", "region": "BY", "type": "tour_gold",  "unlock_cost_gold": 2400 },
 
-    { "id": "ua_dnepr", "title": "Днепр (тур)", "region": "UA", "type": "tour_gold", "unlock_cost_gold": 2400 },
-    { "id": "ua_dniester", "title": "Днестр (тур)", "region": "UA", "type": "tour_gold", "unlock_cost_gold": 2300 },
+    { "id": "ua_dnepr",      "title": "Днепр (тур)",             "region": "UA", "type": "tour_gold",  "unlock_cost_gold": 2400 },
+    { "id": "ua_dniester",   "title": "Днестр (тур)",            "region": "UA", "type": "tour_gold",  "unlock_cost_gold": 2300 },
 
-    { "id": "eu_seine", "title": "Сена (Франция) — катер", "region": "EU", "type": "tour_donate" },
-    { "id": "eu_garda", "title": "Гарда (Италия) — катер", "region": "EU", "type": "tour_donate" },
-    { "id": "eu_vanern", "title": "Венерн (Швеция) — катер", "region": "EU", "type": "tour_donate" },
-    { "id": "eu_lomond", "title": "Ломонд (Шотландия) — катер", "region": "EU", "type": "tour_donate" },
-    { "id": "eu_danube", "title": "Дунай (Австрия/Венгрия) — катер", "region": "EU", "type": "tour_donate" }
+    { "id": "eu_seine",      "title": "Сена — рыбалка с катера", "region": "EU", "type": "tour_donate" },
+    { "id": "eu_garda",      "title": "Гарда — рыбалка с катера","region": "EU", "type": "tour_donate" },
+    { "id": "eu_vanern",     "title": "Венерн — рыбалка с катера","region": "EU","type": "tour_donate" },
+    { "id": "eu_lomond",     "title": "Ломонд — рыбалка с катера","region": "EU","type": "tour_donate" },
+    { "id": "eu_danube",     "title": "Дунай — рыбалка с катера","region": "EU", "type": "tour_donate" }
   ]
 }
