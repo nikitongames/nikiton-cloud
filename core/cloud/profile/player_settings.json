@@ -1,0 +1,65 @@
+{
+  "player_settings": {
+    "language": "auto",
+    "region": "auto_detected",
+    "graphics": {
+      "quality": "high",
+      "frame_rate_limit": 60,
+      "v_sync": true,
+      "post_processing": true,
+      "anti_aliasing": true
+    },
+    "audio": {
+      "music_volume": 0.5,
+      "sfx_volume": 0.6,
+      "mute_all": false
+    },
+    "controls": {
+      "sensitivity": 1.0,
+      "invert_y_axis": false,
+      "vibration": true,
+      "controller_support": true
+    },
+    "interface": {
+      "hud_opacity": 0.9,
+      "hud_scale": 1.0,
+      "show_tips": true,
+      "show_damage_numbers": false,
+      "colorblind_mode": false
+    },
+    "notifications": {
+      "enable_push": true,
+      "enable_email": false,
+      "enable_event_alerts": true,
+      "enable_tournament_alerts": true,
+      "enable_friend_requests": true
+    },
+    "privacy": {
+      "allow_friend_requests": true,
+      "show_online_status": true,
+      "share_statistics_publicly": false
+    },
+    "linked_accounts": {
+      "google_play": false,
+      "apple_game_center": false,
+      "facebook": false,
+      "nikiton_cloud": true
+    }
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_on_startup": true,
+    "sync_interval_minutes": 5,
+    "backup_to_cloud": true
+  },
+  "display_settings": {
+    "show_region_flag": true,
+    "show_vip_badge_if_active": true,
+    "apply_theme_auto": true
+  },
+  "device_restrictions": {
+    "save_device_limit": 3,
+    "require_verification_on_new_device": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
