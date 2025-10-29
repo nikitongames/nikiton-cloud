@@ -1,12 +1,34 @@
 {
   "fish": [
-    { "id": "pike", "title": "Щука", "weight_min": 0.8, "weight_max": 12.0,
-      "spots": ["kz_charyn","kz_ili","ru_volga","by_neman","ua_dnepr"] },
-
-    { "id": "carp", "title": "Карп", "weight_min": 0.5, "weight_max": 18.0,
-      "spots": ["kz_balkhash","kz_ili","ru_volga","ua_dnepr"] },
-
-    { "id": "zander", "title": "Судак", "weight_min": 0.6, "weight_max": 8.0,
-      "spots": ["kz_charyn","kz_balkhash","ru_volga","by_neman"] }
+    {"id":"pike","title":"Щука","weight_min":0.8,"weight_max":18,"spots":["kz_charyn","kz_ili","kz_balkhash","ru_volga","ru_ladoga","by_neman","ua_dnepr","eu_seine","eu_garda","eu_vanern","eu_lomond","eu_danube"]},
+    {"id":"zander","title":"Судак","weight_min":0.6,"weight_max":10,"spots":["kz_balkhash","kz_ili","ru_volga","by_neman","ua_dnepr","eu_danube","eu_seine"]},
+    {"id":"perch","title":"Окунь","weight_min":0.2,"weight_max":2.5,"spots":["kz_charyn","kz_ili","kz_balkhash","ru_ladoga","by_braslaw","ua_dniester","eu_vanern","eu_lomond"]},
+    {"id":"carp","title":"Карп","weight_min":1,"weight_max":20,"spots":["kz_ili","kz_balkhash","ru_volga","by_neman","ua_dnepr","eu_seine","eu_danube"]},
+    {"id":"crucian","title":"Карась","weight_min":0.2,"weight_max":2.0,"spots":["kz_ili","kz_kapchagay","ru_volga","by_neman","ua_dnepr"]},
+    {"id":"bream","title":"Лещ","weight_min":0.5,"weight_max":5.5,"spots":["kz_balkhash","ru_volga","by_neman","ua_dnepr","eu_danube","eu_seine"]},
+    {"id":"roach","title":"Плотва","weight_min":0.1,"weight_max":1.2,"spots":["kz_charyn","ru_ladoga","by_braslaw","ua_dniester","eu_vanern","eu_lomond"]},
+    {"id":"tench","title":"Линь","weight_min":0.3,"weight_max":3.5,"spots":["kz_ili","by_braslaw","ua_dnepr","eu_garda","eu_seine"]},
+    {"id":"ide","title":"Язь","weight_min":0.5,"weight_max":4.0,"spots":["ru_volga","by_neman","ua_dniester","eu_danube"]},
+    {"id":"chub","title":"Голавль","weight_min":0.3,"weight_max":3.0,"spots":["ru_volga","ua_dnepr","eu_seine","eu_danube"]},
+    {"id":"asp","title":"Жерех","weight_min":0.8,"weight_max":7.0,"spots":["ru_volga","ua_dnepr"]},
+    {"id":"catfish","title":"Сом европейский","weight_min":2,"weight_max":80,"spots":["kz_balkhash","ru_volga","ua_dnepr","eu_danube"]},
+    {"id":"burbot","title":"Налим","weight_min":0.6,"weight_max":4.0,"spots":["kz_charyn","ru_ladoga","eu_vanern","eu_lomond"]},
+    {"id":"whitefish","title":"Сиг","weight_min":0.5,"weight_max":3.0,"spots":["ru_ladoga","eu_vanern","eu_lomond"]},
+    {"id":"grayling","title":"Хариус","weight_min":0.3,"weight_max":1.6,"spots":["kz_charyn","ru_ladoga","eu_vanern"]},
+    {"id":"trout_brown","title":"Форель ручьевая","weight_min":0.4,"weight_max":5.0,"spots":["eu_garda","eu_lomond","ru_ladoga"]},
+    {"id":"salmon_atl","title":"Лосось атлантический","weight_min":2,"weight_max":12,"spots":["eu_lomond","eu_seine"]},
+    {"id":"eel","title":"Угорь европейский","weight_min":0.5,"weight_max":3.5,"spots":["eu_seine","eu_danube","by_neman"]},
+    {"id":"sabre","title":"Чехонь","weight_min":0.2,"weight_max":0.9,"spots":["ru_volga","ua_dnepr"]},
+    {"id":"rudd","title":"Краснопёрка","weight_min":0.2,"weight_max":1.0,"spots":["by_braslaw","ru_ladoga","eu_vanern"]},
+    {"id":"bleak","title":"Уклейка","weight_min":0.05,"weight_max":0.2,"spots":["ru_volga","eu_seine"]},
+    {"id":"silver_bream","title":"Густера","weight_min":0.2,"weight_max":1.2,"spots":["ru_volga","by_neman","ua_dnepr"]},
+    {"id":"white_bream","title":"Подлещик","weight_min":0.2,"weight_max":1.0,"spots":["ru_volga","ua_dnepr"]},
+    {"id":"dace","title":"Елец","weight_min":0.1,"weight_max":0.6,"spots":["by_neman","ua_dniester"]},
+    {"id":"roach_baltic","title":"Салака (местная)","weight_min":0.05,"weight_max":0.3,"spots":["ru_ladoga","eu_vanern"]},
+    {"id":"pike_perch","title":"Берщ (вид судака)","weight_min":0.3,"weight_max":2.0,"spots":["ru_volga","ua_dniester"]},
+    {"id":"carassius","title":"Золотой карась","weight_min":0.2,"weight_max":1.5,"spots":["kz_kapchagay","by_braslaw"]},
+    {"id":"amur","title":"Белый амур","weight_min":1.5,"weight_max":15,"spots":["kz_kapchagay","kz_ili","ua_dnepr"]},
+    {"id":"silver_carp","title":"Толстолобик","weight_min":2,"weight_max":20,"spots":["kz_ili","ua_dnepr"]},
+    {"id":"sturgeon","title":"Осётр","weight_min":3,"weight_max":25,"spots":["ru_volga","eu_danube"]}
   ]
 }
