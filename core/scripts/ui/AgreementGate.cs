@@ -1,17 +1,16 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
 public class AgreementGate : MonoBehaviour
 {
     GameObject panel;
     Toggle tPrivacy, tTerms, tEula;
     Button continueBtn;
-    Text title, warning;
+    Text warning;
 
     void Start()
     {
-        // Проверяем, принял ли пользователь соглашения ранее
+        // Проверяем, было ли ранее принято соглашение
         if (PlayerPrefs.GetInt("user_has_agreed", 0) == 1)
         {
             Destroy(this.gameObject);
@@ -39,10 +38,11 @@ public class AgreementGate : MonoBehaviour
         rt.sizeDelta = new Vector2(720, 520);
         rt.anchorMin = rt.anchorMax = new Vector2(0.5f, 0.5f);
         rt.pivot = new Vector2(0.5f, 0.5f);
+        rt.anchoredPosition = Vector2.zero;
         var bg = panel.AddComponent<Image>();
-        bg.color = new Color(0,0,0,0.85f);
+        bg.color = new Color(0, 0, 0, 0.85f);
 
-        title = CreateText("Перед началом игры подтвердите согласие:", panel.transform, new Vector2(0, 200), 24);
+        CreateText("Перед началом игры подтвердите согласие:", panel.transform, new Vector2(0, 200), 26);
 
         tPrivacy = CreateToggle("Политика конфиденциальности", new Vector2(0, 100));
         tTerms   = CreateToggle("Условия использования", new Vector2(0, 40));
@@ -55,7 +55,6 @@ public class AgreementGate : MonoBehaviour
         continueBtn.interactable = false;
         continueBtn.onClick.AddListener(()=> AcceptAll());
 
-        // Слушатели изменений
         tPrivacy.onValueChanged.AddListener(delegate { CheckToggles(); });
         tTerms.onValueChanged.AddListener(delegate { CheckToggles(); });
         tEula.onValueChanged.AddListener(delegate { CheckToggles(); });
@@ -68,14 +67,17 @@ public class AgreementGate : MonoBehaviour
         rt.SetParent(panel.transform, false);
         rt.sizeDelta = new Vector2(600, 40);
         rt.anchoredPosition = pos;
+
         var tgl = go.AddComponent<Toggle>();
         var bg = new GameObject("BG").AddComponent<Image>();
         bg.transform.SetParent(go.transform,false);
-        bg.color = Color.gray;
+        bg.color = new Color(0.25f,0.25f,0.25f,1f);
+
         var check = new GameObject("Checkmark").AddComponent<Image>();
         check.transform.SetParent(go.transform,false);
         check.color = Color.green;
         tgl.graphic = check;
+
         var lbl = new GameObject("Label").AddComponent<Text>();
         lbl.transform.SetParent(go.transform,false);
         lbl.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
@@ -84,6 +86,7 @@ public class AgreementGate : MonoBehaviour
         lbl.fontSize = 18;
         lbl.color = Color.white;
         lbl.rectTransform.anchoredPosition = new Vector2(30, 0);
+
         return tgl;
     }
 
