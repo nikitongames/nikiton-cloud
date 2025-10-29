@@ -1,0 +1,84 @@
+{
+  "ai_balancing": {
+    "bite_system": {
+      "base_bite_chance_percent": 45,
+      "rare_fish_bonus_chance_percent": 5,
+      "legendary_fish_bonus_chance_percent": 1,
+      "event_bonus_multiplier": 1.3,
+      "night_activity_bonus_percent": 20,
+      "bad_weather_penalty_percent": 25,
+      "good_weather_bonus_percent": 15
+    },
+    "equipment_wear": {
+      "enable_dynamic_wear": true,
+      "wear_multiplier_on_large_fish": 1.5,
+      "wear_multiplier_on_event_fish": 2.0,
+      "repair_discount_vip_percent": 20,
+      "chance_of_break_percent": 3,
+      "min_condition_to_warn_percent": 25
+    },
+    "economy_balance": {
+      "gold_drop_multiplier": 1.0,
+      "xp_gain_multiplier": 1.0,
+      "event_gold_bonus": 0.15,
+      "vip_gold_bonus": 0.10,
+      "donation_conversion_bonus": 0.05,
+      "market_tax_percent": 5,
+      "anti_inflation_adjustment": true
+    },
+    "difficulty_scaling": {
+      "enable_player_adaptive_difficulty": true,
+      "easy_mode_threshold_level": 5,
+      "medium_mode_threshold_level": 15,
+      "hard_mode_threshold_level": 30,
+      "extreme_mode_threshold_level": 50,
+      "catch_success_bonus_easy": 15,
+      "catch_success_penalty_extreme": 10,
+      "max_player_level_for_assistance": 25
+    },
+    "weather_system": {
+      "affects_bite_rate": true,
+      "weather_types": [
+        { "id": "sunny", "bite_modifier": 1.1 },
+        { "id": "rain", "bite_modifier": 0.9 },
+        { "id": "storm", "bite_modifier": 0.6 },
+        { "id": "cloudy", "bite_modifier": 1.0 },
+        { "id": "night_clear", "bite_modifier": 1.2 }
+      ]
+    },
+    "ai_behavior": {
+      "enable_fish_reaction": true,
+      "fish_flee_chance_percent": 5,
+      "fish_tiredness_multiplier": 0.8,
+      "player_line_tension_multiplier": 1.0,
+      "fish_behavior_randomness": 0.2
+    },
+    "tournament_difficulty": {
+      "base_target_weight_kg": 15,
+      "bonus_per_level_kg": 0.5,
+      "time_limit_minutes": 10,
+      "ai_opponent_skill_range": [0.8, 1.2],
+      "reward_multiplier_winner": 1.5
+    }
+  },
+  "mechanics": {
+    "use_server_side_balancing": true,
+    "auto_adjust_every_session": true,
+    "track_player_success_rate": true,
+    "send_telemetry_to_cloud": true,
+    "sync_with_economy_module": true
+  },
+  "display_settings": {
+    "show_weather_icons": true,
+    "show_condition_warnings": true,
+    "show_difficulty_notices": true,
+    "animate_bite_feedback": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 15,
+    "refresh_on_weather_change": true,
+    "refresh_on_event_change": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
