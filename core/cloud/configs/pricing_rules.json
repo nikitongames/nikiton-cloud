@@ -1,0 +1,45 @@
+{
+  "pricing": {
+    "dynamic_adjustment": true,
+    "tax_included": true,
+    "round_to_local_currency": true,
+    "display_mode": "localized",
+    "rules": [
+      {
+        "type": "daily_offer",
+        "discount_percent": 15,
+        "region_modifier": 0.95,
+        "description": "Ежедневные предложения со скидкой 15%."
+      },
+      {
+        "type": "event_bundle",
+        "discount_percent": 25,
+        "region_modifier": 1.0,
+        "description": "Сезонные наборы во время событий и праздников."
+      },
+      {
+        "type": "legendary_pack",
+        "discount_percent": 0,
+        "region_modifier": 1.2,
+        "description": "Редкие наборы с фиксированной ценой, не зависящей от региона."
+      },
+      {
+        "type": "tour_pass",
+        "discount_percent": 10,
+        "region_modifier": 1.1,
+        "description": "Скидка на продление тура при покупке нескольких часов."
+      }
+    ]
+  },
+  "currency_format": {
+    "KZT": "{value} ₸",
+    "RUB": "{value} ₽",
+    "BYN": "{value} Br",
+    "UAH": "{value} ₴",
+    "EUR": "€{value}",
+    "USD": "${value}",
+    "CNY": "¥{value}"
+  },
+  "auto_update": true,
+  "last_update": "2025-10-30T00:00:00Z"
+}
