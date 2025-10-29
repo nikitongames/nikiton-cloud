@@ -1,0 +1,24 @@
+{
+  "_": [
+    {"k":"hello","v":"Bonjour"},
+    {"k":"good_luck","v":"Bonne chance!"},
+    {"k":"fish_bite","v":"Ça mord!"},
+    {"k":"nice_catch","v":"Belle prise!"},
+    {"k":"connected","v":"Connecté"},
+    {"k":"disconnected","v":"Déconnecté"},
+    {"k":"new_content_available","v":"Nouveau contenu disponible"},
+    {"k":"download_now","v":"Télécharger maintenant"},
+    {"k":"download_later","v":"Plus tard"},
+    {"k":"downloading","v":"Téléchargement..."},
+    {"k":"install_complete","v":"Installation terminée"},
+    {"k":"shop","v":"Boutique"},
+    {"k":"market","v":"Marché (joueur à joueur)"},
+    {"k":"exchange","v":"Échange de devises"},
+    {"k":"purchase_success","v":"Achat réussi"},
+    {"k":"purchase_failed","v":"Échec de l'achat"},
+    {"k":"insufficient_funds","v":"Fonds insuffisants"},
+    {"k":"tour_active_warning","v":"Une tournée est déjà active. En acheter une nouvelle annulera l'actuelle. Continuer?"},
+    {"k":"tournament_started","v":"Tournoi commencé"},
+    {"k":"tournament_finished","v":"Tournoi terminé"}
+  ]
+}
