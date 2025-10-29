@@ -1,0 +1,131 @@
+{
+  "shop_catalog": {
+    "categories": [
+      {
+        "id": "daily_packs",
+        "name": "Ежедневные наборы",
+        "description": "Обновляются каждый день в 00:00 по времени региона.",
+        "refresh_interval_hours": 24,
+        "offers": [
+          {
+            "id": "daily_basic",
+            "name": "Обычный набор",
+            "price_type": "real",
+            "price_kzt": 500,
+            "contents": { "items": ["worm_bait"], "gold": 100 },
+            "icon": "pack_basic",
+            "limited": false
+          },
+          {
+            "id": "daily_rare",
+            "name": "Редкий набор",
+            "price_type": "real",
+            "price_kzt": 1500,
+            "contents": { "items": ["premium_bait", "strong_line"], "gold": 300 },
+            "icon": "pack_rare",
+            "limited": false
+          },
+          {
+            "id": "daily_legendary",
+            "name": "Легендарный набор",
+            "price_type": "real",
+            "price_kzt": 3000,
+            "contents": {
+              "items": ["legendary_rod", "premium_reel", "event_boost_nauryz"],
+              "gold": 800,
+              "ncoin": 20
+            },
+            "icon": "pack_legendary",
+            "limited": true
+          }
+        ]
+      },
+      {
+        "id": "event_packs",
+        "name": "Событийные наборы",
+        "description": "Доступны только во время активных событий.",
+        "refresh_interval_hours": 0,
+        "offers": [
+          {
+            "id": "nauryz_pack",
+            "name": "Набор Наурыз 🌸",
+            "price_type": "real",
+            "price_kzt": 2000,
+            "contents": {
+              "items": ["nauryz_bait", "nauryz_trophy"],
+              "gold": 500,
+              "ncoin": 10
+            },
+            "icon": "pack_nauryz",
+            "limited": true
+          },
+          {
+            "id": "dragon_pack",
+            "name": "Фестиваль Дракона 🐉",
+            "price_type": "real",
+            "price_kzt": 3000,
+            "contents": {
+              "items": ["dragon_bait", "dragon_hook", "dragon_trophy"],
+              "gold": 700,
+              "ncoin": 15
+            },
+            "icon": "pack_dragon",
+            "limited": true
+          }
+        ]
+      },
+      {
+        "id": "special_bundles",
+        "name": "Особые предложения",
+        "description": "Появляются случайно и доступны ограниченное время.",
+        "refresh_interval_hours": 72,
+        "offers": [
+          {
+            "id": "starter_bundle",
+            "name": "Стартовый набор рыбака 🎣",
+            "price_type": "real",
+            "price_kzt": 1500,
+            "contents": {
+              "items": ["starter_rod", "starter_reel", "worm_bait"],
+              "gold": 200
+            },
+            "icon": "pack_starter",
+            "limited": true
+          },
+          {
+            "id": "vip_bundle",
+            "name": "VIP-комплект 💎",
+            "price_type": "real",
+            "price_kzt": 5000,
+            "contents": {
+              "items": ["vip_badge_gold", "premium_bait", "tournament_rod"],
+              "gold": 1500,
+              "ncoin": 50
+            },
+            "icon": "pack_vip",
+            "limited": true
+          }
+        ]
+      }
+    ]
+  },
+  "mechanics": {
+    "auto_region_price_conversion": true,
+    "highlight_best_value": true,
+    "allow_multiple_purchases": true,
+    "show_limited_timers": true,
+    "show_currency_icons": true,
+    "apply_event_discounts": true
+  },
+  "display_settings": {
+    "show_daily_reset_timer": true,
+    "show_event_banner": true,
+    "show_vip_discount_badges": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 15,
+    "refresh_on_app_launch": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
