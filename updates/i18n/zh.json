@@ -1,0 +1,15 @@
+{
+  "_": [
+    {"k":"hello","v":"你好"},
+    {"k":"good_luck","v":"祝你好运!"},
+    {"k":"fish_bite","v":"咬钩了!"},
+    {"k":"nice_catch","v":"好收获!"},
+    {"k":"connected","v":"已连接"},
+    {"k":"disconnected","v":"已断开"},
+    {"k":"download_now","v":"立即下载"},
+    {"k":"download_later","v":"稍后"},
+    {"k":"shop","v":"商店"},
+    {"k":"purchase_success","v":"购买成功"},
+    {"k":"reward_received","v":"获得奖励"}
+  ]
+}
