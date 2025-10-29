@@ -1,0 +1,87 @@
+{
+  "player_tournaments": {
+    "active_tournaments": [],
+    "completed_tournaments": [],
+    "tournament_points": 0,
+    "ranking": {
+      "global_rank": 0,
+      "regional_rank": 0,
+      "points_total": 0
+    },
+    "last_joined": null,
+    "last_won": null
+  },
+  "tournament_templates": [
+    {
+      "id": "classic_tournament",
+      "name": "Классический турнир 🎣",
+      "duration_hours": 24,
+      "entry_fee_gold": 1000,
+      "rewards": {
+        "1": { "gold": 10000, "ncoin": 300, "items": ["tournament_rod"] },
+        "2": { "gold": 6000, "ncoin": 150, "items": ["tournament_reel"] },
+        "3": { "gold": 4000, "ncoin": 100, "items": ["premium_bait"] }
+      },
+      "scoring": {
+        "points_per_fish": 10,
+        "bonus_for_rare": 20,
+        "bonus_for_legendary": 40
+      },
+      "max_players": 100,
+      "leaderboard_refresh_minutes": 10
+    },
+    {
+      "id": "event_tournament_nauryz",
+      "name": "Турнир Наурыз 🌸",
+      "duration_hours": 48,
+      "entry_fee_ncoin": 50,
+      "rewards": {
+        "1": { "gold": 12000, "ncoin": 400, "items": ["nauryz_trophy"] },
+        "2": { "gold": 7000, "ncoin": 200, "items": ["nauryz_bait"] },
+        "3": { "gold": 4000, "ncoin": 100, "items": ["silver_hook"] }
+      },
+      "scoring": {
+        "points_per_fish": 15,
+        "bonus_for_event_fish": 30
+      },
+      "event_linked": "nauryz_2026",
+      "max_players": 150
+    },
+    {
+      "id": "dragon_festival_tournament",
+      "name": "Фестиваль Дракона 🐉",
+      "duration_hours": 72,
+      "entry_fee_ncoin": 100,
+      "rewards": {
+        "1": { "gold": 15000, "ncoin": 500, "items": ["dragon_trophy"] },
+        "2": { "gold": 9000, "ncoin": 250, "items": ["dragon_reel"] },
+        "3": { "gold": 6000, "ncoin": 150, "items": ["dragon_hook"] }
+      },
+      "scoring": {
+        "points_per_fish": 20,
+        "bonus_for_event_fish": 50
+      },
+      "event_linked": "chinese_new_year_2026",
+      "max_players": 200
+    }
+  ],
+  "mechanics": {
+    "auto_register_on_entry": true,
+    "sync_with_cloud": true,
+    "disqualify_on_disconnect_minutes": 10,
+    "allow_reconnect_during_tournament": true,
+    "auto_distribute_rewards": true
+    },
+  "display_settings": {
+    "show_timer": true,
+    "show_leaderboard_preview": true,
+    "highlight_event_tournaments": true,
+    "notify_on_rank_change": true
+  },
+  "sync_settings": {
+    "auto_save": true,
+    "sync_interval_minutes": 10,
+    "update_on_result_change": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
