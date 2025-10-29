@@ -1,0 +1,145 @@
+{
+  "rewards": {
+    "daily_login": [
+      {
+        "day": 1,
+        "gold": 500,
+        "ncoin": 0,
+        "items": ["basic_bait"]
+      },
+      {
+        "day": 2,
+        "gold": 800,
+        "ncoin": 0,
+        "items": ["worm_bait"]
+      },
+      {
+        "day": 3,
+        "gold": 1000,
+        "ncoin": 10,
+        "items": ["medium_hook"]
+      },
+      {
+        "day": 4,
+        "gold": 1500,
+        "ncoin": 20,
+        "items": ["strong_line"]
+      },
+      {
+        "day": 5,
+        "gold": 2000,
+        "ncoin": 30,
+        "items": ["premium_bait"]
+      },
+      {
+        "day": 6,
+        "gold": 3000,
+        "ncoin": 50,
+        "items": ["silver_hook"]
+      },
+      {
+        "day": 7,
+        "gold": 5000,
+        "ncoin": 100,
+        "items": ["legendary_bait"]
+      }
+    ],
+    "tournament_rewards": [
+      {
+        "position": 1,
+        "gold": 10000,
+        "ncoin": 300,
+        "items": ["tournament_rod", "gold_hook"],
+        "title": "🏆 Чемпион турнира"
+      },
+      {
+        "position": 2,
+        "gold": 6000,
+        "ncoin": 200,
+        "items": ["tournament_reel", "silver_hook"],
+        "title": "🥈 Второе место"
+      },
+      {
+        "position": 3,
+        "gold": 4000,
+        "ncoin": 100,
+        "items": ["premium_bait"],
+        "title": "🥉 Третье место"
+      }
+    ],
+    "event_rewards": {
+      "nauryz_2026": {
+        "milestones": [
+          {
+            "points_required": 100,
+            "reward": { "gold": 1500, "ncoin": 20, "items": ["nauryz_bait"] }
+          },
+          {
+            "points_required": 300,
+            "reward": { "gold": 3000, "ncoin": 50, "items": ["silver_hook"] }
+          },
+          {
+            "points_required": 500,
+            "reward": { "gold": 5000, "ncoin": 100, "items": ["nauryz_medal"] }
+          }
+        ],
+        "grand_reward": {
+          "gold": 10000,
+          "ncoin": 150,
+          "items": ["nauryz_trophy"]
+        }
+      },
+      "chinese_new_year_2026": {
+        "milestones": [
+          {
+            "points_required": 150,
+            "reward": { "gold": 2000, "ncoin": 30, "items": ["dragon_bait"] }
+          },
+          {
+            "points_required": 400,
+            "reward": { "gold": 4000, "ncoin": 80, "items": ["dragon_hook"] }
+          },
+          {
+            "points_required": 700,
+            "reward": { "gold": 7000, "ncoin": 150, "items": ["dragon_rod"] }
+          }
+        ],
+        "grand_reward": {
+          "gold": 15000,
+          "ncoin": 300,
+          "items": ["dragon_trophy"]
+        }
+      }
+    },
+    "donation_rewards": [
+      {
+        "tier": 1,
+        "total_spent_kzt": 2000,
+        "bonus": { "ncoin": 50, "gold": 500 },
+        "title": "💠 Поддержавший проект"
+      },
+      {
+        "tier": 2,
+        "total_spent_kzt": 5000,
+        "bonus": { "ncoin": 150, "gold": 1500, "items": ["vip_badge"] },
+        "title": "🌟 Благодарный донатор"
+      },
+      {
+        "tier": 3,
+        "total_spent_kzt": 10000,
+        "bonus": { "ncoin": 400, "gold": 5000, "items": ["vip_trophy"] },
+        "title": "👑 Великий покровитель"
+      }
+    ]
+  },
+  "sync_settings": {
+    "auto_save": true,
+    "sync_with_cloud": true,
+    "grant_on_login": true
+  },
+  "display_settings": {
+    "show_reward_previews": true,
+    "highlight_claimable": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
