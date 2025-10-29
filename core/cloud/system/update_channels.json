@@ -1,0 +1,66 @@
+{
+  "update_channels": {
+    "default_channel": "live",
+    "available_channels": [
+      {
+        "id": "live",
+        "name": "Основной канал",
+        "description": "Стабильные версии для всех игроков.",
+        "auto_update": true,
+        "receive_hotfixes": true,
+        "min_client_version": "1.0.0",
+        "update_check_interval_hours": 6,
+        "changelog_url": "https://cloud.nikiton.games/updates/live/changelog.json",
+        "assets_url": "https://cdn.nikiton.games/live/"
+      },
+      {
+        "id": "beta",
+        "name": "Бета-тестирование",
+        "description": "Доступ к ранним версиям и экспериментальным функциям.",
+        "auto_update": true,
+        "receive_hotfixes": false,
+        "min_client_version": "1.0.0-beta",
+        "update_check_interval_hours": 3,
+        "changelog_url": "https://cloud.nikiton.games/updates/beta/changelog.json",
+        "assets_url": "https://cdn.nikiton.games/beta/"
+      },
+      {
+        "id": "dev",
+        "name": "Разработческая сборка",
+        "description": "Тестирование внутреннего ядра Nikiton Core и интеграций.",
+        "auto_update": false,
+        "receive_hotfixes": false,
+        "min_client_version": "dev-latest",
+        "update_check_interval_hours": 1,
+        "changelog_url": "https://cloud.nikiton.games/updates/dev/changelog.json",
+        "assets_url": "https://cdn.nikiton.games/dev/"
+      },
+      {
+        "id": "internal",
+        "name": "Внутренний канал Nikiton",
+        "description": "Сборки для команды Nikiton Games. Не доступны публично.",
+        "auto_update": false,
+        "receive_hotfixes": false,
+        "min_client_version": "internal-latest",
+        "update_check_interval_hours": 1,
+        "changelog_url": "https://cloud.nikiton.games/updates/internal/changelog.json",
+        "assets_url": "https://cdn.nikiton.games/internal/"
+      }
+    ]
+  },
+  "mechanics": {
+    "allow_channel_switch": true,
+    "require_restart_after_update": true,
+    "backup_before_update": true,
+    "auto_retry_failed_downloads": true,
+    "verify_file_integrity": true,
+    "partial_update_support": true
+  },
+  "display_settings": {
+    "show_update_notifications": true,
+    "show_changelog_popup": true,
+    "highlight_beta_warning": true,
+    "show_restart_prompt": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
