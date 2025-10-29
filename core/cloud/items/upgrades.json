@@ -1,0 +1,71 @@
+{
+  "upgrades": {
+    "rod_upgrades": {
+      "max_level": 5,
+      "cost_per_level_gold": [500, 1000, 2000, 3500, 5000],
+      "bonus_per_level": {
+        "max_load_kg": [1, 2, 3, 4, 5],
+        "durability": [10, 20, 30, 40, 50]
+      },
+      "description": "Увеличивает прочность и максимальную нагрузку удилища."
+    },
+    "reel_upgrades": {
+      "max_level": 5,
+      "cost_per_level_gold": [400, 800, 1600, 3000, 4500],
+      "bonus_per_level": {
+        "speed_multiplier": [0.1, 0.15, 0.2, 0.25, 0.3],
+        "drag_strength": [1, 2, 3, 4, 5]
+      },
+      "description": "Повышает скорость вытягивания и силу тормоза катушки."
+    },
+    "line_upgrades": {
+      "max_level": 5,
+      "cost_per_level_gold": [300, 600, 1200, 2500, 4000],
+      "bonus_per_level": {
+        "max_strength_kg": [1, 2, 3, 4, 5],
+        "durability": [5, 10, 15, 20, 25]
+      },
+      "description": "Увеличивает прочность и снижает шанс обрыва лески."
+    },
+    "hook_upgrades": {
+      "max_level": 5,
+      "cost_per_level_gold": [250, 500, 1000, 2000, 3000],
+      "bonus_per_level": {
+        "rare_fish_chance": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "catch_bonus": [0.1, 0.15, 0.2, 0.25, 0.3]
+      },
+      "description": "Повышает шанс подсечки и вероятность поймать редкую рыбу."
+    },
+    "auto_upgrade_options": {
+      "enabled": true,
+      "require_confirmation": true,
+      "currency_priority": "gold"
+    }
+  },
+  "special_upgrades": [
+    {
+      "id": "vip_upgrade_bonus",
+      "name": "VIP улучшение",
+      "bonus_multiplier": 1.1,
+      "available_for_vip": true,
+      "description": "VIP игроки получают +10% к эффективности всех улучшений."
+    },
+    {
+      "id": "event_upgrade_discount",
+      "name": "Событийная скидка",
+      "discount_percent": 25,
+      "active_events": ["nauryz_2026", "new_year_2026", "chinese_new_year_2026"],
+      "description": "Во время событий улучшения стоят на 25% дешевле."
+    }
+  ],
+  "display_settings": {
+    "show_upgrade_levels": true,
+    "show_upgrade_costs": true,
+    "animate_on_level_up": true
+  },
+  "sync_settings": {
+    "auto_save": true,
+    "sync_with_profile": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
