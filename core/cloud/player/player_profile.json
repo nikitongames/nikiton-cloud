@@ -1,0 +1,54 @@
+{
+  "player_profile": {
+    "id": "auto",                       // генерируется на сервере
+    "nickname": "NewFisher",
+    "level": 1,
+    "xp": 0,
+    "vip_level": 0,
+    "gratitude_total_kzt": 0,
+    "currencies": {
+      "gold": 0,
+      "ncoin": 0
+    },
+    "region": {
+      "current": "kazakhstan",
+      "auto_detect": true,
+      "last_ip_country": null
+    },
+    "devices": {
+      "max_linked": 3,
+      "linked": []
+    },
+    "permissions_role": "player",
+    "privacy": {
+      "terms_accepted": false,
+      "privacy_accepted": false,
+      "eula_accepted": false,
+      "last_accept_timestamp": null
+    },
+    "progress_flags": {
+      "tutorial_completed": false,
+      "first_catch_done": false,
+      "first_purchase_done": false
+    },
+    "sync": {
+      "cloud_enabled": true,
+      "last_sync": null,
+      "conflict_policy": "prefer_newer"
+    },
+    "timestamps": {
+      "created_at": null,
+      "last_login_at": null
+    }
+  },
+  "display_settings": {
+    "show_vip_badge": true,
+    "show_region_flag": true,
+    "show_currency_icons": true
+  },
+  "security": {
+    "two_factor_enabled": false,
+    "ban_status": "ok"
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
