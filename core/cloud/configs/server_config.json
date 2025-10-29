@@ -1,0 +1,53 @@
+{
+  "server": {
+    "name": "Nikiton Cloud Main",
+    "version": "2.0.0",
+    "region": "global",
+    "base_url": "https://cloud.nikiton-games.com/api/",
+    "cdn_url": "https://cdn.nikiton-games.com/content/",
+    "auth_url": "https://auth.nikiton-games.com/",
+    "backup_url": "https://backup.nikiton-games.com/",
+    "websocket_url": "wss://live.nikiton-games.com/socket"
+  },
+  "security": {
+    "https_required": true,
+    "data_encryption": true,
+    "token_type": "bearer",
+    "token_expiry_hours": 24,
+    "refresh_on_expiry": true,
+    "allowed_domains": [
+      "nikiton-games.com",
+      "cdn.nikiton-games.com",
+      "backup.nikiton-games.com"
+    ]
+  },
+  "sync": {
+    "auto_sync_enabled": true,
+    "interval_seconds": 600,
+    "retry_policy": {
+      "retries": 3,
+      "backoff_ms": 1500
+    }
+  },
+  "services": {
+    "user_profiles": "core/cloud/users/profiles/",
+    "inventories": "core/cloud/users/inventories/",
+    "progress": "core/cloud/users/progress/",
+    "tournaments": "core/cloud/tournaments/",
+    "events": "core/cloud/events/",
+    "shop": "core/cloud/shop/",
+    "updates": "core/cloud/system/updates/"
+  },
+  "logging": {
+    "enabled": true,
+    "level": "info",
+    "max_file_size_mb": 2,
+    "log_path": "core/cloud/users/logs/"
+  },
+  "backup": {
+    "enabled": true,
+    "interval_hours": 6,
+    "target": "core/cloud/system/backups/"
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
