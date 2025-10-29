@@ -1,0 +1,42 @@
+{
+  "region_detection": {
+    "auto_detect": true,
+    "methods": [
+      {
+        "type": "ip_lookup",
+        "enabled": true,
+        "priority": 1,
+        "description": "Определение региона по IP-адресу при первом подключении к Nikiton Cloud."
+      },
+      {
+        "type": "system_language",
+        "enabled": true,
+        "priority": 2,
+        "description": "Определение региона по языку системы устройства."
+      },
+      {
+        "type": "manual_select",
+        "enabled": true,
+        "priority": 3,
+        "description": "Игрок может вручную выбрать регион и язык в настройках."
+      }
+    ],
+    "fallback_region": "KZ",
+    "update_on_reconnect": true
+  },
+  "privacy": {
+    "store_only_region_code": true,
+    "store_ip_address": false,
+    "gdpr_compliant": true
+  },
+  "sync": {
+    "enabled": true,
+    "endpoint": "https://nikiton-cloud/api/region",
+    "method": "POST",
+    "retry_policy": {
+      "retries": 3,
+      "delay_ms": 1200
+    }
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
