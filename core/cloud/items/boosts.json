@@ -1,0 +1,92 @@
+{
+  "boosts": [
+    {
+      "id": "exp_boost_small",
+      "name": "Буст опыта (малый)",
+      "rarity": "common",
+      "duration_minutes": 30,
+      "effect": { "xp_multiplier": 1.25 },
+      "price_gold": 300,
+      "description": "Увеличивает получаемый опыт на 25% в течение 30 минут."
+    },
+    {
+      "id": "exp_boost_large",
+      "name": "Буст опыта (большой)",
+      "rarity": "uncommon",
+      "duration_minutes": 60,
+      "effect": { "xp_multiplier": 1.5 },
+      "price_gold": 600,
+      "description": "Увеличивает получаемый опыт на 50% в течение часа."
+    },
+    {
+      "id": "gold_boost",
+      "name": "Буст золота",
+      "rarity": "rare",
+      "duration_minutes": 60,
+      "effect": { "gold_multiplier": 2.0 },
+      "price_ncoin": 80,
+      "description": "Удваивает количество получаемого золота в течение часа."
+    },
+    {
+      "id": "repair_discount",
+      "name": "Скидка на ремонт",
+      "rarity": "rare",
+      "duration_minutes": 120,
+      "effect": { "repair_cost_multiplier": 0.8 },
+      "price_gold": 700,
+      "description": "Снижает стоимость ремонта снастей на 20% в течение двух часов."
+    },
+    {
+      "id": "durability_boost",
+      "name": "Повышение прочности",
+      "rarity": "epic",
+      "duration_minutes": 90,
+      "effect": { "durability_loss_multiplier": 0.75 },
+      "price_ncoin": 120,
+      "description": "Замедляет износ снастей на 25% в течение 90 минут."
+    },
+    {
+      "id": "event_boost_nauryz",
+      "name": "Бонус Наурыз 🌸",
+      "rarity": "event",
+      "duration_minutes": 180,
+      "effect": { "xp_multiplier": 1.5, "gold_multiplier": 1.5 },
+      "price_ncoin": 100,
+      "special_event": "nauryz_2026",
+      "description": "Во время события Наурыз увеличивает опыт и золото на 50%."
+    },
+    {
+      "id": "dragon_festival_boost",
+      "name": "Бонус Фестиваля Дракона 🐉",
+      "rarity": "event",
+      "duration_minutes": 180,
+      "effect": { "rare_fish_chance_bonus": 0.5 },
+      "price_ncoin": 100,
+      "special_event": "chinese_new_year_2026",
+      "description": "Повышает шанс поймать редкую рыбу во время Фестиваля Дракона."
+    },
+    {
+      "id": "vip_daily_boost",
+      "name": "VIP-дневной буст 💠",
+      "rarity": "vip",
+      "duration_minutes": 120,
+      "effect": { "xp_multiplier": 1.3, "gold_multiplier": 1.3 },
+      "exclusive_for_vip": true,
+      "description": "Доступен только владельцам VIP-подписки. Ежедневно активируется автоматически."
+    }
+  ],
+  "mechanics": {
+    "auto_apply_on_event_start": true,
+    "allow_multiple_active": false,
+    "stacking_rule": "replace_lower_tier"
+  },
+  "display_settings": {
+    "show_timers": true,
+    "highlight_active_boost": true
+  },
+  "sync_settings": {
+    "auto_save": true,
+    "sync_with_profile": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
