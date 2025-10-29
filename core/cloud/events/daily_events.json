@@ -1,0 +1,55 @@
+{
+  "daily_events": {
+    "login_rewards": {
+      "enabled": true,
+      "reset_hour": 0,
+      "streak_bonus": true,
+      "rewards": [
+        { "day": 1, "gold": 500, "ncoin": 0, "item": "basic_bait" },
+        { "day": 2, "gold": 600, "ncoin": 0, "item": "silver_hook" },
+        { "day": 3, "gold": 800, "ncoin": 10, "item": "small_reel" },
+        { "day": 4, "gold": 1000, "ncoin": 15, "item": "rod_upgrade_part" },
+        { "day": 5, "gold": 1200, "ncoin": 20, "item": "premium_bait" },
+        { "day": 6, "gold": 1500, "ncoin": 25, "item": "fishing_hat" },
+        { "day": 7, "gold": 2000, "ncoin": 50, "item": "legendary_bait" }
+      ]
+    },
+    "daily_challenges": {
+      "enabled": true,
+      "reset_hour": 3,
+      "objectives": [
+        {
+          "id": "catch_fish_variety",
+          "title": "Поймай 5 разных видов рыб",
+          "reward_gold": 800,
+          "reward_ncoin": 10
+        },
+        {
+          "id": "win_competition",
+          "title": "Выиграй одно состязание",
+          "reward_gold": 1500,
+          "reward_ncoin": 20
+        },
+        {
+          "id": "upgrade_item",
+          "title": "Улучшить любую снасть",
+          "reward_gold": 500,
+          "reward_ncoin": 5
+        }
+      ]
+    },
+    "catch_of_the_day": {
+      "enabled": true,
+      "fish_id": "trout",
+      "bonus_multiplier": 2.0,
+      "reward_gold": 1000,
+      "reward_ncoin": 15,
+      "description": "Сегодняшняя рыба дня — Форель! Лови её и получай двойные награды."
+    }
+  },
+  "sync_policy": {
+    "auto_refresh": true,
+    "refresh_interval_hours": 24
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
