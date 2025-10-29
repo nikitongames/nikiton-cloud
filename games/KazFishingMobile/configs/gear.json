@@ -1,0 +1,24 @@
+{
+  "starter_set": {
+    "rod": "rod_basic",
+    "reel": "reel_basic",
+    "line": "line_basic",
+    "bait": "bait_universal"
+  },
+  "rods": [
+    { "id": "rod_basic", "title": "Удилище базовое", "max_strength_kg": 5, "durability_max": 100 },
+    { "id": "rod_pro",   "title": "Удилище PRO",     "max_strength_kg": 12, "durability_max": 160 }
+  ],
+  "reels": [
+    { "id": "reel_basic", "title": "Катушка базовая", "max_strength_kg": 5, "durability_max": 100 },
+    { "id": "reel_pro",   "title": "Катушка PRO",     "max_strength_kg": 12, "durability_max": 160 }
+  ],
+  "lines": [
+    { "id": "line_basic", "title": "Леска 0.25", "max_strength_kg": 4, "durability_max": 80 },
+    { "id": "line_strong","title": "Леска 0.4",  "max_strength_kg": 10,"durability_max": 140 }
+  ],
+  "baits": [
+    { "id": "bait_universal", "title": "Наживка универсальная" },
+    { "id": "bait_predator",  "title": "Наживка хищник" }
+  ]
+}
