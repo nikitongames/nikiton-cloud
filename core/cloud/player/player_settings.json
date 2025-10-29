@@ -1,0 +1,81 @@
+{
+  "player_settings": {
+    "language": "auto",
+    "subtitles_enabled": true,
+    "auto_translate_chat": true,
+    "region_date_format": "dd.MM.yyyy",
+    "graphics": {
+      "quality": "high",
+      "vsync": true,
+      "frame_limit": 60,
+      "anti_aliasing": true,
+      "texture_quality": "high",
+      "shadow_quality": "medium",
+      "enable_water_reflection": true
+    },
+    "audio": {
+      "master_volume": 80,
+      "music_volume": 70,
+      "effects_volume": 90,
+      "mute_in_background": true
+    },
+    "controls": {
+      "sensitivity": 1.0,
+      "invert_camera": false,
+      "vibration_enabled": true,
+      "hints_enabled": true
+    },
+    "notifications": {
+      "new_mail": true,
+      "friend_request": true,
+      "event_start": true,
+      "shop_offer": true,
+      "vip_upgrade": true,
+      "daily_bonus": true
+    },
+    "interface": {
+      "theme": "dark",
+      "show_currency_bar": true,
+      "show_weather_widget": true,
+      "show_minimap": true,
+      "show_tips": true,
+      "hud_scale": 1.0
+    },
+    "privacy": {
+      "allow_friend_invites": true,
+      "allow_competition_invites": true,
+      "share_online_status": true,
+      "share_profile_publicly": false
+    },
+    "accessibility": {
+      "color_blind_mode": false,
+      "text_to_speech": false,
+      "large_text_mode": false
+    }
+  },
+  "mechanics": {
+    "auto_apply_changes": true,
+    "save_on_exit": true,
+    "sync_on_change": true,
+    "reset_to_defaults_available": true,
+    "apply_region_language_auto": true
+  },
+  "display_settings": {
+    "show_fps_counter": false,
+    "show_tutorial_prompts": true,
+    "show_language_flag": true,
+    "show_audio_icons": true
+  },
+  "security": {
+    "prevent_config_tampering": true,
+    "validate_settings_integrity": true,
+    "encrypt_user_prefs": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 15,
+    "upload_on_device_change": true,
+    "restore_on_login": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
