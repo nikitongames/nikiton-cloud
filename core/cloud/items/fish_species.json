@@ -1,0 +1,149 @@
+{
+  "fish_species": [
+    {
+      "id": "roach",
+      "name": "Плотва",
+      "rarity": "common",
+      "region": ["KZ", "RU", "BY", "UA"],
+      "max_weight_kg": 1.5,
+      "behavior": "passive",
+      "bite_chance": 1.0,
+      "preferred_baits": ["basic_bait", "worm_bait"],
+      "value_gold": 20,
+      "description": "Мелкая, но частая добыча. Отлично подходит для начинающих рыбаков."
+    },
+    {
+      "id": "perch",
+      "name": "Окунь",
+      "rarity": "common",
+      "region": ["KZ", "RU", "BY", "UA", "EU"],
+      "max_weight_kg": 2.0,
+      "behavior": "active",
+      "bite_chance": 0.9,
+      "preferred_baits": ["insect_bait", "worm_bait"],
+      "value_gold": 40,
+      "description": "Активный хищник, встречающийся почти во всех пресных водоёмах."
+    },
+    {
+      "id": "carp",
+      "name": "Карп",
+      "rarity": "uncommon",
+      "region": ["KZ", "RU", "BY", "UA"],
+      "max_weight_kg": 10.0,
+      "behavior": "passive",
+      "bite_chance": 0.8,
+      "preferred_baits": ["worm_bait", "premium_bait"],
+      "value_gold": 150,
+      "description": "Одна из самых популярных рыб. Известен своей выносливостью при вываживании."
+    },
+    {
+      "id": "pike",
+      "name": "Щука",
+      "rarity": "rare",
+      "region": ["KZ", "RU", "BY", "UA", "EU"],
+      "max_weight_kg": 15.0,
+      "behavior": "aggressive",
+      "bite_chance": 0.7,
+      "preferred_baits": ["insect_bait", "premium_bait"],
+      "value_gold": 250,
+      "description": "Опасный хищник. Требует прочных снастей, иначе легко оборвёт леску."
+    },
+    {
+      "id": "trout",
+      "name": "Форель",
+      "rarity": "rare",
+      "region": ["KZ", "RU", "EU"],
+      "max_weight_kg": 6.0,
+      "behavior": "active",
+      "bite_chance": 0.75,
+      "preferred_baits": ["insect_bait", "legendary_bait"],
+      "value_gold": 300,
+      "description": "Редкая рыба, требующая ловкости и терпения. Часто встречается в горных реках."
+    },
+    {
+      "id": "catfish",
+      "name": "Сом",
+      "rarity": "epic",
+      "region": ["KZ", "RU", "UA"],
+      "max_weight_kg": 40.0,
+      "behavior": "aggressive",
+      "bite_chance": 0.5,
+      "preferred_baits": ["premium_bait", "legendary_bait"],
+      "value_gold": 600,
+      "description": "Крупная и сильная рыба. Настоящее испытание для любого рыбака."
+    },
+    {
+      "id": "sturgeon",
+      "name": "Осётр",
+      "rarity": "legendary",
+      "region": ["RU", "EU"],
+      "max_weight_kg": 80.0,
+      "behavior": "cautious",
+      "bite_chance": 0.4,
+      "preferred_baits": ["legendary_bait"],
+      "value_gold": 1000,
+      "description": "Редчайшая рыба. Поймать её — огромная удача и гордость любого рыбака."
+    },
+    {
+      "id": "burbot",
+      "name": "Налим",
+      "rarity": "event",
+      "region": ["KZ", "RU"],
+      "max_weight_kg": 12.0,
+      "behavior": "nocturnal",
+      "bite_chance": 0.6,
+      "preferred_baits": ["winter_bait"],
+      "value_gold": 400,
+      "special_event": "new_year_2026",
+      "description": "Редкая зимняя рыба, активна только ночью и во время морозов."
+    },
+    {
+      "id": "dragon_fish",
+      "name": "Рыба-Дракон",
+      "rarity": "event",
+      "region": ["CN", "global"],
+      "max_weight_kg": 25.0,
+      "behavior": "aggressive",
+      "bite_chance": 0.5,
+      "preferred_baits": ["dragon_bait"],
+      "value_gold": 800,
+      "special_event": "chinese_new_year_2026",
+      "description": "Мифическая рыба, появляющаяся только во время Китайского Нового года."
+    },
+    {
+      "id": "grayling",
+      "name": "Хариус",
+      "rarity": "uncommon",
+      "region": ["KZ", "RU", "EU"],
+      "max_weight_kg": 4.0,
+      "behavior": "active",
+      "bite_chance": 0.85,
+      "preferred_baits": ["insect_bait", "worm_bait"],
+      "value_gold": 180,
+      "description": "Быстрая и красивая рыба, обитающая в чистых холодных водах."
+    },
+    {
+      "id": "whitefish",
+      "name": "Сиг",
+      "rarity": "rare",
+      "region": ["KZ", "RU", "EU"],
+      "max_weight_kg": 6.0,
+      "behavior": "passive",
+      "bite_chance": 0.75,
+      "preferred_baits": ["winter_bait", "legendary_bait"],
+      "value_gold": 350,
+      "description": "Редкая рыба северных вод. Часто встречается зимой."
+    }
+  ],
+  "mechanics": {
+    "weight_variance_percent": 25,
+    "region_bonus_multiplier": 1.2,
+    "event_fish_spawn_rate": 1.5
+  },
+  "display_settings": {
+    "show_rarity_color": true,
+    "show_weight_bar": true,
+    "show_region_icon": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
