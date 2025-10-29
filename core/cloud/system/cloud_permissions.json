@@ -1,0 +1,109 @@
+{
+  "roles": [
+    {
+      "id": "player",
+      "name": "Игрок",
+      "description": "Обычный пользователь Nikiton Games.",
+      "permissions": {
+        "read_profile": true,
+        "write_profile": true,
+        "access_inventory": true,
+        "access_store": true,
+        "participate_events": true,
+        "access_tournaments": true,
+        "sync_to_cloud": true,
+        "read_updates": true,
+        "manage_friends": true,
+        "manage_mailbox": true,
+        "view_legal_docs": true,
+        "delete_account": false,
+        "admin_tools": false
+      }
+    },
+    {
+      "id": "vip",
+      "name": "VIP-игрок",
+      "description": "Игрок с привилегиями VIP.",
+      "permissions": {
+        "read_profile": true,
+        "write_profile": true,
+        "access_inventory": true,
+        "access_store": true,
+        "participate_events": true,
+        "access_tournaments": true,
+        "sync_to_cloud": true,
+        "read_updates": true,
+        "manage_friends": true,
+        "manage_mailbox": true,
+        "view_legal_docs": true,
+        "early_access_beta": true,
+        "priority_support": true,
+        "delete_account": false,
+        "admin_tools": false
+      }
+    },
+    {
+      "id": "moderator",
+      "name": "Модератор",
+      "description": "Сотрудник Nikiton Games, контролирующий поведение игроков.",
+      "permissions": {
+        "view_player_profiles": true,
+        "mute_or_ban_players": true,
+        "manage_reports": true,
+        "read_system_logs": false,
+        "update_announcements": true,
+        "access_admin_panel": true,
+        "access_beta_channel": true
+      }
+    },
+    {
+      "id": "developer",
+      "name": "Разработчик",
+      "description": "Член команды разработки Nikiton Games.",
+      "permissions": {
+        "read_profile": true,
+        "write_profile": true,
+        "push_updates": true,
+        "manage_store": true,
+        "edit_global_events": true,
+        "deploy_beta_versions": true,
+        "access_internal_channel": true,
+        "read_logs": true,
+        "sync_code_modules": true,
+        "test_features": true,
+        "access_admin_panel": true
+      }
+    },
+    {
+      "id": "admin",
+      "name": "Администратор",
+      "description": "Полный доступ ко всем функциям Nikiton Cloud.",
+      "permissions": {
+        "all": true
+      }
+    }
+  ],
+  "api_access": {
+    "require_api_key": true,
+    "rate_limit_per_minute": 60,
+    "rate_limit_vip_bonus": 100,
+    "api_key_rotation_days": 30,
+    "blocked_ips": [],
+    "allowed_domains": ["nikitongames.com", "cloud.nikiton.games"]
+  },
+  "security_policies": {
+    "require_two_factor_auth": true,
+    "password_min_length": 8,
+    "session_timeout_minutes": 30,
+    "max_failed_logins": 5,
+    "auto_lock_duration_minutes": 10,
+    "encrypt_sensitive_data": true,
+    "log_admin_actions": true
+  },
+  "display_settings": {
+    "show_privilege_badges": true,
+    "highlight_vip_permissions": true,
+    "show_beta_warning": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
