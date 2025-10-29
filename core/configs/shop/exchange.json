@@ -1,0 +1,5 @@
+{
+  "ncoin_to_gold_rate": 100,
+  "min_exchange_ncoin": 10,
+  "max_exchange_ncoin": 100000
+}
