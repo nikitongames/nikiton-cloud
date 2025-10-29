@@ -1,27 +1,41 @@
 {
   "starter_set": { "rod": "rod_basic", "reel": "reel_basic", "line": "line_basic", "bait": "bait_universal" },
   "rods": [
-    {"id":"rod_basic","title":"Удилище базовое","max_strength_kg":5,"durability_max":100},
-    {"id":"rod_mid","title":"Удилище среднее","max_strength_kg":8,"durability_max":130},
+    {"id":"rod_basic","title":"Удилище Базовое","max_strength_kg":5,"durability_max":100},
+    {"id":"rod_basic_plus","title":"Удилище Базовое+","max_strength_kg":6,"durability_max":110},
+    {"id":"rod_mid","title":"Удилище Среднее","max_strength_kg":8,"durability_max":130},
+    {"id":"rod_mid_plus","title":"Удилище Среднее+","max_strength_kg":10,"durability_max":145},
     {"id":"rod_pro","title":"Удилище PRO","max_strength_kg":12,"durability_max":160},
-    {"id":"rod_boat_heavy","title":"Катерное heavy","max_strength_kg":20,"durability_max":200}
+    {"id":"rod_pro_plus","title":"Удилище PRO+","max_strength_kg":14,"durability_max":175},
+    {"id":"rod_elite","title":"Удилище ELITE","max_strength_kg":16,"durability_max":190},
+    {"id":"rod_boat_heavy","title":"Катерное Heavy","max_strength_kg":20,"durability_max":210}
   ],
   "reels": [
-    {"id":"reel_basic","title":"Катушка базовая","max_strength_kg":5,"durability_max":100},
-    {"id":"reel_mid","title":"Катушка средняя","max_strength_kg":8,"durability_max":130},
+    {"id":"reel_basic","title":"Катушка Базовая","max_strength_kg":5,"durability_max":100},
+    {"id":"reel_basic_plus","title":"Катушка Базовая+","max_strength_kg":6,"durability_max":110},
+    {"id":"reel_mid","title":"Катушка Средняя","max_strength_kg":8,"durability_max":130},
+    {"id":"reel_mid_plus","title":"Катушка Средняя+","max_strength_kg":10,"durability_max":145},
     {"id":"reel_pro","title":"Катушка PRO","max_strength_kg":12,"durability_max":160},
-    {"id":"reel_boat","title":"Катушка boat","max_strength_kg":20,"durability_max":200}
+    {"id":"reel_pro_plus","title":"Катушка PRO+","max_strength_kg":14,"durability_max":175},
+    {"id":"reel_elite","title":"Катушка ELITE","max_strength_kg":16,"durability_max":190},
+    {"id":"reel_boat","title":"Катушка Boat","max_strength_kg":20,"durability_max":210}
   ],
   "lines": [
-    {"id":"line_basic","title":"Леска 0.25","max_strength_kg":4,"durability_max":80},
-    {"id":"line_strong","title":"Леска 0.4","max_strength_kg":10,"durability_max":140},
-    {"id":"line_braid","title":"Плетёнка 0.18","max_strength_kg":14,"durability_max":180}
+    {"id":"line_basic","title":"Леска 0.25 моно","max_strength_kg":4,"durability_max":80},
+    {"id":"line_mono_030","title":"Леска 0.30 моно","max_strength_kg":6,"durability_max":100},
+    {"id":"line_mono_035","title":"Леска 0.35 моно","max_strength_kg":8,"durability_max":120},
+    {"id":"line_fluoro_030","title":"Флюорокарбон 0.30","max_strength_kg":9,"durability_max":130},
+    {"id":"line_braid_018","title":"Плетёнка 0.18","max_strength_kg":12,"durability_max":160},
+    {"id":"line_braid_022","title":"Плетёнка 0.22","max_strength_kg":14,"durability_max":175},
+    {"id":"line_braid_026","title":"Плетёнка 0.26","max_strength_kg":16,"durability_max":190},
+    {"id":"line_braid_030","title":"Плетёнка 0.30","max_strength_kg":20,"durability_max":210}
   ],
   "baits": [
     {"id":"bait_universal","title":"Универсальная"},
     {"id":"bait_predator","title":"На хищника"},
     {"id":"bait_carp","title":"Карповая"},
     {"id":"bait_trout","title":"Форелевая"},
-    {"id":"bait_eel","title":"На угря"}
+    {"id":"bait_eel","title":"На угря"},
+    {"id":"bait_catfish","title":"На сома"}
   ]
 }
