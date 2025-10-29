@@ -1,0 +1,66 @@
+{
+  "profile_structure": {
+    "id": "auto_generated",
+    "username": "Player",
+    "region": "auto_detected",
+    "language": "ru",
+    "level": 1,
+    "experience": 0,
+    "vip_status": false,
+    "currency": {
+      "gold": 0,
+      "ncoin": 0
+    },
+    "inventory": {
+      "rods": ["basic_rod"],
+      "reels": ["starter_reel"],
+      "lines": ["basic_line"],
+      "hooks": ["small_hook"],
+      "baits": ["basic_bait"]
+    },
+    "boosts": [],
+    "active_tour": null,
+    "active_event": null,
+    "achievements": [],
+    "trophies": [],
+    "settings": {
+      "music_volume": 0.5,
+      "sfx_volume": 0.5,
+      "notifications": true,
+      "language_auto_update": true
+    }
+  },
+  "progression": {
+    "xp_table": [100, 300, 600, 1000, 1500, 2100, 2800, 3600, 4500, 5500],
+    "xp_multiplier": 1.0,
+    "level_up_rewards": {
+      "1": { "gold": 500, "items": ["worm_bait"] },
+      "3": { "gold": 1000, "items": ["medium_hook"] },
+      "5": { "gold": 1500, "items": ["strong_line"] },
+      "8": { "gold": 2000, "items": ["silver_hook"] },
+      "10": { "gold": 5000, "ncoin": 50, "items": ["premium_bait"] }
+    }
+  },
+  "sync_settings": {
+    "auto_save": true,
+    "sync_with_cloud": true,
+    "backup_interval_hours": 2
+  },
+  "restrictions": {
+    "max_inventory_size": 200,
+    "max_boosts_active": 2,
+    "max_trophies_displayed": 10
+  },
+  "ui_settings": {
+    "show_level_progress_bar": true,
+    "show_currency_icons": true,
+    "display_vip_badge": true,
+    "highlight_new_items": true
+  },
+  "auto_actions": {
+    "daily_login_reward": true,
+    "event_auto_enroll": true,
+    "tournament_auto_sync": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
