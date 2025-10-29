@@ -1,0 +1,177 @@
+{
+  "location_catalog": {
+    "regions": [
+      {
+        "id": "kazakhstan",
+        "name": "Казахстан 🇰🇿",
+        "type": "start_region",
+        "description": "Родные водоёмы, с которых начинается путь рыбака.",
+        "locations": [
+          {
+            "id": "kapchagay_lake",
+            "name": "Капчагайское водохранилище",
+            "available_from_level": 1,
+            "entry_cost_gold": 0,
+            "fish_species": ["carp", "pike", "perch", "bream"],
+            "has_tour": false
+          },
+          {
+            "id": "balkhash_lake",
+            "name": "Озеро Балхаш",
+            "available_from_level": 5,
+            "entry_cost_gold": 250,
+            "fish_species": ["catfish", "carp", "pike_perch"],
+            "has_tour": false
+          },
+          {
+            "id": "ile_river",
+            "name": "Река Или",
+            "available_from_level": 10,
+            "entry_cost_gold": 400,
+            "fish_species": ["asp", "ide", "chub", "bream"],
+            "has_tour": true,
+            "tour_prices": {
+              "1h": 300,
+              "3h": 500,
+              "5h": 600
+            },
+            "tour_currency": "ncoin"
+          }
+        ]
+      },
+      {
+        "id": "russia",
+        "name": "Россия 🇷🇺",
+        "type": "tour_region",
+        "description": "Известные места для спортивной рыбалки.",
+        "locations": [
+          {
+            "id": "volga_delta",
+            "name": "Дельта Волги",
+            "available_from_level": 15,
+            "entry_cost_gold": 700,
+            "fish_species": ["catfish", "sturgeon", "pike"],
+            "has_tour": true,
+            "tour_prices": {
+              "1h": 300,
+              "3h": 500,
+              "5h": 600
+            },
+            "tour_currency": "ncoin"
+          },
+          {
+            "id": "baikhal_lake",
+            "name": "Озеро Байкал",
+            "available_from_level": 20,
+            "entry_cost_gold": 1200,
+            "fish_species": ["omul", "grayling", "lenok"],
+            "has_tour": true,
+            "tour_prices": {
+              "1h": 300,
+              "3h": 500,
+              "5h": 600
+            },
+            "tour_currency": "ncoin"
+          }
+        ]
+      },
+      {
+        "id": "belarus",
+        "name": "Беларусь 🇧🇾",
+        "type": "tour_region",
+        "locations": [
+          {
+            "id": "naroch_lake",
+            "name": "Озеро Нарочь",
+            "available_from_level": 18,
+            "entry_cost_gold": 900,
+            "fish_species": ["pike", "perch", "roach", "tench"],
+            "has_tour": true,
+            "tour_prices": {
+              "1h": 300,
+              "3h": 500,
+              "5h": 600
+            },
+            "tour_currency": "ncoin"
+          }
+        ]
+      },
+      {
+        "id": "ukraine",
+        "name": "Украина 🇺🇦",
+        "type": "tour_region",
+        "locations": [
+          {
+            "id": "dnipro_river",
+            "name": "Река Днепр",
+            "available_from_level": 15,
+            "entry_cost_gold": 800,
+            "fish_species": ["catfish", "carp", "bream"],
+            "has_tour": true,
+            "tour_prices": {
+              "1h": 300,
+              "3h": 500,
+              "5h": 600
+            },
+            "tour_currency": "ncoin"
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Европа 🌍",
+        "type": "premium_region",
+        "description": "Туры по странам Европы. Рыбалка с катера на лучших водоёмах.",
+        "locations": [
+          {
+            "id": "norway_fjords",
+            "name": "Фьорды Норвегии",
+            "available_from_level": 25,
+            "entry_cost_real": {
+              "1h": 2000,
+              "3h": 3000,
+              "5h": 4500
+            },
+            "currency": "real",
+            "fish_species": ["cod", "halibut", "salmon"],
+            "has_tour": true
+          },
+          {
+            "id": "france_rhone",
+            "name": "Река Рона, Франция",
+            "available_from_level": 30,
+            "entry_cost_real": {
+              "1h": 2000,
+              "3h": 3000,
+              "5h": 4500
+            },
+            "currency": "real",
+            "fish_species": ["trout", "pike_perch", "barbel"],
+            "has_tour": true
+          }
+        ]
+      }
+    ]
+  },
+  "mechanics": {
+    "auto_unlock_next_region": true,
+    "show_locked_regions": true,
+    "region_unlock_requires_level": true,
+    "display_tour_warnings": true,
+    "allow_tour_extension": true,
+    "save_remaining_time": true,
+    "pause_timer_on_exit": true
+  },
+  "display_settings": {
+    "show_region_flags": true,
+    "highlight_active_tours": true,
+    "show_entry_costs": true,
+    "show_recommended_level": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 20,
+    "refresh_on_app_launch": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
