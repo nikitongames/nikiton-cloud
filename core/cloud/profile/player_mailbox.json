@@ -1,0 +1,47 @@
+{
+  "player_mailbox": {
+    "inbox": [
+      {
+        "id": "welcome_mail",
+        "title": "Добро пожаловать в KazFishing Mobile! 🎣",
+        "message": "Рады видеть тебя, рыбак! В честь начала твоего путешествия — небольшой подарок.",
+        "attachments": { "gold": 1000, "ncoin": 10, "items": ["worm_bait"] },
+        "sender": "Nikiton Games",
+        "date_received": "2025-10-30T00:00:00Z",
+        "expires_in_days": 30,
+        "is_read": false
+      }
+    ],
+    "system_messages": [
+      {
+        "id": "update_notice_1_0",
+        "title": "Обновление 1.0 — Nikiton Core",
+        "message": "Теперь все ваши данные синхронизируются с облаком Nikiton Cloud. Спасибо за участие в тестировании!",
+        "sender": "System",
+        "date_received": "2025-10-30T00:00:00Z",
+        "is_read": false
+      }
+    ],
+    "event_rewards": [],
+    "gift_mails": [],
+    "sent_mails": []
+  },
+  "mechanics": {
+    "max_inbox_size": 50,
+    "max_storage_days": 60,
+    "auto_delete_read_after_days": 30,
+    "allow_player_gifting": true,
+    "allow_system_rewards": true
+  },
+  "display_settings": {
+    "show_unread_badge": true,
+    "highlight_new_rewards": true,
+    "group_by_category": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 10,
+    "save_on_read": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
