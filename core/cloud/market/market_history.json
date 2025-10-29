@@ -1,0 +1,86 @@
+{
+  "market_history": {
+    "transactions": [
+      {
+        "id": "TX-2025-10-29-0001",
+        "type": "sale",
+        "seller_id": "player_00123",
+        "buyer_id": "player_00789",
+        "item_id": "carbon_rod",
+        "item_name": "Карповое карбоновое удилище",
+        "quantity": 1,
+        "price_ncoin": 350,
+        "tax_applied_ncoin": 17.5,
+        "region": "kazakhstan",
+        "timestamp": "2025-10-29T21:10:00Z",
+        "status": "completed"
+      },
+      {
+        "id": "TX-2025-10-29-0002",
+        "type": "sale",
+        "seller_id": "player_00456",
+        "buyer_id": "player_00842",
+        "item_id": "dragon_trophy",
+        "item_name": "Трофей Дракона",
+        "quantity": 1,
+        "price_ncoin": 1200,
+        "tax_applied_ncoin": 60,
+        "region": "russia",
+        "timestamp": "2025-10-29T22:40:00Z",
+        "status": "completed"
+      },
+      {
+        "id": "TX-2025-10-29-0003",
+        "type": "cancel",
+        "seller_id": "player_00999",
+        "buyer_id": null,
+        "item_id": "worm_bait",
+        "item_name": "Червь",
+        "quantity": 10,
+        "price_ncoin": 8,
+        "tax_applied_ncoin": 0,
+        "region": "belarus",
+        "timestamp": "2025-10-29T23:15:00Z",
+        "status": "cancelled"
+      }
+    ]
+  },
+  "analytics": {
+    "total_transactions_today": 152,
+    "total_volume_ncoin": 42800,
+    "average_transaction_value_ncoin": 282,
+    "top_sold_item_id": "premium_bait",
+    "top_seller_id": "player_00123",
+    "most_active_region": "kazakhstan",
+    "daily_trend_percent": 7.5,
+    "event_period_multiplier": 1.2
+  },
+  "mechanics": {
+    "auto_archive_after_days": 30,
+    "keep_seller_history_days": 90,
+    "keep_buyer_history_days": 90,
+    "auto_cleanup_on_server_restart": true,
+    "allow_player_history_view": true,
+    "show_trade_notifications": true
+  },
+  "display_settings": {
+    "show_recent_sales_first": true,
+    "show_item_icons": true,
+    "show_price_with_tax": true,
+    "highlight_completed_sales": true,
+    "show_daily_trends": true
+  },
+  "security": {
+    "hash_transaction_ids": true,
+    "verify_transaction_integrity": true,
+    "log_anomalies": true,
+    "prevent_manual_edit": true,
+    "ban_on_duplicate_tx": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 15,
+    "upload_to_cloud_archive": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
