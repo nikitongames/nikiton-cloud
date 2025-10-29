@@ -9,52 +9,65 @@
   "gratitude_levels": [
     {
       "level": 1,
-      "threshold_kzt": 2000,
-      "reward": { "ncoin": 50, "gold": 500, "items": ["vip_badge_bronze"] },
-      "title": "💠 Поддержавший проект",
-      "bonus": { "vip_bonus_active": false }
+      "threshold_kzt": 1000,
+      "reward": { "ncoin": 25, "gold": 250 },
+      "title": "💠 Первый вклад",
+      "bonus": { "xp_multiplier": 1.05 },
+      "description": "Спасибо за поддержку проекта! Ваш первый шаг навстречу развитию Nikiton Games."
     },
     {
       "level": 2,
       "threshold_kzt": 5000,
-      "reward": { "ncoin": 150, "gold": 1500, "items": ["vip_badge_silver"] },
-      "title": "🌟 Благодарный донатор",
-      "bonus": { "vip_bonus_active": true, "vip_level_unlock": 1 }
+      "reward": { "ncoin": 150, "gold": 1500, "items": ["vip_badge_bronze"] },
+      "title": "🌟 Поддержавший проект",
+      "bonus": { "xp_multiplier": 1.1, "vip_bonus_active": true, "vip_level_unlock": 1 },
+      "description": "Открывает бронзовый статус и дополнительные бонусы в игре."
     },
     {
       "level": 3,
-      "threshold_kzt": 10000,
-      "reward": { "ncoin": 400, "gold": 5000, "items": ["vip_badge_gold"] },
+      "threshold_kzt": 15000,
+      "reward": { "ncoin": 400, "gold": 5000, "items": ["vip_badge_silver", "premium_bait"] },
+      "title": "💎 Благодарный донатор",
+      "bonus": { "xp_multiplier": 1.15, "gold_multiplier": 1.1 },
+      "description": "Увеличенные бонусы и доступ к эксклюзивным событиям."
+    },
+    {
+      "level": 4,
+      "threshold_kzt": 45000,
+      "reward": { "ncoin": 1200, "gold": 15000, "items": ["vip_badge_gold", "tournament_rod"] },
       "title": "👑 Великий покровитель",
-      "bonus": { "vip_bonus_active": true, "vip_level_unlock": 2 }
+      "bonus": { "xp_multiplier": 1.25, "gold_multiplier": 1.25, "vip_level_unlock": 2 },
+      "description": "Золотой статус, уникальные предметы и привилегии в турнирах."
+    },
+    {
+      "level": 5,
+      "threshold_kzt": 100000,
+      "reward": { "ncoin": 3000, "gold": 30000, "items": ["founder_badge", "exclusive_trophy"] },
+      "title": "🏅 Партнёр Nikiton Games",
+      "bonus": { "xp_multiplier": 1.4, "gold_multiplier": 1.4, "event_discount": 0.8 },
+      "description": "Наивысший уровень поддержки. Благодарность от студии и внутриигровая табличка партнёра."
     }
   ],
   "donation_packages": [
-    {
-      "id": "donation_pack_small",
-      "name": "Малый набор поддержки",
-      "price_kzt": 2000,
-      "contents": { "ncoin": 50, "gold": 500 },
-      "description": "Небольшая поддержка проекта. Спасибо за вклад!",
-      "region_auto_convert": true
-    },
-    {
-      "id": "donation_pack_medium",
-      "name": "Средний набор поддержки",
-      "price_kzt": 5000,
-      "contents": { "ncoin": 150, "gold": 1500, "items": ["vip_badge_silver"] },
-      "description": "Популярный выбор игроков. Активирует статус VIP Bronze.",
-      "region_auto_convert": true
-    },
-    {
-      "id": "donation_pack_large",
-      "name": "Большой набор поддержки",
-      "price_kzt": 10000,
-      "contents": { "ncoin": 400, "gold": 5000, "items": ["vip_badge_gold", "tournament_rod"] },
-      "description": "Максимальная поддержка проекта и доступ к VIP Gold.",
-      "region_auto_convert": true
-    }
+    { "id": "pack_1000", "name": "Мини-набор", "price_kzt": 1000, "ncoin": 25 },
+    { "id": "pack_5000", "name": "Малый набор", "price_kzt": 5000, "ncoin": 150 },
+    { "id": "pack_15000", "name": "Средний набор", "price_kzt": 15000, "ncoin": 400 },
+    { "id": "pack_45000", "name": "Большой набор", "price_kzt": 45000, "ncoin": 1200 },
+    { "id": "pack_100000", "name": "Премиум-набор", "price_kzt": 100000, "ncoin": 3000 }
   ],
+  "custom_donation": {
+    "enabled": true,
+    "conversion_rate_kzt_per_ncoin": 40,
+    "min_kzt": 500,
+    "max_kzt": 500000,
+    "allow_fractional_values": false,
+    "ui_behavior": {
+      "show_input_field": true,
+      "auto_calculate_ncoin": true,
+      "show_conversion_rate": true,
+      "display_currency_symbol": "₸"
+    }
+  },
   "mechanics": {
     "auto_gratitude_progress": true,
     "auto_vip_upgrade": true,
@@ -64,7 +77,8 @@
   "display_settings": {
     "show_total_support": true,
     "show_gratitude_level": true,
-    "show_rewards_preview": true
+    "show_rewards_preview": true,
+    "show_custom_donation_input": true
   },
   "sync_settings": {
     "auto_save": true,
