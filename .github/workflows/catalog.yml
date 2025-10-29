@@ -1,0 +1,65 @@
+name: Generate Content Catalog (KazFishingMobile)
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "games/KazFishingMobile/content/packs/**"
+      - ".github/workflows/catalog.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build catalog.json
+        run: |
+          set -e
+          cd games/KazFishingMobile/content
+          mkdir -p packs
+          echo "{
+            \"version\": \"$(date -u +%Y.%m.%d-%H.%M)\",
+            \"items\": [" > catalog.json
+
+          first=1
+          for f in packs/*.zip; do
+            [ -f "$f" ] || continue
+            # title = имя файла без .zip, приводим к человекочитаемому виду
+            base=$(basename "$f" .zip)
+            title=$(echo "$base" | sed -E 's/_/ /g')
+            size_mb=$(python3 - <<EOF
+import os,sys
+sz=os.path.getsize("$f")/1024/1024
+print(f"{sz:.1f}")
+EOF
+)
+            url="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/games/KazFishingMobile/content/packs/$base.zip"
+            if [ $first -eq 0 ]; then
+              echo "," >> catalog.json
+            fi
+            first=0
+            echo "  {\"id\":\"$base\",\"type\":\"pack\",\"title\":\"$title\",\"size_mb\":$size_mb,\"hash\":\"\",\"url\":\"$url\"}" >> catalog.json
+          done
+
+          echo "]}" >> catalog.json
+
+      - name: Commit catalog.json if changed
+        run: |
+          cd games/KazFishingMobile/content
+          if git diff --quiet catalog.json; then
+            echo "No changes in catalog.json"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add catalog.json
+            git commit -m "Update content catalog (KazFishingMobile)"
+            git push
+          fi
