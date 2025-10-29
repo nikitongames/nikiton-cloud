@@ -1,0 +1,87 @@
+{
+  "core_version": "2.0.0",
+  "min_client_version": "2.0.0",
+  "cloud_sync": {
+    "enabled": true,
+    "on_boot": true,
+    "retry_policy": { "retries": 3, "backoff_ms": 1500 },
+    "cache_ttl_seconds": 900
+  },
+  "legal": {
+    "require_consent_gate": true,
+    "reset_on_new_device": true,
+    "files": {
+      "privacy_policy": "core/cloud/global/policies/privacy_policy.json",
+      "terms_of_use": "core/cloud/global/policies/terms_of_use.json",
+      "disclaimer": "core/cloud/global/policies/legal_disclaimer.json"
+    }
+  },
+  "resources": {
+    "languages": [
+      "core/cloud/global/languages/ru.json",
+      "core/cloud/global/languages/en.json",
+      "core/cloud/global/languages/zh.json"
+    ],
+    "events": {
+      "global": "core/cloud/events/global_events.json",
+      "seasonal": "core/cloud/events/seasonal_events.json",
+      "daily": "core/cloud/events/daily_events.json",
+      "special_offers": "core/cloud/events/special_offers.json"
+    },
+    "shop": {
+      "catalog": "core/cloud/shop/shop_catalog.json",
+      "donation_packs": "core/cloud/shop/donation_packs.json",
+      "daily_offers": "core/cloud/shop/daily_offers.json",
+      "special_bundles": "core/cloud/shop/special_bundles.json"
+    },
+    "locations": {
+      "base": "core/cloud/locations/base_locations.json",
+      "tours": "core/cloud/locations/tour_locations.json",
+      "europe": "core/cloud/locations/europe_locations.json",
+      "event_only": "core/cloud/locations/special_event_locations.json"
+    },
+    "items": {
+      "rods": "core/cloud/items/rods.json",
+      "reels": "core/cloud/items/reels.json",
+      "lines": "core/cloud/items/lines.json",
+      "hooks": "core/cloud/items/hooks.json",
+      "baits": "core/cloud/items/baits.json",
+      "lures": "core/cloud/items/lures.json",
+      "tools": "core/cloud/items/tools.json"
+    },
+    "tournaments": {
+      "rules": "core/cloud/tournaments/rules.json",
+      "leaderboards": "core/cloud/tournaments/leaderboards.json",
+      "rewards": "core/cloud/tournaments/rewards.json",
+      "matchmaking": "core/cloud/tournaments/matchmaking.json"
+    },
+    "pricing": {
+      "regions": "core/cloud/configs/regions.json",
+      "exchange": "core/cloud/configs/exchange.json",
+      "rules": "core/cloud/configs/pricing_rules.json",
+      "currency_visual": "core/cloud/configs/currency_visual.json",
+      "player_region_source": "core/cloud/configs/player_region_source.json"
+    }
+  },
+  "features": {
+    "tournaments_enabled": true,
+    "competitions_enabled": true,
+    "chat_enabled": true,
+    "auto_translate_chat": true,
+    "dynamic_offers_enabled": true,
+    "event_calendar_enabled": true
+  },
+  "assets": {
+    "icons": {
+      "gold": "core/assets/icons/currency/gold.png",
+      "ncoin": "core/assets/icons/currency/ncoin.png"
+    },
+    "splash_logo": "core/assets/splash/logo.png"
+  },
+  "security": {
+    "manifest": "core/cloud/system/update_manifest.json",
+    "patch_list": "core/cloud/system/patch_list.json",
+    "allow_downgrade": false,
+    "signature_required": false
+  }
+}
