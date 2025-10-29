@@ -1,0 +1,61 @@
+{
+  "market_tax": {
+    "base_tax_percent": 5,
+    "vip_discount_levels": {
+      "vip1": 1,
+      "vip2": 2,
+      "vip3": 3,
+      "vip4": 4,
+      "vip5": 5
+    },
+    "region_modifiers": {
+      "kazakhstan": 1.0,
+      "russia": 1.1,
+      "belarus": 1.05,
+      "ukraine": 0.95,
+      "eu": 1.2,
+      "asia": 0.9
+    },
+    "rarity_modifiers": {
+      "common": 1.0,
+      "uncommon": 1.0,
+      "rare": 1.1,
+      "legendary": 1.25,
+      "event": 1.15
+    },
+    "dynamic_adjustment": {
+      "enabled": true,
+      "activity_threshold_low": 200,
+      "activity_threshold_high": 2000,
+      "low_activity_discount_percent": 10,
+      "high_activity_surcharge_percent": 10,
+      "adjustment_interval_hours": 24
+    },
+    "minimum_tax_ncoin": 1,
+    "maximum_tax_ncoin": 500,
+    "transaction_fee_ceil_percent": 10
+  },
+  "mechanics": {
+    "calculate_tax_server_side": true,
+    "apply_tax_on_listing": false,
+    "apply_tax_on_successful_sale": true,
+    "refund_tax_on_failed_sale": true,
+    "sync_with_economy_module": true
+  },
+  "display_settings": {
+    "show_tax_preview": true,
+    "highlight_vip_discounts": true,
+    "show_region_modifier": true,
+    "show_final_price_after_tax": true
+  },
+  "security": {
+    "prevent_tax_modification_client_side": true,
+    "log_tax_calculations": true,
+    "verify_tax_integrity_on_sale": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 30
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
