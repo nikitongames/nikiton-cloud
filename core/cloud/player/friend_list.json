@@ -1,0 +1,77 @@
+{
+  "friend_list": {
+    "max_friends": 100,
+    "friends": [
+      {
+        "id": "player_00234",
+        "nickname": "FisherMan92",
+        "status": "online",
+        "last_online": "2025-10-30T18:20:00Z",
+        "region": "kazakhstan",
+        "vip_level": 2,
+        "mutual_friend": true,
+        "blocked": false
+      },
+      {
+        "id": "player_00888",
+        "nickname": "LakeHunter",
+        "status": "offline",
+        "last_online": "2025-10-29T14:10:00Z",
+        "region": "russia",
+        "vip_level": 0,
+        "mutual_friend": true,
+        "blocked": false
+      }
+    ],
+    "incoming_requests": [
+      {
+        "from_id": "player_01001",
+        "nickname": "DeepCatcher",
+        "timestamp": "2025-10-30T09:45:00Z"
+      }
+    ],
+    "outgoing_requests": [
+      {
+        "to_id": "player_01150",
+        "nickname": "LuckyFish",
+        "timestamp": "2025-10-30T10:30:00Z"
+      }
+    ],
+    "blocked_players": []
+  },
+  "mechanics": {
+    "allow_friend_invites": true,
+    "allow_blocking": true,
+    "allow_mutual_visibility": true,
+    "auto_accept_from_trusted": false,
+    "sync_with_tournaments": true,
+    "sync_with_competitions": true
+  },
+  "display_settings": {
+    "show_online_status": true,
+    "show_vip_badges": true,
+    "highlight_mutual_friends": true,
+    "sort_by_status": true,
+    "show_last_online_time": true,
+    "group_by_region": true
+  },
+  "privacy": {
+    "allow_friend_requests": true,
+    "show_activity_status": true,
+    "show_playtime": false,
+    "allow_competition_invites": true,
+    "allow_event_invites": true
+  },
+  "security": {
+    "validate_friend_ids": true,
+    "block_duplicate_requests": true,
+    "ban_on_friend_spam": true,
+    "encrypt_friend_data": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 15,
+    "refresh_on_status_change": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
