@@ -1,0 +1,75 @@
+{
+  "market_security": {
+    "verification": {
+      "require_verified_account": true,
+      "require_two_factor_auth": true,
+      "verify_item_ownership": true,
+      "verify_balance_before_trade": true,
+      "verify_market_license": true,
+      "auto_check_after_login": true
+    },
+    "anti_fraud": {
+      "enabled": true,
+      "detect_price_dumping": true,
+      "detect_duplicate_items": true,
+      "detect_fast_trades_same_item": true,
+      "detect_cross_account_trades": true,
+      "detect_region_exploits": true,
+      "alert_thresholds": {
+        "suspicious_price_drop_percent": 70,
+        "repeated_trade_interval_minutes": 10,
+        "multi_region_trade_limit_per_hour": 5
+      },
+      "auto_flag_review": true,
+      "auto_freeze_on_violation": true
+    },
+    "bans_and_actions": {
+      "minor_violation": {
+        "penalty": "temporary_lock_1h",
+        "log_to_admin_panel": true
+      },
+      "moderate_violation": {
+        "penalty": "temporary_lock_24h",
+        "log_to_admin_panel": true
+      },
+      "severe_violation": {
+        "penalty": "permaban",
+        "log_to_admin_panel": true,
+        "notify_cloud_security": true
+      }
+    },
+    "monitoring": {
+      "enable_real_time_logs": true,
+      "send_logs_to_cloud": true,
+      "cloud_endpoint": "https://security.nikiton.games/api/market/logs",
+      "alert_admin_on_violation": true,
+      "daily_summary_to_admins": true
+    },
+    "reports": {
+      "player_report_enabled": true,
+      "report_cooldown_minutes": 15,
+      "min_report_reason_length": 10,
+      "auto_attach_trade_log": true,
+      "review_time_limit_hours": 24
+    },
+    "display_settings": {
+      "show_suspicious_activity_warnings": true,
+      "show_verification_status": true,
+      "highlight_banned_accounts": true,
+      "notify_player_on_freeze": true
+    },
+    "security_integrity": {
+      "use_encrypted_transactions": true,
+      "hash_all_trade_data": true,
+      "verify_server_signature": true,
+      "prevent_offline_market_access": true,
+      "auto_backup_suspicious_logs": true
+    },
+    "sync_settings": {
+      "auto_sync": true,
+      "sync_interval_minutes": 20,
+      "upload_violation_data_to_cloud": true
+    },
+    "last_update": "2025-10-30T00:00:00Z"
+  }
+}
