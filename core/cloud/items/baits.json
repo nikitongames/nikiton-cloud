@@ -1,0 +1,97 @@
+{
+  "baits": [
+    {
+      "id": "basic_bait",
+      "name": "Обычная наживка",
+      "rarity": "common",
+      "effectiveness": 1.0,
+      "duration_minutes": 10,
+      "preferred_fish": ["roach", "perch", "crucian"],
+      "price_gold": 100,
+      "description": "Простая наживка, подходящая для большинства мелких рыб."
+    },
+    {
+      "id": "worm_bait",
+      "name": "Червь",
+      "rarity": "uncommon",
+      "effectiveness": 1.2,
+      "duration_minutes": 15,
+      "preferred_fish": ["carp", "roach", "bream"],
+      "price_gold": 200,
+      "description": "Классическая наживка для рыбалки в пресной воде."
+    },
+    {
+      "id": "insect_bait",
+      "name": "Насекомые",
+      "rarity": "uncommon",
+      "effectiveness": 1.3,
+      "duration_minutes": 20,
+      "preferred_fish": ["perch", "trout", "ide"],
+      "price_gold": 300,
+      "description": "Популярная наживка для хищных рыб в реках и озёрах."
+    },
+    {
+      "id": "premium_bait",
+      "name": "Премиум наживка",
+      "rarity": "rare",
+      "effectiveness": 1.6,
+      "duration_minutes": 25,
+      "preferred_fish": ["pike", "catfish", "zander"],
+      "price_ncoin": 50,
+      "description": "Высококачественная наживка, повышающая шанс поймать крупную рыбу."
+    },
+    {
+      "id": "legendary_bait",
+      "name": "Легендарная наживка",
+      "rarity": "legendary",
+      "effectiveness": 2.0,
+      "duration_minutes": 30,
+      "preferred_fish": ["sturgeon", "trout", "salmon"],
+      "price_ncoin": 100,
+      "description": "Редкая наживка, привлекающая только самых трофейных рыб."
+    },
+    {
+      "id": "winter_bait",
+      "name": "Зимняя наживка",
+      "rarity": "event",
+      "effectiveness": 1.5,
+      "duration_minutes": 20,
+      "preferred_fish": ["burbot", "whitefish", "pike"],
+      "price_ncoin": 40,
+      "special_event": "new_year_2026",
+      "description": "Особая наживка для подлёдной рыбалки. Эффективна в холодных условиях."
+    },
+    {
+      "id": "nauryz_bait",
+      "name": "Праздничная наживка Наурыз",
+      "rarity": "event",
+      "effectiveness": 1.7,
+      "duration_minutes": 25,
+      "preferred_fish": ["perch", "tench", "trout"],
+      "price_ncoin": 60,
+      "special_event": "nauryz_2026",
+      "description": "Тематическая наживка, доступная во время весеннего события Наурыз."
+    },
+    {
+      "id": "dragon_bait",
+      "name": "Приманка Дракона",
+      "rarity": "event",
+      "effectiveness": 1.9,
+      "duration_minutes": 30,
+      "preferred_fish": ["dragon_fish", "sea_bass", "red_snapper"],
+      "price_ncoin": 80,
+      "special_event": "chinese_new_year_2026",
+      "description": "Редкая приманка, использующаяся во время Китайского Нового года. Повышает шанс поймать мифическую рыбу."
+    }
+  ],
+  "mechanics": {
+    "stackable": true,
+    "max_stack": 99,
+    "auto_use_on_fish_start": true
+  },
+  "display_settings": {
+    "show_effectiveness": true,
+    "show_duration_timer": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
