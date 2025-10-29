@@ -1,0 +1,103 @@
+{
+  "trophies": [
+    {
+      "id": "first_fish",
+      "name": "Первая рыба 🎣",
+      "description": "Поймай свою первую рыбу.",
+      "reward_gold": 500,
+      "reward_ncoin": 0,
+      "reward_item": null,
+      "requirements": { "fish_caught": 1 },
+      "category": "progression",
+      "rarity": "common"
+    },
+    {
+      "id": "hundred_fish",
+      "name": "Опытный рыбак 🐟",
+      "description": "Поймай 100 рыб.",
+      "reward_gold": 2000,
+      "reward_ncoin": 20,
+      "reward_item": "silver_hook",
+      "requirements": { "fish_caught": 100 },
+      "category": "progression",
+      "rarity": "uncommon"
+    },
+    {
+      "id": "rare_fish_master",
+      "name": "Мастер редкой рыбы 💎",
+      "description": "Поймай 10 редких или легендарных рыб.",
+      "reward_gold": 5000,
+      "reward_ncoin": 50,
+      "reward_item": "premium_bait",
+      "requirements": { "rare_fish_caught": 10 },
+      "category": "rarity",
+      "rarity": "rare"
+    },
+    {
+      "id": "tournament_champion",
+      "name": "Чемпион турнира 🏆",
+      "description": "Выиграй любое официальное соревнование.",
+      "reward_gold": 10000,
+      "reward_ncoin": 100,
+      "reward_item": "trophy_cup",
+      "requirements": { "tournaments_won": 1 },
+      "category": "competition",
+      "rarity": "epic"
+    },
+    {
+      "id": "event_hero",
+      "name": "Герой события 🎊",
+      "description": "Прими участие в любом сезонном событии.",
+      "reward_gold": 3000,
+      "reward_ncoin": 50,
+      "reward_item": "event_medal",
+      "requirements": { "events_participated": 1 },
+      "category": "events",
+      "rarity": "rare"
+    },
+    {
+      "id": "legendary_fisher",
+      "name": "Легендарный рыбак 👑",
+      "description": "Поймай хотя бы одну рыбу каждого вида.",
+      "reward_gold": 20000,
+      "reward_ncoin": 250,
+      "reward_item": "gold_hook",
+      "requirements": { "species_completed": true },
+      "category": "collection",
+      "rarity": "legendary"
+    },
+    {
+      "id": "dragon_festival_winner",
+      "name": "Победитель фестиваля Дракона 🐉",
+      "description": "Поймай рыбу-дракона во время Китайского Нового года.",
+      "reward_gold": 8000,
+      "reward_ncoin": 150,
+      "reward_item": "dragon_rod",
+      "requirements": { "special_event": "chinese_new_year_2026" },
+      "category": "events",
+      "rarity": "event"
+    },
+    {
+      "id": "nauryz_master",
+      "name": "Мастер Наурыза 🌸",
+      "description": "Заверши все задания события Наурыз.",
+      "reward_gold": 6000,
+      "reward_ncoin": 120,
+      "reward_item": "nauryz_bait",
+      "requirements": { "special_event": "nauryz_2026" },
+      "category": "events",
+      "rarity": "event"
+    }
+  ],
+  "display_settings": {
+    "show_earned_badge": true,
+    "show_progress_bar": true,
+    "group_by_category": true
+  },
+  "sync_settings": {
+    "auto_save": true,
+    "sync_with_cloud": true,
+    "track_offline_progress": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
