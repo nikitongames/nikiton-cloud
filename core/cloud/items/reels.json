@@ -1,0 +1,100 @@
+{
+  "reels": [
+    {
+      "id": "starter_reel",
+      "name": "Начальная катушка",
+      "rarity": "common",
+      "durability": 100,
+      "speed_multiplier": 1.0,
+      "drag_strength": 4,
+      "repair_cost_gold": 40,
+      "available_from_level": 1,
+      "price_gold": 400,
+      "description": "Простая катушка для первых шагов в рыбалке."
+    },
+    {
+      "id": "medium_reel",
+      "name": "Средняя катушка",
+      "rarity": "uncommon",
+      "durability": 150,
+      "speed_multiplier": 1.2,
+      "drag_strength": 7,
+      "repair_cost_gold": 80,
+      "available_from_level": 3,
+      "price_gold": 900,
+      "description": "Катушка с улучшенной скоростью и надёжностью."
+    },
+    {
+      "id": "advanced_reel",
+      "name": "Продвинутая катушка",
+      "rarity": "rare",
+      "durability": 200,
+      "speed_multiplier": 1.5,
+      "drag_strength": 10,
+      "repair_cost_gold": 120,
+      "available_from_level": 5,
+      "price_gold": 1600,
+      "description": "Баланс между скоростью и мощностью. Отличный выбор для опытных рыбаков."
+    },
+    {
+      "id": "golden_reel",
+      "name": "Золотая катушка",
+      "rarity": "epic",
+      "durability": 250,
+      "speed_multiplier": 1.8,
+      "drag_strength": 12,
+      "repair_cost_gold": 200,
+      "available_from_level": 7,
+      "price_ncoin": 120,
+      "description": "Катушка премиум-класса с повышенной прочностью и скоростью вытягивания."
+    },
+    {
+      "id": "tournament_reel",
+      "name": "Турнирная катушка",
+      "rarity": "legendary",
+      "durability": 300,
+      "speed_multiplier": 2.0,
+      "drag_strength": 15,
+      "repair_cost_gold": 250,
+      "available_from_level": 10,
+      "price_ncoin": 200,
+      "description": "Используется профессионалами на турнирах. Максимальная отзывчивость и контроль."
+    },
+    {
+      "id": "frost_reel",
+      "name": "Морозная катушка",
+      "rarity": "event",
+      "durability": 220,
+      "speed_multiplier": 1.6,
+      "drag_strength": 11,
+      "repair_cost_gold": 180,
+      "available_from_level": 1,
+      "price_ncoin": 100,
+      "special_event": "new_year_2026",
+      "description": "Катушка с защитой от холода, созданная специально для подлёдной рыбалки."
+    },
+    {
+      "id": "dragon_reel",
+      "name": "Катушка Дракона",
+      "rarity": "event",
+      "durability": 270,
+      "speed_multiplier": 1.7,
+      "drag_strength": 13,
+      "repair_cost_gold": 220,
+      "available_from_level": 5,
+      "price_ncoin": 150,
+      "special_event": "chinese_new_year_2026",
+      "description": "Праздничная катушка с уникальным дизайном и мягким ходом."
+    }
+  ],
+  "repair_system": {
+    "enabled": true,
+    "durability_loss_per_use": 0.4,
+    "auto_repair_option": true
+  },
+  "display_settings": {
+    "show_durability_bar": true,
+    "show_speed_drag_stats": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
