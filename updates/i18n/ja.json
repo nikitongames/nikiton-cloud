@@ -1,0 +1,12 @@
+{
+  "_": [
+    {"k":"hello","v":"こんにちは"},
+    {"k":"good_luck","v":"頑張って！"},
+    {"k":"fish_bite","v":"ヒット！"},
+    {"k":"nice_catch","v":"ナイスキャッチ！"},
+    {"k":"connected","v":"接続済み"},
+    {"k":"disconnected","v":"切断されました"},
+    {"k":"shop","v":"ショップ"},
+    {"k":"reward_received","v":"報酬を受け取りました"}
+  ]
+}
