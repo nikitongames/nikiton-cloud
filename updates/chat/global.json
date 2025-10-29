@@ -1,0 +1,6 @@
+{
+  "messages": [
+    { "id":"m1", "user":"System", "txt":"hello", "lang":"en", "ts": 1730200000 },
+    { "id":"m2", "user":"Admin",  "txt":"nice_catch", "lang":"en", "ts": 1730200100 }
+  ]
+}
