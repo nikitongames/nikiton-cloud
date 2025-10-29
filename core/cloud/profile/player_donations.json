@@ -1,0 +1,75 @@
+{
+  "player_donations": {
+    "transactions": [],
+    "total_spent_kzt": 0,
+    "total_spent_usd": 0,
+    "gratitude_level": 0,
+    "last_donation_date": null
+  },
+  "gratitude_levels": [
+    {
+      "level": 1,
+      "threshold_kzt": 2000,
+      "reward": { "ncoin": 50, "gold": 500, "items": ["vip_badge_bronze"] },
+      "title": "💠 Поддержавший проект",
+      "bonus": { "vip_bonus_active": false }
+    },
+    {
+      "level": 2,
+      "threshold_kzt": 5000,
+      "reward": { "ncoin": 150, "gold": 1500, "items": ["vip_badge_silver"] },
+      "title": "🌟 Благодарный донатор",
+      "bonus": { "vip_bonus_active": true, "vip_level_unlock": 1 }
+    },
+    {
+      "level": 3,
+      "threshold_kzt": 10000,
+      "reward": { "ncoin": 400, "gold": 5000, "items": ["vip_badge_gold"] },
+      "title": "👑 Великий покровитель",
+      "bonus": { "vip_bonus_active": true, "vip_level_unlock": 2 }
+    }
+  ],
+  "donation_packages": [
+    {
+      "id": "donation_pack_small",
+      "name": "Малый набор поддержки",
+      "price_kzt": 2000,
+      "contents": { "ncoin": 50, "gold": 500 },
+      "description": "Небольшая поддержка проекта. Спасибо за вклад!",
+      "region_auto_convert": true
+    },
+    {
+      "id": "donation_pack_medium",
+      "name": "Средний набор поддержки",
+      "price_kzt": 5000,
+      "contents": { "ncoin": 150, "gold": 1500, "items": ["vip_badge_silver"] },
+      "description": "Популярный выбор игроков. Активирует статус VIP Bronze.",
+      "region_auto_convert": true
+    },
+    {
+      "id": "donation_pack_large",
+      "name": "Большой набор поддержки",
+      "price_kzt": 10000,
+      "contents": { "ncoin": 400, "gold": 5000, "items": ["vip_badge_gold", "tournament_rod"] },
+      "description": "Максимальная поддержка проекта и доступ к VIP Gold.",
+      "region_auto_convert": true
+    }
+  ],
+  "mechanics": {
+    "auto_gratitude_progress": true,
+    "auto_vip_upgrade": true,
+    "region_price_conversion": true,
+    "sync_with_store": true
+  },
+  "display_settings": {
+    "show_total_support": true,
+    "show_gratitude_level": true,
+    "show_rewards_preview": true
+  },
+  "sync_settings": {
+    "auto_save": true,
+    "sync_interval_minutes": 10,
+    "track_cross_platform": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
