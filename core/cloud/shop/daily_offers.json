@@ -1,0 +1,73 @@
+{
+  "daily_offers": {
+    "refresh_interval_hours": 24,
+    "offers": [
+      {
+        "id": "daily_pack_basic",
+        "title": "Ежедневный набор 🎁",
+        "description": "Небольшой бонусный набор с наживками и немного валюты.",
+        "price_real": {
+          "KZT": 500,
+          "RUB": 99,
+          "USD": 0.99,
+          "EUR": 0.89
+        },
+        "contents": {
+          "gold": 1000,
+          "ncoin": 25,
+          "items": ["basic_bait", "small_hook"]
+        },
+        "discount_percent": 20,
+        "available_from": "00:00",
+        "available_to": "23:59",
+        "limit_per_user": 1
+      },
+      {
+        "id": "daily_pack_rare",
+        "title": "Редкий ежедневный набор 💎",
+        "description": "Редкий набор со скидкой! Содержит редкую снасть и донатную валюту.",
+        "price_real": {
+          "KZT": 1500,
+          "RUB": 299,
+          "USD": 2.99,
+          "EUR": 2.79
+        },
+        "contents": {
+          "gold": 3000,
+          "ncoin": 75,
+          "items": ["silver_hook", "advanced_line"]
+        },
+        "discount_percent": 30,
+        "available_from": "00:00",
+        "available_to": "23:59",
+        "limit_per_user": 1
+      },
+      {
+        "id": "daily_pack_legendary",
+        "title": "Легендарный ежедневный набор 🏆",
+        "description": "Лучший ежедневный набор — максимум выгоды и эксклюзивные предметы!",
+        "price_real": {
+          "KZT": 2500,
+          "RUB": 499,
+          "USD": 4.99,
+          "EUR": 4.79
+        },
+        "contents": {
+          "gold": 6000,
+          "ncoin": 200,
+          "items": ["legendary_bait", "strong_rod", "vip_ticket"]
+        },
+        "discount_percent": 40,
+        "available_from": "00:00",
+        "available_to": "23:59",
+        "limit_per_user": 1
+      }
+    ]
+  },
+  "display_settings": {
+    "show_timer": true,
+    "highlight_best_offer": true,
+    "auto_sort_by_discount": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
