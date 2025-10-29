@@ -1,0 +1,64 @@
+{
+  "player_inventory": {
+    "capacity": 300,
+    "items": [
+      {
+        "id": "starter_rod",
+        "name": "Базовое удилище",
+        "quantity": 1,
+        "condition_percent": 100,
+        "equipped": true,
+        "trade_locked": false
+      },
+      {
+        "id": "worm_bait",
+        "name": "Червь",
+        "quantity": 25,
+        "equipped": false,
+        "trade_locked": false
+      },
+      {
+        "id": "strong_line",
+        "name": "Усиленная леска",
+        "quantity": 2,
+        "condition_percent": 85,
+        "equipped": false,
+        "trade_locked": false
+      }
+    ],
+    "currencies": {
+      "gold": 500,
+      "ncoin": 20
+    },
+    "slots_used": 3,
+    "slots_free": 297
+  },
+  "mechanics": {
+    "auto_stack_items": true,
+    "auto_repair_on_login": false,
+    "auto_sync_with_cloud": true,
+    "repair_warning_threshold": 25,
+    "drop_non_tradeables_on_delete": false
+  },
+  "display_settings": {
+    "show_rarity_colors": true,
+    "show_durability_bars": true,
+    "show_equipped_highlight": true,
+    "show_item_icons": true,
+    "sort_by_rarity": true,
+    "group_by_category": true
+  },
+  "security": {
+    "validate_item_ids": true,
+    "prevent_duplicate_entries": true,
+    "prevent_illegal_items": true,
+    "log_inventory_changes": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 10,
+    "conflict_resolution": "prefer_server",
+    "backup_on_sync": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
