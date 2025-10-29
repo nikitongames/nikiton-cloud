@@ -1,0 +1,60 @@
+{
+  "connection_status": {
+    "is_connected": true,
+    "last_successful_sync": "2025-10-30T00:00:00Z",
+    "last_failed_sync": null,
+    "failed_attempts": 0,
+    "average_latency_ms": 120,
+    "packet_loss_percent": 0.3,
+    "ping_interval_seconds": 30,
+    "region_server": "kazakhstan",
+    "current_channel": "live",
+    "sync_in_progress": false
+  },
+  "server_health": {
+    "status": "stable",
+    "uptime_percent": 99.94,
+    "maintenance_mode": false,
+    "active_sessions": 1438,
+    "current_load_percent": 42.5,
+    "response_time_ms": {
+      "min": 85,
+      "avg": 120,
+      "max": 240
+    }
+  },
+  "retry_policy": {
+    "max_retries": 3,
+    "retry_delay_seconds": 15,
+    "exponential_backoff": true,
+    "notify_on_failure": true
+  },
+  "offline_mode": {
+    "enabled": true,
+    "cache_local_data": true,
+    "max_cache_age_hours": 24,
+    "auto_resync_on_reconnect": true,
+    "display_offline_banner": true
+  },
+  "display_settings": {
+    "show_connection_icon": true,
+    "show_latency_indicator": true,
+    "notify_on_disconnect": true,
+    "show_reconnect_popup": true
+  },
+  "log_history": [
+    {
+      "timestamp": "2025-10-29T23:50:00Z",
+      "event": "Successful sync",
+      "latency_ms": 112,
+      "region": "kazakhstan"
+    },
+    {
+      "timestamp": "2025-10-29T22:10:00Z",
+      "event": "Temporary disconnect detected",
+      "latency_ms": null,
+      "region": "kazakhstan"
+    }
+  ],
+  "last_update": "2025-10-30T00:00:00Z"
+}
