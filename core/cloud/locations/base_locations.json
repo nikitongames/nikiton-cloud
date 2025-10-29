@@ -1,0 +1,82 @@
+{
+  "base_locations": [
+    {
+      "id": "lake_balkhash",
+      "name": "Озеро Балхаш",
+      "region": "KZ",
+      "type": "freshwater",
+      "difficulty": 1,
+      "unlocked_by_default": true,
+      "required_level": 1,
+      "fish_species": ["carp", "pike", "crucian", "bream", "perch"],
+      "description": "Одно из крупнейших озёр Казахстана. Отличное место для начинающих рыболовов.",
+      "entry_fee_gold": 0,
+      "tour_available": false,
+      "scenery": "mountain_lake",
+      "weather_variants": ["sunny", "windy", "cloudy"]
+    },
+    {
+      "id": "kapchagay_reservoir",
+      "name": "Капчагайское водохранилище",
+      "region": "KZ",
+      "type": "freshwater",
+      "difficulty": 2,
+      "unlocked_by_default": false,
+      "required_level": 3,
+      "fish_species": ["catfish", "zander", "roach", "perch", "carp"],
+      "description": "Популярное место среди местных рыбаков. Часто проводятся соревнования.",
+      "entry_fee_gold": 250,
+      "tour_available": true,
+      "scenery": "open_steppe",
+      "weather_variants": ["sunny", "stormy", "evening"]
+    },
+    {
+      "id": "ile_river",
+      "name": "Река Или",
+      "region": "KZ",
+      "type": "river",
+      "difficulty": 3,
+      "unlocked_by_default": false,
+      "required_level": 5,
+      "fish_species": ["pike", "perch", "trout", "tench", "ide"],
+      "description": "Живописная река с быстрым течением и множеством редких видов рыб.",
+      "entry_fee_gold": 400,
+      "tour_available": true,
+      "scenery": "river_sunset",
+      "weather_variants": ["sunny", "foggy", "rainy"]
+    },
+    {
+      "id": "charyn_canyon",
+      "name": "Чарынский каньон",
+      "region": "KZ",
+      "type": "river",
+      "difficulty": 4,
+      "unlocked_by_default": false,
+      "required_level": 8,
+      "fish_species": ["grayling", "trout", "perch", "lenok"],
+      "description": "Уникальное место для экстремальной рыбалки с потрясающими видами.",
+      "entry_fee_gold": 750,
+      "tour_available": true,
+      "scenery": "canyon",
+      "weather_variants": ["sunny", "windy", "evening"]
+    },
+    {
+      "id": "altai_lake",
+      "name": "Алтайское озеро",
+      "region": "KZ",
+      "type": "freshwater",
+      "difficulty": 5,
+      "unlocked_by_default": false,
+      "required_level": 12,
+      "fish_species": ["grayling", "whitefish", "perch", "pike", "char"],
+      "description": "Живописное высокогорное озеро, известное кристально чистой водой и крупной рыбой.",
+      "entry_fee_gold": 1000,
+      "tour_available": true,
+      "scenery": "mountain_valley",
+      "weather_variants": ["clear", "foggy", "night"]
+    }
+  ],
+  "auto_unlock_progression": true,
+  "sync_with_profile": true,
+  "last_update": "2025-10-30T00:00:00Z"
+}
