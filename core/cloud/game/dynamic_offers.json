@@ -1,0 +1,129 @@
+{
+  "dynamic_offers": {
+    "triggers": [
+      {
+        "id": "inactive_player_bonus",
+        "name": "Бонус возвращения 🎁",
+        "trigger_condition": {
+          "days_inactive_min": 3
+        },
+        "offer": {
+          "id": "return_pack",
+          "name": "Пакет возвращения",
+          "price_type": "real",
+          "price_kzt": 1000,
+          "contents": {
+            "gold": 1000,
+            "items": ["premium_bait", "starter_rod"]
+          },
+          "duration_hours": 24,
+          "icon": "offer_return"
+        }
+      },
+      {
+        "id": "frequent_player_offer",
+        "name": "Ежедневная активность 🎣",
+        "trigger_condition": {
+          "sessions_last_3_days_min": 5
+        },
+        "offer": {
+          "id": "active_bonus",
+          "name": "Бонус за активность",
+          "price_type": "ncoin",
+          "price_ncoin": 20,
+          "contents": {
+            "gold": 1500,
+            "items": ["strong_line"]
+          },
+          "discount_percent": 25,
+          "duration_hours": 12,
+          "icon": "offer_active"
+        }
+      },
+      {
+        "id": "event_related_offer",
+        "name": "Событийное предложение 🐉",
+        "trigger_condition": {
+          "active_event_id": "dragon_festival"
+        },
+        "offer": {
+          "id": "dragon_special",
+          "name": "Фестиваль Дракона — спецнабор",
+          "price_type": "real",
+          "price_kzt": 2500,
+          "contents": {
+            "items": ["dragon_hook", "dragon_trophy", "premium_bait"],
+            "ncoin": 20
+          },
+          "duration_hours": 72,
+          "icon": "offer_dragon",
+          "limited": true
+        }
+      },
+      {
+        "id": "region_based_offer",
+        "name": "Региональное предложение 🌍",
+        "trigger_condition": {
+          "player_region": "kazakhstan"
+        },
+        "offer": {
+          "id": "kaz_promo",
+          "name": "KazFishing Специальный набор",
+          "price_type": "real",
+          "price_kzt": 1500,
+          "contents": {
+            "items": ["nauryz_bait", "carp_master_rod"],
+            "gold": 800
+          },
+          "duration_hours": 48,
+          "icon": "offer_kaz"
+        }
+      },
+      {
+        "id": "tournament_trigger",
+        "name": "Турнирное предложение 🏆",
+        "trigger_condition": {
+          "player_in_tournament": true
+        },
+        "offer": {
+          "id": "tournament_pack",
+          "name": "Пакет участника турнира",
+          "price_type": "real",
+          "price_kzt": 2000,
+          "contents": {
+            "items": ["tournament_rod", "premium_bait"],
+            "gold": 1200
+          },
+          "duration_hours": 24,
+          "icon": "offer_tournament"
+        }
+      }
+    ]
+  },
+  "mechanics": {
+    "allow_multiple_active_offers": true,
+    "max_offers_per_player": 3,
+    "refresh_interval_hours": 6,
+    "auto_expire_after_hours": 72,
+    "region_price_conversion": true,
+    "offer_limit_per_event": 5,
+    "sync_with_shop_catalog": true
+  },
+  "display_settings": {
+    "show_offer_banners": true,
+    "show_timer_countdown": true,
+    "highlight_limited_offers": true,
+    "show_player_trigger_reason": true
+  },
+  "security": {
+    "verify_offer_validity_server_side": true,
+    "prevent_price_modification": true,
+    "ban_on_offer_exploit": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 15,
+    "refresh_on_event_change": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
