@@ -1,0 +1,30 @@
+{
+  "currencies": [
+    {
+      "id": "gold",
+      "display_name": "Gold",
+      "icon_path": "core/assets/icons/currency/gold.png",
+      "color": "#FFD700",
+      "priority": 1,
+      "description": "Основная внутриигровая валюта. Используется для покупок, апгрейдов и ремонта снастей."
+    },
+    {
+      "id": "ncoin",
+      "display_name": "N-Coin",
+      "icon_path": "core/assets/icons/currency/ncoin.png",
+      "color": "#4FA6FF",
+      "priority": 0,
+      "description": "Донатная валюта. Используется для покупки премиум-наборов и туров."
+    }
+  ],
+  "display_rules": {
+    "show_symbol": false,
+    "show_icon": true,
+    "show_color": true,
+    "align": "right",
+    "icon_size": 24,
+    "spacing": 6
+  },
+  "auto_refresh": true,
+  "last_update": "2025-10-30T00:00:00Z"
+}
