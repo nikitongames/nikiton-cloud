@@ -1,0 +1,80 @@
+{
+  "special_event_locations": [
+    {
+      "id": "childhood_lake_event",
+      "name": "Озеро Детства",
+      "region": "KZ",
+      "real_location": true,
+      "type": "freshwater",
+      "difficulty": 2,
+      "event_linked": "birthday_event",
+      "available_from": "2026-07-01T00:00:00Z",
+      "available_to": "2026-07-07T23:59:00Z",
+      "fish_species": ["carp", "roach", "pike", "crucian"],
+      "description": "Особое событие, вдохновлённое настоящими воспоминаниями о рыбалке. Здесь всё начинается.",
+      "entry_fee": 0,
+      "currency": "gold",
+      "scenery": "nostalgic_sunset",
+      "weather_variants": ["sunny", "cloudy", "evening"]
+    },
+    {
+      "id": "nauryz_festival_lake",
+      "name": "Праздничное озеро Наурыз 🌸",
+      "region": "KZ",
+      "real_location": false,
+      "type": "freshwater",
+      "difficulty": 3,
+      "event_linked": "nauryz_2026",
+      "available_from": "2026-03-15T00:00:00Z",
+      "available_to": "2026-03-25T23:59:00Z",
+      "fish_species": ["perch", "tench", "pike", "trout"],
+      "description": "Праздничное озеро, открывающееся только во время Наурыза. Игроки ловят рыбу, участвуют в состязаниях и получают редкие награды.",
+      "entry_fee": 0,
+      "currency": "ncoin",
+      "scenery": "spring_mountain",
+      "weather_variants": ["sunny", "blooming", "evening"]
+    },
+    {
+      "id": "winter_tournament_pond",
+      "name": "Зимний турнирный пруд ❄️",
+      "region": "KZ",
+      "real_location": false,
+      "type": "ice_fishing",
+      "difficulty": 4,
+      "event_linked": "new_year_2026",
+      "available_from": "2025-12-25T00:00:00Z",
+      "available_to": "2026-01-10T23:59:00Z",
+      "fish_species": ["burbot", "pike", "perch", "whitefish"],
+      "description": "Пруд для подлёдной рыбалки, активен только в зимние праздники. Игроки участвуют в специальных зимних турнирах.",
+      "entry_fee": 0,
+      "currency": "gold",
+      "scenery": "snow_field",
+      "weather_variants": ["snowy", "frost", "evening"]
+    },
+    {
+      "id": "dragon_festival_bay",
+      "name": "Залив Дракона 🐉",
+      "region": "CN",
+      "real_location": false,
+      "type": "saltwater",
+      "difficulty": 5,
+      "event_linked": "chinese_new_year_2026",
+      "available_from": "2026-02-05T00:00:00Z",
+      "available_to": "2026-02-20T23:59:00Z",
+      "fish_species": ["red_snapper", "dragon_fish", "sea_bass"],
+      "description": "Праздничный залив, посвящённый году Дракона. Участники ловят редких морских существ и получают эксклюзивные призы.",
+      "entry_fee": 0,
+      "currency": "ncoin",
+      "scenery": "sunrise_sea",
+      "weather_variants": ["clear", "sunny", "stormy"]
+    }
+  ],
+  "rules": {
+    "auto_open_by_event": true,
+    "visible_in_map_before_start": true,
+    "show_timer": true,
+    "access_requires_event_active": true,
+    "rewards_scale_with_player_level": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
