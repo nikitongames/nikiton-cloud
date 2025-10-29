@@ -1,0 +1,12 @@
+{
+  "_": [
+    {"k":"hello","v":"안녕하세요"},
+    {"k":"good_luck","v":"행운을 빕니다!"},
+    {"k":"fish_bite","v":"물었어요!"},
+    {"k":"nice_catch","v":"좋은 낚시!"},
+    {"k":"connected","v":"연결됨"},
+    {"k":"disconnected","v":"연결 해제"},
+    {"k":"shop","v":"상점"},
+    {"k":"reward_received","v":"보상 받음"}
+  ]
+}
