@@ -1,11 +1,16 @@
 {
   "default": "KZ",
   "regions": {
-    "KZ": { "name": "Казахстан", "currency": "KZT", "symbol": "₸" },
-    "RU": { "name": "Россия", "currency": "RUB", "symbol": "₽" },
-    "BY": { "name": "Беларусь", "currency": "BYN", "symbol": "Br" },
-    "UA": { "name": "Украина", "currency": "UAH", "symbol": "₴" },
-    "EU": { "name": "Европа", "currency": "EUR", "symbol": "€" },
-    "US": { "name": "США", "currency": "USD", "symbol": "$" }
+    "KZ": { "name": "Казахстан", "currency": "KZT", "symbol": "₸", "lang": "ru", "fallbacks": ["kk", "en"] },
+    "RU": { "name": "Россия", "currency": "RUB", "symbol": "₽", "lang": "ru", "fallbacks": ["en"] },
+    "BY": { "name": "Беларусь", "currency": "BYN", "symbol": "Br", "lang": "ru", "fallbacks": ["en"] },
+    "UA": { "name": "Украина", "currency": "UAH", "symbol": "₴", "lang": "uk", "fallbacks": ["ru", "en"] },
+    "EU": { "name": "Европа", "currency": "EUR", "symbol": "€", "lang": "en", "fallbacks": ["de","fr","it","es"] },
+    "US": { "name": "США", "currency": "USD", "symbol": "$", "lang": "en", "fallbacks": [] },
+    "TR": { "name": "Турция", "currency": "TRY", "symbol": "₺", "lang": "tr", "fallbacks": ["en"] },
+    "PL": { "name": "Польша", "currency": "PLN", "symbol": "zł", "lang": "pl", "fallbacks": ["en"] },
+    "CN": { "name": "Китай", "currency": "CNY", "symbol": "¥", "lang": "zh", "fallbacks": ["en"] },
+    "JP": { "name": "Япония", "currency": "JPY", "symbol": "¥", "lang": "ja", "fallbacks": ["en"] },
+    "KR": { "name": "Корея", "currency": "KRW", "symbol": "₩", "lang": "ko", "fallbacks": ["en"] }
   }
 }
