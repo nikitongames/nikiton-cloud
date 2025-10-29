@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "fees_percent": 10,
+  "min_price_ncoin": 10,
+  "max_price_ncoin": 50000,
+  "allowed_items": ["rod_*","reel_*","line_*","bait_*"]
+}
