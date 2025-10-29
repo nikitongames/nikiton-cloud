@@ -1,0 +1,13 @@
+{
+  "single_active": true,
+  "donation_tours_europe": {
+    "1h": 300,
+    "3h": 500,
+    "5h": 600
+  },
+  "real_money_location": {
+    "1h_kzt": 2000,
+    "3h_kzt": 3000,
+    "5h_kzt": 4500
+  }
+}
