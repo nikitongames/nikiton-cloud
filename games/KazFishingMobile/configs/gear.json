@@ -1,24 +1,27 @@
 {
-  "starter_set": {
-    "rod": "rod_basic",
-    "reel": "reel_basic",
-    "line": "line_basic",
-    "bait": "bait_universal"
-  },
+  "starter_set": { "rod": "rod_basic", "reel": "reel_basic", "line": "line_basic", "bait": "bait_universal" },
   "rods": [
-    { "id": "rod_basic", "title": "Удилище базовое", "max_strength_kg": 5, "durability_max": 100 },
-    { "id": "rod_pro",   "title": "Удилище PRO",     "max_strength_kg": 12, "durability_max": 160 }
+    {"id":"rod_basic","title":"Удилище базовое","max_strength_kg":5,"durability_max":100},
+    {"id":"rod_mid","title":"Удилище среднее","max_strength_kg":8,"durability_max":130},
+    {"id":"rod_pro","title":"Удилище PRO","max_strength_kg":12,"durability_max":160},
+    {"id":"rod_boat_heavy","title":"Катерное heavy","max_strength_kg":20,"durability_max":200}
   ],
   "reels": [
-    { "id": "reel_basic", "title": "Катушка базовая", "max_strength_kg": 5, "durability_max": 100 },
-    { "id": "reel_pro",   "title": "Катушка PRO",     "max_strength_kg": 12, "durability_max": 160 }
+    {"id":"reel_basic","title":"Катушка базовая","max_strength_kg":5,"durability_max":100},
+    {"id":"reel_mid","title":"Катушка средняя","max_strength_kg":8,"durability_max":130},
+    {"id":"reel_pro","title":"Катушка PRO","max_strength_kg":12,"durability_max":160},
+    {"id":"reel_boat","title":"Катушка boat","max_strength_kg":20,"durability_max":200}
   ],
   "lines": [
-    { "id": "line_basic", "title": "Леска 0.25", "max_strength_kg": 4, "durability_max": 80 },
-    { "id": "line_strong","title": "Леска 0.4",  "max_strength_kg": 10,"durability_max": 140 }
+    {"id":"line_basic","title":"Леска 0.25","max_strength_kg":4,"durability_max":80},
+    {"id":"line_strong","title":"Леска 0.4","max_strength_kg":10,"durability_max":140},
+    {"id":"line_braid","title":"Плетёнка 0.18","max_strength_kg":14,"durability_max":180}
   ],
   "baits": [
-    { "id": "bait_universal", "title": "Наживка универсальная" },
-    { "id": "bait_predator",  "title": "Наживка хищник" }
+    {"id":"bait_universal","title":"Универсальная"},
+    {"id":"bait_predator","title":"На хищника"},
+    {"id":"bait_carp","title":"Карповая"},
+    {"id":"bait_trout","title":"Форелевая"},
+    {"id":"bait_eel","title":"На угря"}
   ]
 }
