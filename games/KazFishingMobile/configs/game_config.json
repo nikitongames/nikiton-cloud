@@ -1,0 +1,9 @@
+{
+  "game_name": "KazFishing Mobile",
+  "game_version": "1.0.0",
+  "default_language": "ru",
+  "available_languages": ["ru", "en"],
+  "background_loading_image": "background.png",
+  "region_pricing": true,
+  "allow_in_app_purchases": true
+}
