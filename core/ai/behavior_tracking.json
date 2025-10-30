@@ -1,0 +1,14 @@
+{
+  "behavior_tracking": {
+    "enabled": true,
+    "tracked_events": [
+      "purchase",
+      "battle_start",
+      "tournament_join",
+      "logout"
+    ],
+    "anonymize_data": true,
+    "retention_days": 30,
+    "reporting_interval_min": 60
+  }
+}
