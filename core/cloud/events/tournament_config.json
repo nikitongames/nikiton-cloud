@@ -12,12 +12,8 @@
       "auto_registration_enabled": true,
       "require_min_level": 5,
       "entry_fee_enabled": true,
-      "entry_fee_real_currency": {
-        "kazakhstan": 3000,
-        "russia": 550,
-        "europe": 4.99,
-        "usa": 4.49
-      },
+      "entry_fee_currency": "ncoin",
+      "entry_fee_amount": 50,
       "max_participants_per_tournament": 5000
     },
     "rules": {
