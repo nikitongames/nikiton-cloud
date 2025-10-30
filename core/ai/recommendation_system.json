@@ -1,0 +1,19 @@
+{
+  "recommendations": {
+    "enabled": true,
+    "logic": [
+      {
+        "trigger": "low_balance",
+        "action": "offer_donation_pack",
+        "pack_id": "donation_pack_1000"
+      },
+      {
+        "trigger": "event_active",
+        "action": "notify_bundle",
+        "bundle_id": "spring_festival_bundle"
+      }
+    ],
+    "update_interval_hours": 6,
+    "privacy_compliant": true
+  }
+}
