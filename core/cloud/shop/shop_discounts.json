@@ -1,0 +1,22 @@
+{
+  "discounts": [
+    {
+      "id": "daily_discount",
+      "description": "Случайная скидка дня — обновляется каждые 24 часа.",
+      "discount_percent": 10,
+      "target_category": "daily"
+    },
+    {
+      "id": "event_discount",
+      "description": "Скидка на время активных событий.",
+      "discount_percent": 20,
+      "target_category": "special"
+    },
+    {
+      "id": "vip_bonus",
+      "description": "Дополнительная скидка 15% для владельцев VIP Pass.",
+      "discount_percent": 15,
+      "target_category": "all"
+    }
+  ]
+}
