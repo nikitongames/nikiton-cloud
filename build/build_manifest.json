@@ -1,0 +1,15 @@
+{
+  "artifacts": {
+    "apk": "build/output/kazfishing_1.0.0.apk",
+    "aab": "build/output/kazfishing_1.0.0.aab",
+    "zip": "build/output/nikiton_kazfishing_1.0.0.zip"
+  },
+  "includes": [
+    "/core/",
+    "/game/",
+    "/legal/",
+    "/branding/",
+    "/core/integration/kazfishing_link.json"
+  ],
+  "generated_at": "2025-10-30T23:59:00Z"
+}
