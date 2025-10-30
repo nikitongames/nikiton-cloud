@@ -1,35 +1,84 @@
-name: NikitoN Games - Unity Token Test
+name: Nikiton Cloud Build — KazFishing Mobile
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch: {}
 
 jobs:
-  test-unity-token:
+  build-android:
     runs-on: ubuntu-latest
+    env:
+      UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+      UNITY_VERSION: 2022.3.39f1
+      PROJECT_PATH: game
+      BUILD_NAME: kazfishing
+      VERSION_FILE: build/version.json
     steps:
-      - name: Проверка подключения к репозиторию
+      - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
-      - name: Проверка наличия токена Unity
+      - name: Read version.json
+        id: ver
         run: |
-          if [ -z "${{ secrets.UNITY_AUTH_TOKEN }}" ]; then
-            echo "❌ UNITY_AUTH_TOKEN не найден!"
-            exit 1
-          else
-            echo "✅ UNITY_AUTH_TOKEN найден."
-          fi
+          VERSION=$(jq -r '.version' ${{ env.VERSION_FILE }})
+          CODE=$(jq -r '.build_code' ${{ env.VERSION_FILE }})
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "code=$CODE" >> $GITHUB_OUTPUT
 
-      - name: Тест авторизации в Unity
-        env:
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-          UNITY_AUTH_TOKEN: ${{ secrets.UNITY_AUTH_TOKEN }}
+      - name: Cache Unity Library
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.PROJECT_PATH }}/Library
+          key: Library-${{ env.UNITY_VERSION }}-${{ hashFiles('**/Packages/manifest.json') }}
+          restore-keys: |
+            Library-${{ env.UNITY_VERSION }}-
+
+      - name: Build APK
+        uses: game-ci/unity-builder@v4
+        with:
+          unityVersion: ${{ env.UNITY_VERSION }}
+          targetPlatform: Android
+          androidAppBundle: false
+          projectPath: ${{ env.PROJECT_PATH }}
+          buildName: ${{ env.BUILD_NAME }}_${{ steps.ver.outputs.version }}
+          versioning: Custom
+          version: ${{ steps.ver.outputs.version }}
+          androidVersionCode: ${{ steps.ver.outputs.code }}
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: kazfishing_${{ steps.ver.outputs.version }}.apk
+          path: build/Android/${{ env.BUILD_NAME }}_${{ steps.ver.outputs.version }}.apk
+
+      - name: Build AAB
+        uses: game-ci/unity-builder@v4
+        with:
+          unityVersion: ${{ env.UNITY_VERSION }}
+          targetPlatform: Android
+          androidAppBundle: true
+          projectPath: ${{ env.PROJECT_PATH }}
+          buildName: ${{ env.BUILD_NAME }}_${{ steps.ver.outputs.version }}
+          versioning: Custom
+          version: ${{ steps.ver.outputs.version }}
+          androidVersionCode: ${{ steps.ver.outputs.code }}
+
+      - name: Upload AAB
+        uses: actions/upload-artifact@v4
+        with:
+          name: kazfishing_${{ steps.ver.outputs.version }}.aab
+          path: build/Android/${{ env.BUILD_NAME }}_${{ steps.ver.outputs.version }}.aab
+
+      - name: Pack project ZIP (core+game+legal+branding)
         run: |
-          echo "Пробуем авторизоваться в Unity..."
-          if [ -n "$UNITY_AUTH_TOKEN" ]; then
-            echo "✅ Авторизация через токен UNITY_AUTH_TOKEN прошла успешно!"
-            echo "Теперь можно собирать ядро и игры NikitoN Games."
-          else
-            echo "❌ Ошибка: токен пустой или недействителен."
-            exit 1
-          fi
+          mkdir -p build/output
+          zip -r build/output/nikiton_kazfishing_${{ steps.ver.outputs.version }}.zip core game legal branding build/version.json || true
+
+      - name: Upload ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: nikiton_kazfishing_${{ steps.ver.outputs.version }}.zip
+          path: build/output/nikiton_kazfishing_${{ steps.ver.outputs.version }}.zip
