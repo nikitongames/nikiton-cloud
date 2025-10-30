@@ -1,0 +1,28 @@
+{
+  "shop": {
+    "categories": [
+      { "id": "daily", "name": "Ежедневные товары" },
+      { "id": "special", "name": "Спецпредложения" },
+      { "id": "donation", "name": "Премиум-валюта" }
+    ],
+    "items": [
+      {
+        "id": "daily_pack_small",
+        "name": "Малый ежедневный набор",
+        "category": "daily",
+        "price_real": 1000,
+        "contents": [
+          { "item_id": "ncoin_pack_100", "amount": 1 },
+          { "item_id": "resource_box_common", "amount": 1 }
+        ]
+      },
+      {
+        "id": "donation_pack_1000",
+        "name": "Пакет Ncoin (1000)",
+        "category": "donation",
+        "price_real": 10000,
+        "bonus_percent": 10
+      }
+    ]
+  }
+}
