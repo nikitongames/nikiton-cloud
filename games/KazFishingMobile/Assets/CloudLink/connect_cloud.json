@@ -1,0 +1,13 @@
+{
+  "connection": {
+    "cloud_path": "../../core/cloud/",
+    "auto_sync": true,
+    "last_update": "2025-10-31T00:00:00Z"
+  },
+  "project": {
+    "id": "KazFishingMobile",
+    "framework": "Nikiton Core Framework",
+    "build_target": "Android",
+    "orientation": "Landscape"
+  }
+}
