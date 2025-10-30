@@ -1,0 +1,19 @@
+{
+  "assistant": {
+    "enabled": true,
+    "wake_phrase": "Hey Nikiton",
+    "functions": [
+      "show_tutorial",
+      "display_event_info",
+      "explain_currency",
+      "open_donation_menu"
+    ],
+    "voice_enabled": false,
+    "cooldown_sec": 10,
+    "personality": {
+      "tone": "helpful",
+      "language": "ru",
+      "humor": "mild"
+    }
+  }
+}
