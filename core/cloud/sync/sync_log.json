@@ -1,0 +1,18 @@
+{
+  "sync_log": [
+    {
+      "timestamp": "2025-10-28T12:30:00Z",
+      "player_id": "USR-24811",
+      "status": "success",
+      "duration_ms": 240,
+      "details": "inventory + stats synced"
+    },
+    {
+      "timestamp": "2025-10-28T13:05:00Z",
+      "player_id": "USR-19002",
+      "status": "error",
+      "error_code": "TIMEOUT_504",
+      "details": "connection lost"
+    }
+  ]
+}
