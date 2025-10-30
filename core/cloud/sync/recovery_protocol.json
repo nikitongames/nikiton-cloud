@@ -1,0 +1,16 @@
+{
+  "recovery_protocol": {
+    "enabled": true,
+    "auto_retry": 3,
+    "retry_delay_sec": 15,
+    "backup_source": "local_cache",
+    "merge_strategy": "latest_wins",
+    "steps": [
+      "pause_active_requests",
+      "load_local_cache",
+      "compare_timestamps",
+      "merge_changes",
+      "resend_to_server"
+    ]
+  }
+}
