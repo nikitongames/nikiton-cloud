@@ -1,0 +1,14 @@
+{
+  "matchmaking": {
+    "modes": [
+      { "id": "pvp", "min_level": 5, "max_diff": 3 },
+      { "id": "cooperative", "min_level": 1, "max_diff": 10 },
+      { "id": "tournament", "min_level": 10, "max_diff": 2 }
+    ],
+    "region_priority": true,
+    "latency_limit_ms": 250,
+    "retries": 3,
+    "queue_timeout_sec": 60,
+    "auto_fill_with_bots": true
+  }
+}
