@@ -1,0 +1,92 @@
+{
+  "event_templates": {
+    "templates": [
+      {
+        "id": "holiday_event",
+        "name": "Праздничное событие 🎊",
+        "description": "Событие, приуроченное к праздникам. Включает эксклюзивные награды и временные локации.",
+        "duration_days": 7,
+        "type": "global",
+        "visual_theme": "festive",
+        "rewards_pool_id": "event_rewards_festive",
+        "bonus_modifiers": {
+          "xp_boost_percent": 50,
+          "drop_rate_boost_percent": 30,
+          "gold_boost_percent": 25
+        },
+        "ui_elements": {
+          "banner_image": "assets/events/festive_banner.png",
+          "background_music": "audio/event_festive_theme.mp3",
+          "color_scheme": "#FFD54F"
+        },
+        "available_to_all_regions": true
+      },
+      {
+        "id": "tournament_event",
+        "name": "Турнирное событие 🎣",
+        "description": "Игроки соревнуются за наибольший улов, награды и титулы.",
+        "duration_days": 14,
+        "type": "competitive",
+        "visual_theme": "ocean_blue",
+        "rewards_pool_id": "event_rewards_tournament",
+        "bonus_modifiers": {
+          "xp_boost_percent": 20,
+          "rare_fish_chance_boost_percent": 15
+        },
+        "ui_elements": {
+          "banner_image": "assets/events/tournament_banner.png",
+          "background_music": "audio/event_tournament_theme.mp3",
+          "color_scheme": "#03A9F4"
+        },
+        "available_to_all_regions": true
+      },
+      {
+        "id": "regional_event",
+        "name": "Региональное событие 🏞",
+        "description": "Событие, доступное игрокам выбранного региона. Уникальные рыбы и задания.",
+        "duration_days": 10,
+        "type": "regional",
+        "visual_theme": "nature_green",
+        "rewards_pool_id": "event_rewards_regional",
+        "bonus_modifiers": {
+          "xp_boost_percent": 10,
+          "gold_boost_percent": 15
+        },
+        "ui_elements": {
+          "banner_image": "assets/events/regional_banner.png",
+          "background_music": "audio/event_regional_theme.mp3",
+          "color_scheme": "#8BC34A"
+        },
+        "available_to_all_regions": false
+      }
+    ]
+  },
+  "mechanics": {
+    "auto_generate_from_schedule": true,
+    "apply_bonus_to_all_players": true,
+    "send_start_notifications": true,
+    "auto_distribute_rewards": true,
+    "end_event_with_animation": true,
+    "track_event_progress_per_player": true
+  },
+  "display_settings": {
+    "show_event_timer": true,
+    "animate_rewards": true,
+    "show_event_logo": true,
+    "highlight_active_events": true,
+    "show_reward_preview_popup": true
+  },
+  "security": {
+    "verify_template_integrity": true,
+    "encrypt_event_data": true,
+    "block_fake_templates": true,
+    "log_template_changes": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 60,
+    "refresh_on_event_start": true,
+    "upload_template_updates": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
