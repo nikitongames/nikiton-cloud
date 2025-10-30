@@ -1,0 +1,61 @@
+{
+  "competition_records": {
+    "max_active_competitions": 5,
+    "competitions": [
+      {
+        "id": "COMP-2025-10-30-001",
+        "creator_id": "player_00123",
+        "creator_nickname": "BigCatch",
+        "title": "Состязание: Самая крупная рыба",
+        "description": "Поймай самую тяжёлую рыбу за 30 минут.",
+        "entry_fee_ncoin": 10,
+        "reward_pool_ncoin": 100,
+        "participants_limit": 10,
+        "participants": [
+          { "id": "player_00123", "nickname": "BigCatch", "joined_at": "2025-10-30T10:10:00Z" },
+          { "id": "player_00456", "nickname": "DeepLake", "joined_at": "2025-10-30T10:12:00Z" }
+        ],
+        "rules": {
+          "target": "max_weight",
+          "time_limit_minutes": 30,
+          "allowed_locations": ["Kazakhstan_Lake_1", "Kazakhstan_Lake_2"],
+          "allowed_baits": ["worm_bait", "premium_bait"]
+        },
+        "status": "active",
+        "started_at": "2025-10-30T10:10:00Z",
+        "ends_at": "2025-10-30T10:40:00Z",
+        "winner": null
+      }
+    ]
+  },
+  "mechanics": {
+    "allow_player_created_competitions": true,
+    "allow_entry_fee": true,
+    "auto_distribute_rewards": true,
+    "auto_send_mail_to_winner": true,
+    "refund_on_cancelled": true,
+    "show_timer_countdown": true
+  },
+  "display_settings": {
+    "show_active_competitions": true,
+    "show_participants_count": true,
+    "show_reward_pool": true,
+    "highlight_player_created": true,
+    "show_region_flag": true,
+    "animate_winner_announcement": true
+  },
+  "security": {
+    "validate_competition_id": true,
+    "prevent_fake_results": true,
+    "verify_participant_identity": true,
+    "ban_on_result_manipulation": true,
+    "log_all_competition_events": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 10,
+    "refresh_on_status_change": true,
+    "archive_completed_competitions": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
