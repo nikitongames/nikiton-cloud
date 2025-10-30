@@ -1,0 +1,51 @@
+{
+  "latency_monitor": {
+    "interval_seconds": 10,
+    "max_ping_threshold_ms": 250,
+    "warning_threshold_ms": 180,
+    "packet_loss_threshold_percent": 5,
+    "auto_server_switch_enabled": true,
+    "notify_on_high_latency": true,
+    "notify_on_reconnect": true,
+    "max_reconnect_attempts": 3,
+    "avg_ping_history_limit": 50,
+    "metrics": {
+      "avg_ping_ms": null,
+      "max_ping_ms": null,
+      "min_ping_ms": null,
+      "packet_loss_percent": null,
+      "last_check_timestamp": null
+    }
+  },
+  "mechanics": {
+    "auto_measure_ping": true,
+    "smooth_latency_display": true,
+    "adapt_graphics_on_lag": true,
+    "prefer_udp_for_real_time": true,
+    "sync_with_server_nodes": true,
+    "fallback_on_connection_loss": true,
+    "resume_game_after_reconnect": true
+  },
+  "display_settings": {
+    "show_ping_bar": true,
+    "show_packet_loss": true,
+    "show_latency_graph": true,
+    "highlight_connection_drops": true,
+    "animate_reconnect_events": true,
+    "show_server_region_name": true
+  },
+  "security": {
+    "verify_server_response_time": true,
+    "detect_fake_ping_responses": true,
+    "ban_on_ping_spoof": true,
+    "log_all_latency_events": true,
+    "encrypt_latency_logs": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 10,
+    "upload_latency_data_to_cloud": true,
+    "include_in_diagnostics_report": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
