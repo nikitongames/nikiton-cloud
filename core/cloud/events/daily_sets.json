@@ -1,0 +1,115 @@
+{
+  "daily_sets": {
+    "auto_refresh_daily": true,
+    "refresh_time_utc": "00:00",
+    "currency_conversion_mode": "auto",
+    "sets": [
+      {
+        "id": "daily_common",
+        "name": "Обычный набор 🎣",
+        "description": "Набор для повседневной рыбалки. Содержит базовые ресурсы и наживки.",
+        "price_real_currency": {
+          "base_currency": "KZT",
+          "region_prices": {
+            "kazakhstan": 5000,
+            "russia": 950,
+            "europe": 9.99,
+            "usa": 8.99
+          }
+        },
+        "contents": [
+          { "type": "item", "id": "basic_bait", "quantity": 25 },
+          { "type": "item", "id": "line_standard", "quantity": 2 },
+          { "type": "gold", "amount": 1000 }
+        ],
+        "rarity": "common"
+      },
+      {
+        "id": "daily_rare",
+        "name": "Редкий набор 🐟",
+        "description": "Набор с улучшенными снастями, редкими наживками и бонусом к улову.",
+        "price_real_currency": {
+          "base_currency": "KZT",
+          "region_prices": {
+            "kazakhstan": 12000,
+            "russia": 2200,
+            "europe": 19.99,
+            "usa": 17.99
+          }
+        },
+        "contents": [
+          { "type": "item", "id": "premium_bait", "quantity": 20 },
+          { "type": "item", "id": "rod_advanced", "quantity": 1 },
+          { "type": "gold", "amount": 2500 },
+          { "type": "vip_points", "amount": 25 }
+        ],
+        "rarity": "rare"
+      },
+      {
+        "id": "daily_legendary",
+        "name": "Легендарный набор 🏆",
+        "description": "Эксклюзивный набор с мощной снастью, легендарными наживками и крупным бонусом к турнирам.",
+        "price_real_currency": {
+          "base_currency": "KZT",
+          "region_prices": {
+            "kazakhstan": 23000,
+            "russia": 4200,
+            "europe": 39.99,
+            "usa": 34.99
+          }
+        },
+        "contents": [
+          { "type": "item", "id": "rod_legendary_combo", "quantity": 1 },
+          { "type": "item", "id": "bait_legendary_mix", "quantity": 15 },
+          { "type": "gold", "amount": 6000 },
+          { "type": "vip_points", "amount": 100 }
+        ],
+        "rarity": "legendary"
+      }
+    ],
+    "bundle_offer": {
+      "id": "daily_bundle",
+      "name": "Комплект всех наборов 💎",
+      "description": "Получите все три набора со скидкой 20%.",
+      "discount_percent": 20,
+      "price_real_currency": {
+        "base_currency": "KZT",
+        "region_prices": {
+          "kazakhstan": 35000,
+          "russia": 6400,
+          "europe": 59.99,
+          "usa": 54.99
+        }
+      },
+      "includes": ["daily_common", "daily_rare", "daily_legendary"]
+    }
+  },
+  "mechanics": {
+    "auto_add_to_shop": true,
+    "allow_buy_all_bundle": true,
+    "limit_one_purchase_per_day": true,
+    "auto_send_to_mail_if_inventory_full": true,
+    "convert_currency_by_region": true,
+    "reset_on_region_time_change": true
+  },
+  "display_settings": {
+    "show_daily_timer": true,
+    "show_discount_badge": true,
+    "highlight_legendary_set": true,
+    "animate_new_day_refresh": true,
+    "show_price_in_local_currency": true
+  },
+  "security": {
+    "validate_payment_gateway": true,
+    "verify_region_currency": true,
+    "log_all_transactions": true,
+    "encrypt_set_data": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 60,
+    "upload_sales_stats": true,
+    "refresh_on_server_reset": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
