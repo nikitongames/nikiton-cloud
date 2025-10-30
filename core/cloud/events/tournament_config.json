@@ -1,0 +1,106 @@
+{
+  "tournament_config": {
+    "season_settings": {
+      "enable_seasons": true,
+      "season_duration_days": 14,
+      "rest_period_days": 2,
+      "auto_start_next_season": true,
+      "max_active_tournaments": 3,
+      "global_tournament_id": "summer_2025"
+    },
+    "registration": {
+      "auto_registration_enabled": true,
+      "require_min_level": 5,
+      "entry_fee_enabled": true,
+      "entry_fee_real_currency": {
+        "kazakhstan": 3000,
+        "russia": 550,
+        "europe": 4.99,
+        "usa": 4.49
+      },
+      "max_participants_per_tournament": 5000
+    },
+    "rules": {
+      "score_system": "weight_based",
+      "score_display_mode": "realtime",
+      "tie_breaker": "earliest_submission",
+      "disqualify_on_disconnect": false,
+      "allow_team_tournaments": true,
+      "team_size_limit": 3,
+      "allow_retry": false,
+      "require_verified_account": true
+    },
+    "matchmaking": {
+      "region_based": true,
+      "level_range_grouping": true,
+      "max_level_gap": 10,
+      "vip_priority_enabled": true,
+      "vip_priority_multiplier": 1.2,
+      "search_timeout_seconds": 60
+    },
+    "reward_system": {
+      "auto_distribute_rewards": true,
+      "distribution_method": "mail",
+      "reward_tiers": [
+        {
+          "rank_range": "1",
+          "reward_bundle": "tournament_ultimate",
+          "title": "Легенда турнира 🏆"
+        },
+        {
+          "rank_range": "2-10",
+          "reward_bundle": "tournament_pro",
+          "title": "Почётный чемпион 🥈"
+        },
+        {
+          "rank_range": "11-100",
+          "reward_bundle": "tournament_standard",
+          "title": "Опытный рыболов 🎣"
+        },
+        {
+          "rank_range": "101-500",
+          "reward_bundle": "tournament_basic",
+          "title": "Участник турнира 🎟"
+        }
+      ],
+      "vip_bonus_multiplier": 1.15,
+      "minimum_participation_time_minutes": 15
+    },
+    "leaderboard": {
+      "global_leaderboard_enabled": true,
+      "regional_leaderboards_enabled": true,
+      "update_interval_minutes": 5,
+      "store_historical_results": true,
+      "max_history_records": 10
+    },
+    "security": {
+      "anti_cheat_enabled": true,
+      "packet_verification": true,
+      "hash_tournament_scores": true,
+      "detect_duplicate_accounts": true,
+      "log_suspicious_activity": true,
+      "ban_on_detected_cheat": true
+    },
+    "notifications": {
+      "show_registration_popup": true,
+      "show_timer_before_start": true,
+      "notify_on_rank_change": true,
+      "notify_on_reward_distribution": true,
+      "send_summary_mail": true
+    },
+    "display_settings": {
+      "show_live_ranking": true,
+      "show_prize_pool": true,
+      "show_personal_progress": true,
+      "animate_rank_changes": true,
+      "highlight_top_players": true
+    },
+    "sync_settings": {
+      "auto_sync": true,
+      "sync_interval_minutes": 10,
+      "refresh_on_event_start": true,
+      "upload_score_logs": true
+    }
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
