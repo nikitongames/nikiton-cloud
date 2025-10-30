@@ -1,0 +1,87 @@
+{
+  "event_rewards": {
+    "reward_pools": [
+      {
+        "id": "event_rewards_festive",
+        "name": "Праздничные награды 🎁",
+        "description": "Награды за участие в сезонных или праздничных событиях.",
+        "rewards": [
+          { "type": "gold", "amount": 500 },
+          { "type": "ncoin", "amount": 50 },
+          { "type": "item", "id": "event_bait_festive", "quantity": 10 },
+          { "type": "item", "id": "limited_fishing_rod", "quantity": 1 }
+        ]
+      },
+      {
+        "id": "event_rewards_tournament",
+        "name": "Награды турнира 🏆",
+        "description": "Награды за лучшие результаты в турнирах.",
+        "rewards": [
+          { "type": "ncoin", "amount": 300 },
+          { "type": "item", "id": "tournament_trophy_gold", "quantity": 1 },
+          { "type": "gold", "amount": 1500 },
+          { "type": "vip_points", "amount": 100 }
+        ]
+      },
+      {
+        "id": "event_rewards_regional",
+        "name": "Региональные награды 🏞",
+        "description": "Награды за участие в региональных событиях и челленджах.",
+        "rewards": [
+          { "type": "gold", "amount": 800 },
+          { "type": "item", "id": "regional_rod_special", "quantity": 1 },
+          { "type": "item", "id": "regional_trophy_bronze", "quantity": 1 }
+        ]
+      },
+      {
+        "id": "event_bundle_nowruz",
+        "name": "Набор Наурыза 🌸",
+        "description": "Специальный набор к празднику Наурыз, доступен всем регионам.",
+        "rewards": [
+          { "type": "gold", "amount": 2000 },
+          { "type": "ncoin", "amount": 100 },
+          { "type": "item", "id": "exclusive_rod_nowruz", "quantity": 1 },
+          { "type": "item", "id": "event_trophy_nowruz", "quantity": 1 }
+        ]
+      },
+      {
+        "id": "event_bundle_cny",
+        "name": "Набор Китайского Нового года 🏮",
+        "description": "Набор с праздничной снастью и редкими приманками.",
+        "rewards": [
+          { "type": "gold", "amount": 2500 },
+          { "type": "ncoin", "amount": 150 },
+          { "type": "item", "id": "dragon_bait", "quantity": 5 },
+          { "type": "item", "id": "event_trophy_dragon", "quantity": 1 }
+        ]
+      }
+    ]
+  },
+  "mechanics": {
+    "auto_distribute_on_event_end": true,
+    "calculate_bonus_by_vip": true,
+    "scale_rewards_by_activity": true,
+    "allow_event_reward_preview": true,
+    "sync_with_mail_system": true
+  },
+  "display_settings": {
+    "show_reward_icons": true,
+    "show_reward_values": true,
+    "highlight_rare_items": true,
+    "animate_reward_collection": true,
+    "show_reward_popup_on_claim": true
+  },
+  "security": {
+    "verify_reward_source": true,
+    "block_fake_claims": true,
+    "encrypt_reward_packets": true,
+    "log_reward_distribution": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 30,
+    "refresh_on_event_start": true,
+    "upload_reward_logs": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
