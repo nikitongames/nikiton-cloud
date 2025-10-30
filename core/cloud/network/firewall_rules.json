@@ -1,0 +1,74 @@
+{
+  "firewall_rules": {
+    "anti_flood": {
+      "enabled": true,
+      "max_packets_per_second": 200,
+      "auto_temp_block_duration_sec": 60,
+      "ban_on_repeat_offense": true,
+      "log_all_offenses": true
+    },
+    "ddos_protection": {
+      "enabled": true,
+      "max_simultaneous_connections": 1000,
+      "threshold_trigger_percent": 85,
+      "activate_cloud_shield_on_attack": true,
+      "cooldown_seconds": 120,
+      "notify_admin": true
+    },
+    "packet_validation": {
+      "enabled": true,
+      "verify_signature": true,
+      "reject_unsigned_packets": true,
+      "check_packet_size_limit_bytes": 4096,
+      "block_duplicate_packets": true,
+      "log_packet_drops": true
+    },
+    "geo_restrictions": {
+      "enabled": false,
+      "blocked_regions": [],
+      "allow_vpn_connections": false,
+      "log_geo_blocks": true
+    },
+    "ip_control": {
+      "blacklist_enabled": true,
+      "whitelist_enabled": true,
+      "auto_ban_on_repeated_failures": true,
+      "temporary_ban_minutes": 10,
+      "log_ip_activity": true
+    },
+    "connection_monitoring": {
+      "track_active_sessions": true,
+      "auto_kick_inactive_clients": true,
+      "inactivity_timeout_minutes": 20,
+      "alert_on_suspicious_activity": true,
+      "max_failed_auth_attempts": 3
+    }
+  },
+  "mechanics": {
+    "auto_apply_rules_on_startup": true,
+    "sync_rules_with_cloud": true,
+    "reapply_rules_on_server_switch": true,
+    "log_firewall_activity": true,
+    "auto_backup_on_update": true
+  },
+  "display_settings": {
+    "show_firewall_status": true,
+    "show_connection_attempts": true,
+    "show_blocked_ips_count": true,
+    "animate_security_alerts": true
+  },
+  "security": {
+    "encrypt_firewall_logs": true,
+    "hash_firewall_rules": true,
+    "verify_rule_integrity": true,
+    "ban_on_tampering_attempt": true,
+    "upload_logs_to_security_api": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 30,
+    "refresh_on_threat_detection": true,
+    "upload_firewall_activity": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
