@@ -1,0 +1,85 @@
+{
+  "leaderboards": {
+    "types": [
+      {
+        "id": "global_weight",
+        "name": "🌍 Глобальный рейтинг по весу улова",
+        "description": "Общий вес пойманной рыбы среди всех игроков.",
+        "update_interval_minutes": 30,
+        "reward_distribution": {
+          "top1": { "ncoin": 500, "item": "trophy_gold" },
+          "top10": { "ncoin": 200 },
+          "top100": { "gold": 1000 }
+        },
+        "entries": []
+      },
+      {
+        "id": "regional_weight",
+        "name": "🏞 Региональный рейтинг",
+        "description": "Лучшие рыбаки вашего региона.",
+        "update_interval_minutes": 30,
+        "reward_distribution": {
+          "top1": { "ncoin": 300 },
+          "top10": { "gold": 1000 },
+          "top100": { "gold": 500 }
+        },
+        "entries": []
+      },
+      {
+        "id": "event_leaderboard",
+        "name": "🎉 Событийный рейтинг",
+        "description": "Результаты активных событий.",
+        "update_interval_minutes": 15,
+        "reward_distribution": {
+          "top1": { "ncoin": 250, "item": "event_trophy_gold" },
+          "top10": { "item": "event_trophy_silver" },
+          "top100": { "gold": 500 }
+        },
+        "entries": []
+      },
+      {
+        "id": "tournament_rank",
+        "name": "🏅 Турнирный рейтинг",
+        "description": "Позиции игроков по результатам турниров.",
+        "update_interval_minutes": 10,
+        "reward_distribution": {
+          "top1": { "ncoin": 1000, "item": "vip_badge_gold" },
+          "top3": { "ncoin": 500 },
+          "top10": { "gold": 2000 }
+        },
+        "entries": []
+      }
+    ],
+    "display_modes": ["global", "regional", "event", "tournament"]
+  },
+  "mechanics": {
+    "auto_update": true,
+    "sync_with_statistics": true,
+    "allow_cross_region_comparison": true,
+    "enable_seasonal_resets": true,
+    "store_historical_snapshots": true,
+    "calculate_on_server": true
+  },
+  "display_settings": {
+    "show_player_rank": true,
+    "show_nickname_and_flag": true,
+    "show_vip_badges": true,
+    "highlight_player_entry": true,
+    "animate_rank_changes": true,
+    "show_reward_preview": true
+  },
+  "security": {
+    "validate_score_submission": true,
+    "prevent_fake_entries": true,
+    "ban_on_score_tampering": true,
+    "hash_leaderboard_data": true,
+    "log_rank_changes": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 10,
+    "archive_on_season_end": true,
+    "refresh_on_event_end": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
