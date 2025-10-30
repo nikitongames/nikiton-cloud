@@ -1,0 +1,62 @@
+{
+  "player_log": {
+    "entries": [
+      {
+        "id": "LOG-2025-10-30-0001",
+        "timestamp": "2025-10-30T10:20:00Z",
+        "type": "login",
+        "message": "Игрок вошёл в систему.",
+        "severity": "info",
+        "source": "auth"
+      },
+      {
+        "id": "LOG-2025-10-30-0002",
+        "timestamp": "2025-10-30T10:22:00Z",
+        "type": "sync",
+        "message": "Синхронизация данных профиля завершена успешно.",
+        "severity": "info",
+        "source": "cloud_sync"
+      },
+      {
+        "id": "LOG-2025-10-30-0003",
+        "timestamp": "2025-10-30T10:25:00Z",
+        "type": "market",
+        "message": "Игрок выставил предмет Carbon Rod на продажу за 350 Ncoin.",
+        "severity": "info",
+        "source": "market"
+      }
+    ],
+    "max_entries": 1000,
+    "auto_cleanup_on_exceed": true
+  },
+  "mechanics": {
+    "log_player_actions": true,
+    "log_errors": true,
+    "log_warnings": true,
+    "log_market_trades": true,
+    "log_donations": true,
+    "log_tournament_participation": true,
+    "log_device_switches": true,
+    "notify_admin_on_critical": true
+  },
+  "display_settings": {
+    "show_latest_first": true,
+    "color_by_severity": true,
+    "show_timestamps": true,
+    "show_source_module": true,
+    "allow_filtering_by_type": true
+  },
+  "security": {
+    "encrypt_log_data": true,
+    "prevent_manual_edit": true,
+    "verify_integrity_on_load": true,
+    "log_tamper_attempts": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 20,
+    "upload_to_cloud_archive": true,
+    "archive_old_logs": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
