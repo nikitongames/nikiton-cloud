@@ -1,0 +1,68 @@
+{
+  "event_schedule": {
+    "auto_generate_from_calendar": true,
+    "calendar_integration": true,
+    "region_coverage": "global",
+    "events": [
+      {
+        "id": "nowruz_2025",
+        "name": "Наурыз 🌸",
+        "description": "Празднуем весну и обновление природы! Специальные туры и рыбы доступны всем регионам.",
+        "start_date": "2025-03-21T00:00:00Z",
+        "end_date": "2025-03-28T00:00:00Z",
+        "regions_included": ["kazakhstan", "russia", "europe", "asia"],
+        "trigger_reward": "event_bundle_nowruz",
+        "is_global_event": true
+      },
+      {
+        "id": "chinese_new_year_2025",
+        "name": "Китайский Новый год 🏮",
+        "description": "Празднуем вместе! Доступны тематические награды и эксклюзивные локации.",
+        "start_date": "2025-02-10T00:00:00Z",
+        "end_date": "2025-02-17T00:00:00Z",
+        "regions_included": ["asia", "europe", "kazakhstan", "russia"],
+        "trigger_reward": "event_bundle_cny",
+        "is_global_event": true
+      },
+      {
+        "id": "summer_tournament_2025",
+        "name": "Летний Турнир 🎣",
+        "description": "Соревнуйтесь за крупнейший улов и особые награды!",
+        "start_date": "2025-06-10T00:00:00Z",
+        "end_date": "2025-06-24T00:00:00Z",
+        "regions_included": ["global"],
+        "trigger_reward": "tournament_rewards_summer",
+        "is_global_event": true
+      }
+    ]
+  },
+  "mechanics": {
+    "auto_trigger_events": true,
+    "auto_notify_players": true,
+    "allow_manual_override": true,
+    "repeat_annually": true,
+    "allow_overlap": false,
+    "update_leaderboards_on_end": true,
+    "send_mail_rewards_on_end": true
+  },
+  "display_settings": {
+    "show_event_banner": true,
+    "show_timer_until_start": true,
+    "animate_event_entry": true,
+    "show_global_participation": true,
+    "show_event_rewards_preview": true
+  },
+  "security": {
+    "validate_event_dates": true,
+    "prevent_fake_events": true,
+    "log_event_changes": true,
+    "encrypt_event_data": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 60,
+    "refresh_on_calendar_update": true,
+    "archive_past_events": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
