@@ -1,0 +1,99 @@
+{
+  "sync_channels": {
+    "channels": [
+      {
+        "id": "player_data",
+        "name": "Профили игроков",
+        "endpoint": "/sync/player",
+        "interval_minutes": 10,
+        "priority": "high",
+        "data_types": ["profile", "inventory", "settings", "vip_status"],
+        "compression_enabled": true,
+        "encrypted": true
+      },
+      {
+        "id": "economy",
+        "name": "Экономика и магазин",
+        "endpoint": "/sync/economy",
+        "interval_minutes": 15,
+        "priority": "high",
+        "data_types": ["market", "donations", "pricing_rules", "currency_visual"],
+        "compression_enabled": true,
+        "encrypted": true
+      },
+      {
+        "id": "events",
+        "name": "События и туры",
+        "endpoint": "/sync/events",
+        "interval_minutes": 20,
+        "priority": "medium",
+        "data_types": ["global_events", "competition_records", "event_rewards"],
+        "compression_enabled": true,
+        "encrypted": true
+      },
+      {
+        "id": "chat",
+        "name": "Чаты и коммуникации",
+        "endpoint": "/sync/chat",
+        "interval_minutes": 5,
+        "priority": "medium",
+        "data_types": ["chat_messages", "moderation_logs", "translation_data"],
+        "compression_enabled": false,
+        "encrypted": true
+      },
+      {
+        "id": "leaderboards",
+        "name": "Рейтинги и достижения",
+        "endpoint": "/sync/leaderboards",
+        "interval_minutes": 30,
+        "priority": "low",
+        "data_types": ["statistics", "achievements", "leaderboard_data"],
+        "compression_enabled": true,
+        "encrypted": true
+      },
+      {
+        "id": "updates",
+        "name": "Обновления клиента и ядра",
+        "endpoint": "/sync/updates",
+        "interval_minutes": 60,
+        "priority": "system",
+        "data_types": ["patch_notes", "version_manifest", "legal_updates"],
+        "compression_enabled": true,
+        "encrypted": true
+      }
+    ]
+  },
+  "mechanics": {
+    "auto_resolve_conflicts": true,
+    "prefer_newer_data": true,
+    "batch_upload_enabled": true,
+    "retry_on_failure": true,
+    "max_retries": 3,
+    "log_sync_activity": true,
+    "pause_sync_on_low_bandwidth": true,
+    "resume_sync_on_stable_connection": true
+  },
+  "display_settings": {
+    "show_sync_status": true,
+    "show_last_sync_time": true,
+    "animate_sync_progress": true,
+    "show_sync_channel_name": true,
+    "color_code_by_priority": true
+  },
+  "security": {
+    "verify_data_signatures": true,
+    "detect_data_conflicts": true,
+    "encrypt_all_payloads": true,
+    "hash_sync_packets": true,
+    "auto_quarantine_on_anomaly": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "parallel_channel_sync": true,
+    "max_parallel_channels": 3,
+    "sync_on_game_start": true,
+    "sync_on_exit": true,
+    "upload_logs_on_completion": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
