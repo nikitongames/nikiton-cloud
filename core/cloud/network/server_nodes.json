@@ -1,0 +1,84 @@
+{
+  "server_nodes": {
+    "regions": [
+      {
+        "id": "kazakhstan",
+        "name": "Казахстан",
+        "api_url": "https://kz.api.nikiton.games",
+        "ws_url": "wss://kz.ws.nikiton.games",
+        "ping_limit_ms": 100,
+        "status": "active",
+        "priority": 1,
+        "backup_node": "central_asia"
+      },
+      {
+        "id": "russia",
+        "name": "Россия",
+        "api_url": "https://ru.api.nikiton.games",
+        "ws_url": "wss://ru.ws.nikiton.games",
+        "ping_limit_ms": 120,
+        "status": "active",
+        "priority": 2,
+        "backup_node": "kazakhstan"
+      },
+      {
+        "id": "europe",
+        "name": "Европа",
+        "api_url": "https://eu.api.nikiton.games",
+        "ws_url": "wss://eu.ws.nikiton.games",
+        "ping_limit_ms": 180,
+        "status": "active",
+        "priority": 3,
+        "backup_node": "asia"
+      },
+      {
+        "id": "asia",
+        "name": "Азия",
+        "api_url": "https://asia.api.nikiton.games",
+        "ws_url": "wss://asia.ws.nikiton.games",
+        "ping_limit_ms": 220,
+        "status": "active",
+        "priority": 4,
+        "backup_node": "europe"
+      },
+      {
+        "id": "north_america",
+        "name": "Северная Америка",
+        "api_url": "https://na.api.nikiton.games",
+        "ws_url": "wss://na.ws.nikiton.games",
+        "ping_limit_ms": 250,
+        "status": "standby",
+        "priority": 5,
+        "backup_node": "europe"
+      }
+    ],
+    "default_region": "kazakhstan"
+  },
+  "mechanics": {
+    "auto_select_nearest": true,
+    "fallback_on_failure": true,
+    "rotate_load_balancing": true,
+    "auto_ping_measurement": true,
+    "region_priority_override": false,
+    "notify_on_server_switch": true
+  },
+  "display_settings": {
+    "show_region_name": true,
+    "show_ping_value": true,
+    "show_connection_quality": true,
+    "animate_region_switch": true
+  },
+  "security": {
+    "ssl_only": true,
+    "verify_dns_signature": true,
+    "detect_spoofing": true,
+    "auto_ban_on_flood": true,
+    "log_failed_connections": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 15,
+    "refresh_on_new_node": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
