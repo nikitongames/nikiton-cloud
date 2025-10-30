@@ -4,11 +4,11 @@
       {
         "id": "event_nowruz_2025",
         "name": "Наурыз 🌸",
-        "description": "Праздничное весеннее событие. Каждый набор отражает этап пробуждения природы.",
+        "description": "Весенний праздник обновления природы. Эксклюзивные снасти, золото и VIP-награды.",
         "sets": [
           {
             "id": "nowruz_basic",
-            "name": "Набор Весенний рассвет",
+            "name": "Весенний рассвет",
             "price_real_currency": { "kazakhstan": 7000, "russia": 1300, "europe": 11.99, "usa": 10.99 },
             "contents": [
               { "type": "gold", "amount": 2000 },
@@ -17,7 +17,7 @@
           },
           {
             "id": "nowruz_standard",
-            "name": "Набор Цветение природы",
+            "name": "Цветение природы",
             "price_real_currency": { "kazakhstan": 15000, "russia": 2800, "europe": 25.99, "usa": 22.99 },
             "contents": [
               { "type": "gold", "amount": 4000 },
@@ -27,7 +27,7 @@
           },
           {
             "id": "nowruz_advanced",
-            "name": "Набор Песни Наурыза",
+            "name": "Песни Наурыза",
             "price_real_currency": { "kazakhstan": 30000, "russia": 5400, "europe": 46.99, "usa": 42.99 },
             "contents": [
               { "type": "gold", "amount": 8000 },
@@ -39,8 +39,8 @@
         ],
         "bundle_offer": {
           "id": "nowruz_bundle",
-          "name": "Праздничный комплект Наурыза 💎",
-          "description": "Все наборы события со скидкой 20%.",
+          "name": "Комплект Наурыза 💎",
+          "description": "Все праздничные наборы со скидкой 20%.",
           "discount_percent": 20,
           "price_real_currency": { "kazakhstan": 42000, "russia": 7600, "europe": 64.99, "usa": 59.99 },
           "includes": ["nowruz_basic", "nowruz_standard", "nowruz_advanced"]
@@ -49,11 +49,11 @@
       {
         "id": "event_cny_2025",
         "name": "Китайский Новый год 🏮",
-        "description": "Праздничное событие с символом удачи и легендарной рыбой-драконом.",
+        "description": "Символ удачи и дракона приносит редкие снасти и богатые награды.",
         "sets": [
           {
             "id": "cny_basic",
-            "name": "Набор Лунный старт",
+            "name": "Лунный старт",
             "price_real_currency": { "kazakhstan": 10000, "russia": 1900, "europe": 16.99, "usa": 14.99 },
             "contents": [
               { "type": "gold", "amount": 3000 },
@@ -62,7 +62,7 @@
           },
           {
             "id": "cny_deluxe",
-            "name": "Набор Удача дракона",
+            "name": "Удача дракона",
             "price_real_currency": { "kazakhstan": 25000, "russia": 4700, "europe": 39.99, "usa": 35.99 },
             "contents": [
               { "type": "gold", "amount": 9000 },
@@ -73,7 +73,7 @@
           },
           {
             "id": "cny_legendary",
-            "name": "Набор Императорский дракон",
+            "name": "Императорский дракон",
             "price_real_currency": { "kazakhstan": 60000, "russia": 11300, "europe": 89.99, "usa": 84.99 },
             "contents": [
               { "type": "gold", "amount": 20000 },
@@ -90,6 +90,107 @@
           "discount_percent": 25,
           "price_real_currency": { "kazakhstan": 72000, "russia": 13600, "europe": 109.99, "usa": 99.99 },
           "includes": ["cny_basic", "cny_deluxe", "cny_legendary"]
+        }
+      },
+      {
+        "id": "event_summer_tournament_2025",
+        "name": "Летний турнир 🎣",
+        "description": "Сразитесь за титул чемпиона! Турнирные снасти, золото и престижные трофеи.",
+        "sets": [
+          {
+            "id": "tournament_basic",
+            "name": "Турнирный старт",
+            "price_real_currency": { "kazakhstan": 7000, "russia": 1300, "europe": 11.99, "usa": 10.99 },
+            "contents": [
+              { "type": "gold", "amount": 2500 },
+              { "type": "item", "id": "tournament_bait_basic", "quantity": 10 }
+            ]
+          },
+          {
+            "id": "tournament_standard",
+            "name": "Чемпион",
+            "price_real_currency": { "kazakhstan": 18000, "russia": 3300, "europe": 27.99, "usa": 25.99 },
+            "contents": [
+              { "type": "item", "id": "rod_tournament_standard", "quantity": 1 },
+              { "type": "gold", "amount": 6000 },
+              { "type": "vip_points", "amount": 75 }
+            ]
+          },
+          {
+            "id": "tournament_pro",
+            "name": "Победитель",
+            "price_real_currency": { "kazakhstan": 36000, "russia": 6400, "europe": 49.99, "usa": 44.99 },
+            "contents": [
+              { "type": "item", "id": "rod_tournament_pro", "quantity": 1 },
+              { "type": "gold", "amount": 12000 },
+              { "type": "vip_points", "amount": 150 },
+              { "type": "item", "id": "trophy_gold_cup", "quantity": 1 }
+            ]
+          },
+          {
+            "id": "tournament_ultimate",
+            "name": "Легенда турнира",
+            "price_real_currency": { "kazakhstan": 60000, "russia": 11300, "europe": 89.99, "usa": 84.99 },
+            "contents": [
+              { "type": "item", "id": "rod_tournament_ultimate", "quantity": 1 },
+              { "type": "item", "id": "bait_legendary_mix", "quantity": 20 },
+              { "type": "vip_points", "amount": 300 },
+              { "type": "gold", "amount": 20000 }
+            ]
+          }
+        ],
+        "bundle_offer": {
+          "id": "tournament_bundle",
+          "name": "Комплект Турнира 💎",
+          "description": "Все турнирные наборы со скидкой 25%.",
+          "discount_percent": 25,
+          "price_real_currency": { "kazakhstan": 88000, "russia": 16500, "europe": 129.99, "usa": 119.99 },
+          "includes": ["tournament_basic", "tournament_standard", "tournament_pro", "tournament_ultimate"]
+        }
+      },
+      {
+        "id": "event_autumn_festival_2025",
+        "name": "Осенний фестиваль 🍂",
+        "description": "Празднуем урожай и конец сезона! Эксклюзивные снасти и особые призы.",
+        "sets": [
+          {
+            "id": "autumn_basic",
+            "name": "Листопад",
+            "price_real_currency": { "kazakhstan": 9000, "russia": 1600, "europe": 13.99, "usa": 12.99 },
+            "contents": [
+              { "type": "item", "id": "bait_autumn", "quantity": 15 },
+              { "type": "gold", "amount": 3000 }
+            ]
+          },
+          {
+            "id": "autumn_standard",
+            "name": "Урожайный день",
+            "price_real_currency": { "kazakhstan": 20000, "russia": 3700, "europe": 32.99, "usa": 29.99 },
+            "contents": [
+              { "type": "item", "id": "rod_autumn", "quantity": 1 },
+              { "type": "gold", "amount": 8000 },
+              { "type": "vip_points", "amount": 90 }
+            ]
+          },
+          {
+            "id": "autumn_advanced",
+            "name": "Золотая осень",
+            "price_real_currency": { "kazakhstan": 35000, "russia": 6400, "europe": 54.99, "usa": 49.99 },
+            "contents": [
+              { "type": "item", "id": "rod_autumn_elite", "quantity": 1 },
+              { "type": "gold", "amount": 15000 },
+              { "type": "vip_points", "amount": 180 },
+              { "type": "item", "id": "trophy_autumn_festival", "quantity": 1 }
+            ]
+          }
+        ],
+        "bundle_offer": {
+          "id": "autumn_bundle",
+          "name": "Осенний комплект фестиваля 🍁",
+          "description": "Все осенние наборы со скидкой 20%.",
+          "discount_percent": 20,
+          "price_real_currency": { "kazakhstan": 52000, "russia": 9500, "europe": 79.99, "usa": 74.99 },
+          "includes": ["autumn_basic", "autumn_standard", "autumn_advanced"]
         }
       }
     ]
