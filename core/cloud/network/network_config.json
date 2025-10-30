@@ -1,0 +1,47 @@
+{
+  "network_config": {
+    "protocol": "https",
+    "default_port": 443,
+    "api_base_url": "https://api.nikiton.games",
+    "ws_base_url": "wss://ws.nikiton.games",
+    "timeout_seconds": 20,
+    "max_retries": 3,
+    "retry_delay_seconds": 5,
+    "max_connections_per_client": 3,
+    "heartbeat_interval_seconds": 30,
+    "ping_check_interval_seconds": 15,
+    "compression_enabled": true,
+    "encryption": "AES-256",
+    "region_autoselect": true,
+    "fallback_region": "kazakhstan"
+  },
+  "mechanics": {
+    "auto_reconnect": true,
+    "reconnect_attempts": 5,
+    "auto_switch_on_high_ping": true,
+    "prefer_nearest_server": true,
+    "log_network_events": true,
+    "allow_background_connection": true
+  },
+  "display_settings": {
+    "show_connection_status": true,
+    "show_server_region": true,
+    "show_ping_value": true,
+    "show_disconnect_warnings": true
+  },
+  "security": {
+    "ssl_required": true,
+    "anti_flood_enabled": true,
+    "token_auth_required": true,
+    "ip_validation_enabled": true,
+    "encrypt_all_packets": true,
+    "ban_on_auth_failures": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 10,
+    "retry_on_failure": true,
+    "notify_on_reconnect": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
