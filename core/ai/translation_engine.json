@@ -1,0 +1,16 @@
+{
+  "translation_engine": {
+    "enabled": true,
+    "supported_languages": ["ru", "en", "kk", "zh", "es"],
+    "auto_detect": true,
+    "provider": "NikitonTranslate",
+    "fallback_language": "en",
+    "translation_cache": true,
+    "update_interval_min": 30,
+    "ui_labels": {
+      "translate_button": "Перевести",
+      "translating": "Перевод...",
+      "error": "Ошибка перевода"
+    }
+  }
+}
