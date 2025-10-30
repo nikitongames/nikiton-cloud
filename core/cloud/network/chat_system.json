@@ -1,0 +1,92 @@
+{
+  "chat_system": {
+    "channels": [
+      {
+        "id": "global",
+        "name": "Глобальный чат 🌍",
+        "description": "Общение со всеми игроками мира.",
+        "auto_translate": true,
+        "moderated": true,
+        "message_limit_per_minute": 10,
+        "max_message_length": 300
+      },
+      {
+        "id": "regional",
+        "name": "Региональный чат 🏞",
+        "description": "Игроки вашего региона.",
+        "auto_translate": true,
+        "moderated": true,
+        "message_limit_per_minute": 15,
+        "max_message_length": 250
+      },
+      {
+        "id": "friends",
+        "name": "Чат друзей 🤝",
+        "description": "Общение с друзьями и приглашения в туры.",
+        "auto_translate": false,
+        "moderated": false,
+        "message_limit_per_minute": 20,
+        "max_message_length": 200
+      },
+      {
+        "id": "competition",
+        "name": "Чат состязаний ⚔️",
+        "description": "Общение между участниками активных состязаний.",
+        "auto_translate": true,
+        "moderated": true,
+        "message_limit_per_minute": 10,
+        "max_message_length": 300
+      },
+      {
+        "id": "private",
+        "name": "Личные сообщения ✉️",
+        "description": "Приватная переписка между игроками.",
+        "auto_translate": true,
+        "moderated": false,
+        "message_limit_per_minute": 10,
+        "max_message_length": 300
+      }
+    ]
+  },
+  "mechanics": {
+    "enable_auto_translation": true,
+    "translation_engine": "nikiton_cloud_ai",
+    "detect_language_automatically": true,
+    "allow_voice_to_text": false,
+    "allow_message_reactions": true,
+    "auto_archive_old_messages": true,
+    "archive_after_days": 30
+  },
+  "moderation": {
+    "enable_profanity_filter": true,
+    "enable_spam_detection": true,
+    "auto_warn_on_violation": true,
+    "auto_mute_after_warnings": 3,
+    "auto_ban_after_violations": 5,
+    "allow_player_reports": true,
+    "review_time_hours": 24
+  },
+  "display_settings": {
+    "show_player_flag": true,
+    "show_vip_badge": true,
+    "show_translation_label": true,
+    "show_message_timestamps": true,
+    "highlight_admin_messages": true,
+    "animate_new_messages": true
+  },
+  "security": {
+    "encrypt_messages": true,
+    "hash_chat_logs": true,
+    "log_all_messages": true,
+    "verify_sender_identity": true,
+    "block_links_in_chat": true,
+    "auto_report_suspicious_content": true
+  },
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval_minutes": 5,
+    "upload_chat_logs_to_cloud": true,
+    "purge_expired_archives": true
+  },
+  "last_update": "2025-10-30T00:00:00Z"
+}
