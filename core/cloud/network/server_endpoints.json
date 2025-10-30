@@ -1,0 +1,15 @@
+{
+  "endpoints": {
+    "auth": "https://api.nikitoncloud.com/v2/auth",
+    "sync": "https://api.nikitoncloud.com/v2/sync",
+    "events": "https://api.nikitoncloud.com/v2/events",
+    "shop": "https://api.nikitoncloud.com/v2/shop",
+    "trade": "https://api.nikitoncloud.com/v2/trade",
+    "leaderboards": "https://api.nikitoncloud.com/v2/leaderboards"
+  },
+  "security": {
+    "ssl_required": true,
+    "rate_limit": 100,
+    "token_expiration_min": 60
+  }
+}
