@@ -1,0 +1,18 @@
+{
+  "kazfishing_link": {
+    "integration_enabled": true,
+    "sync_paths": [
+      "core/cloud/events/",
+      "core/cloud/shop/",
+      "core/cloud/sync/"
+    ],
+    "linked_modules": [
+      "fish_packs",
+      "location_data",
+      "tournament_config"
+    ],
+    "auto_update_content": true,
+    "update_frequency_hours": 12,
+    "fallback_mode": "offline_cache"
+  }
+}
