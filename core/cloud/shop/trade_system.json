@@ -1,0 +1,22 @@
+{
+  "trade_system": {
+    "enabled": true,
+    "currency": "Ncoin",
+    "trade_tax_percent": 5,
+    "rules": {
+      "min_price": 100,
+      "max_price": 500000,
+      "restricted_items": ["vip_pass", "event_ticket"]
+    },
+    "player_limits": {
+      "daily_trades": 10,
+      "max_active_offers": 5
+    },
+    "categories": ["resources", "equipment", "cosmetics"],
+    "security": {
+      "transaction_logging": true,
+      "fraud_detection": true,
+      "ban_on_abuse": true
+    }
+  }
+}
