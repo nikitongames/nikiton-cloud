@@ -3,92 +3,85 @@ name: Nikiton Cloud Build — KazFishing Mobile
 on:
   workflow_dispatch:
 
+env:
+  UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+  UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+  UNITY_ACTIVATION_METHOD: PERSONAL
+  UNITY_VERSION: 6000.0.60f1
+  PROJECT_PATH: game
+  BUILD_NAME: kazfishing_1.0.0
+  BUILD_PATH: build/Android
+
 jobs:
   build-android:
-    name: Build Android (APK + AAB + ZIP)
     runs-on: ubuntu-latest
-
-    env:
-      UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-      UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-      UNITY_VERSION: 6000.0.60f1
-      PROJECT_PATH: games/KazFishingMobile
-      BUILD_TARGET: Android
-      BUILD_NAME: kazfishing_1.0.0
-      BUILD_PATH: build/Android
-      BUILD_FILE: kazfishing_1.0.0.apk
-      VERSION: 1.0.0
-      ANDROID_VERSION_CODE: 1
-      BUILD_ZIP_NAME: nikiton_kazfishing_1.0.0.zip
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: Cache Unity Library
-        uses: actions/cache@v4
+        uses: actions/cache@v3
         with:
           path: Library
-          key: Library-${{ runner.os }}-${{ env.UNITY_VERSION }}
+          key: Library-${{ env.UNITY_VERSION }}
           restore-keys: |
             Library-
+
+      - name: Activate Unity License
+        uses: game-ci/unity-activate@v3
+        with:
+          unityVersion: ${{ env.UNITY_VERSION }}
+          activationMethod: ${{ env.UNITY_ACTIVATION_METHOD }}
+          personalLicense: ${{ env.UNITY_LICENSE }}
+          email: ${{ env.UNITY_EMAIL }}
+          password: ${{ env.UNITY_PASSWORD }}
 
       - name: Build APK
         uses: game-ci/unity-builder@v4
         env:
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: Android
-          unityVersion: ${{ env.UNITY_VERSION }}
           projectPath: ${{ env.PROJECT_PATH }}
           buildName: ${{ env.BUILD_NAME }}
-          buildPath: ${{ env.BUILD_PATH }}
-          buildFile: ${{ env.BUILD_FILE }}
-          allowDirtyBuild: true
+          versioning: Custom
+          version: 1.0.0
+          androidExportType: androidPackage
 
       - name: Upload APK
-        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: KazFishing-APK
-          path: ${{ env.BUILD_PATH }}/${{ env.BUILD_FILE }}
+          path: ${{ env.BUILD_PATH }}/${{ env.BUILD_NAME }}.apk
 
       - name: Build AAB
-        if: always()
         uses: game-ci/unity-builder@v4
         env:
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: Android
-          unityVersion: ${{ env.UNITY_VERSION }}
+          androidExportType: androidAppBundle
           projectPath: ${{ env.PROJECT_PATH }}
           buildName: ${{ env.BUILD_NAME }}
-          buildPath: ${{ env.BUILD_PATH }}
-          buildFile: kazfishing_1.0.0.aab
-          androidExportType: androidAppBundle
-          allowDirtyBuild: true
+          versioning: Custom
+          version: 1.0.0
 
       - name: Upload AAB
-        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: KazFishing-AAB
-          path: ${{ env.BUILD_PATH }}/kazfishing_1.0.0.aab
+          path: ${{ env.BUILD_PATH }}/${{ env.BUILD_NAME }}.aab
 
       - name: Pack project ZIP (core+game+legal+branding)
-        if: always()
         run: |
-          zip -r ${{ env.BUILD_ZIP_NAME }} core games legal branding
+          zip -r ${{ env.BUILD_NAME }}.zip core game legal branding
+        shell: bash
 
       - name: Upload ZIP
-        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: NikitonCloud-FullPackage
-          path: ${{ env.BUILD_ZIP_NAME }}
-
-      - name: Complete job
-        if: always()
-        run: echo "✅ Build process completed successfully."
+          name: KazFishing-ZIP
+          path: ./${{ env.BUILD_NAME }}.zip
