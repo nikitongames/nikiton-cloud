@@ -4,15 +4,26 @@ on:
   workflow_dispatch:
 
 jobs:
+  activate:
+    name: Activate Unity License
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Activate Unity
+        uses: game-ci/unity-activate@v4
+        env:
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_VERSION: 6000.0.60f1
+
   build-android:
     name: Build Android (APK + AAB + ZIP)
+    needs: activate
     runs-on: ubuntu-latest
 
     env:
-      UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-      UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-      UNITY_ACTIVATION_METHOD: PRO
-      UNITY_SERIAL: ""
       UNITY_VERSION: 6000.0.60f1
       PROJECT_PATH: game
       BUILD_TARGET: Android
@@ -36,15 +47,6 @@ jobs:
           key: Library-${{ runner.os }}-${{ env.UNITY_VERSION }}
           restore-keys: |
             Library-
-
-      - name: Read version.json
-        id: version
-        run: |
-          if [ -f "core/version.json" ]; then
-            echo "Version file found."
-          else
-            echo "Version file missing — skipping read."
-          fi
 
       - name: Build APK
         uses: game-ci/unity-builder@v4
@@ -88,8 +90,7 @@ jobs:
 
       - name: Pack project ZIP (core+game+legal+branding)
         if: always()
-        run: |
-          zip -r ${{ env.BUILD_ZIP_NAME }} core game legal branding
+        run: zip -r ${{ env.BUILD_ZIP_NAME }} core game legal branding
 
       - name: Upload ZIP
         if: always()
@@ -98,13 +99,6 @@ jobs:
           name: NikitonCloud-FullPackage
           path: ${{ env.BUILD_ZIP_NAME }}
 
-      - name: Post Cache Unity Library
-        if: always()
-        uses: actions/cache@v4
-        with:
-          path: Library
-          key: Library-${{ runner.os }}-${{ env.UNITY_VERSION }}
-
       - name: Complete job
         if: always()
-        run: echo "✅ Build process completed successfully."
+        run: echo "✅ Build finished successfully"
