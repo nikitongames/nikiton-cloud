@@ -1,0 +1,49 @@
+{
+  "market_bundles": [
+    {
+      "id": "spring_festival_bundle",
+      "name": "Весенний фестиваль",
+      "description": "Эксклюзивный набор к Весеннему фестивалю — ресурсы, билеты на турнир и бонусные монеты Ncoin.",
+      "items": [
+        { "item_id": "ncoin_pack_500", "amount": 1 },
+        { "item_id": "tournament_ticket", "amount": 3 },
+        { "item_id": "spring_gift_box", "amount": 1 }
+      ],
+      "price_real": 7000,
+      "discount": 20,
+      "currency": "KZT",
+      "duration_days": 7,
+      "availability": "seasonal"
+    },
+    {
+      "id": "new_year_event_bundle",
+      "name": "Новогодний марафон",
+      "description": "Праздничный набор с удвоенным шансом редких наград и бонусными ресурсами.",
+      "items": [
+        { "item_id": "ncoin_pack_1000", "amount": 1 },
+        { "item_id": "legendary_reward_box", "amount": 1 },
+        { "item_id": "vip_pass", "amount": 1 }
+      ],
+      "price_real": 15000,
+      "discount": 30,
+      "currency": "KZT",
+      "duration_days": 14,
+      "availability": "limited"
+    },
+    {
+      "id": "discount_festival_bundle",
+      "name": "Фестиваль скидок",
+      "description": "Уникальное предложение недели — комплект редких ресурсов и бонусных токенов.",
+      "items": [
+        { "item_id": "ncoin_pack_200", "amount": 2 },
+        { "item_id": "resource_box_rare", "amount": 2 },
+        { "item_id": "bonus_token", "amount": 10 }
+      ],
+      "price_real": 5000,
+      "discount": 15,
+      "currency": "KZT",
+      "duration_days": 5,
+      "availability": "weekly"
+    }
+  ]
+}
