@@ -1,87 +1,60 @@
-name: Nikiton Cloud Build — KazFishing Mobile
+name: Android Build
 
 on:
   workflow_dispatch:
 
-env:
-  UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-  UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-  UNITY_ACTIVATION_METHOD: PERSONAL
-  UNITY_VERSION: 6000.0.60f1
-  PROJECT_PATH: game
-  BUILD_NAME: kazfishing_1.0.0
-  BUILD_PATH: build/Android
-
 jobs:
   build-android:
+    name: Build Android
     runs-on: ubuntu-latest
+
+    env:
+      UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+      UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+      UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+      UNITY_ACTIVATION_METHOD: PERSONAL
+      UNITY_VERSION: 6000.0.60f1
+      PROJECT_PATH: game
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          lfs: true
 
       - name: Cache Unity Library
         uses: actions/cache@v3
         with:
           path: Library
-          key: Library-${{ env.UNITY_VERSION }}
+          key: Library-${{ hashFiles('**/Packages/manifest.json') }}
           restore-keys: |
             Library-
 
-      - name: Activate Unity License
-        uses: game-ci/unity-activate@v3
-        with:
-          unityVersion: ${{ env.UNITY_VERSION }}
-          activationMethod: ${{ env.UNITY_ACTIVATION_METHOD }}
-          personalLicense: ${{ env.UNITY_LICENSE }}
-          email: ${{ env.UNITY_EMAIL }}
-          password: ${{ env.UNITY_PASSWORD }}
-
-      - name: Build APK
+      - name: Build Android APK
         uses: game-ci/unity-builder@v4
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: Android
+          unityVersion: 6000.0.60f1
           projectPath: ${{ env.PROJECT_PATH }}
-          buildName: ${{ env.BUILD_NAME }}
-          versioning: Custom
-          version: 1.0.0
-          androidExportType: androidPackage
+          buildName: kazfishing_1.0.0
+          buildFile: build/Android/kazfishing_1.0.0.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: KazFishing-APK
-          path: ${{ env.BUILD_PATH }}/${{ env.BUILD_NAME }}.apk
+          name: KazFishing APK
+          path: build/Android/kazfishing_1.0.0.apk
 
-      - name: Build AAB
+      - name: Build Android AAB
         uses: game-ci/unity-builder@v4
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: Android
+          unityVersion: 6000.0.60f1
           androidExportType: androidAppBundle
           projectPath: ${{ env.PROJECT_PATH }}
-          buildName: ${{ env.BUILD_NAME }}
-          versioning: Custom
-          version: 1.0.0
+          buildName: kazfishing_1.0.0
+          buildFile: build/Android/kazfishing_1.0.0.aab
 
       - name: Upload AAB
         uses: actions/upload-artifact@v4
         with:
-          name: KazFishing-AAB
-          path: ${{ env.BUILD_PATH }}/${{ env.BUILD_NAME }}.aab
-
-      - name: Pack project ZIP (core+game+legal+branding)
-        run: |
-          zip -r ${{ env.BUILD_NAME }}.zip core game legal branding
-        shell: bash
-
-      - name: Upload ZIP
-        uses: actions/upload-artifact@v4
-        with:
-          name: KazFishing-ZIP
-          path: ./${{ env.BUILD_NAME }}.zip
+          name: KazFishing AAB
+          path: build/Android/kazfishing_1.0.0.aab
