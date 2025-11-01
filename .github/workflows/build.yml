@@ -1,91 +1,51 @@
-name: Android Build — KazFishing Mobile
+name: Nikiton Cloud Build — KazFishing Mobile
 
 on:
   workflow_dispatch:
 
-env:
-  UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-  UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-  UNITY_ACTIVATION_METHOD: PERSONAL
-  UNITY_VERSION: 6000.0.60f1
-  PROJECT_PATH: games/KazFishingMobile
-  BUILD_NAME: kazfishing_1.0.0
-  BUILD_DIR: build/Android
-
 jobs:
   build-android:
+    name: Build Android APK
     runs-on: ubuntu-latest
 
+    env:
+      UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+      UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+      UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+      UNITY_ACTIVATION_METHOD: PERSONAL
+      UNITY_VERSION: 6000.0.60f1
+      PROJECT_PATH: game/KazFishingMobile
+      BUILD_NAME: kazfishing_1.0.0
+      BUILD_FILE: kazfishing_1.0.0.apk
+      BUILD_PATH: build/Android
+
     steps:
-      - name: Checkout repo (full history to avoid shallow warning)
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           lfs: true
-          fetch-depth: 0
-
-      - name: Precheck: ensure Unity project exists
-        run: |
-          set -e
-          echo "Listing PROJECT_PATH:"
-          ls -la "${{ env.PROJECT_PATH }}"
-          test -d "${{ env.PROJECT_PATH }}/Assets" \
-            && test -d "${{ env.PROJECT_PATH }}/Packages" \
-            && test -d "${{ env.PROJECT_PATH }}/ProjectSettings" \
-            || (echo "❌ Unity project structure not found under ${{ env.PROJECT_PATH }}"; exit 1)
 
       - name: Cache Unity Library
-        uses: actions/cache@v4
+        uses: actions/cache@v3
         with:
           path: ${{ env.PROJECT_PATH }}/Library
-          key: Library-${{ env.UNITY_VERSION }}-${{ hashFiles(format('{0}/Packages/manifest.json', env.PROJECT_PATH)) }}
+          key: Library-${{ env.UNITY_VERSION }}
           restore-keys: |
             Library-
 
-      - name: Build APK
+      - name: Unity Build (Android)
         uses: game-ci/unity-builder@v4
-        env:
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
-          unityVersion: ${{ env.UNITY_VERSION }}
           targetPlatform: Android
+          unityVersion: ${{ env.UNITY_VERSION }}
           projectPath: ${{ env.PROJECT_PATH }}
           buildName: ${{ env.BUILD_NAME }}
-          buildFile: ${{ env.BUILD_DIR }}/${{ env.BUILD_NAME }}.apk
-          versioning: Custom
-          version: 1.0.0
-          androidExportType: androidPackage
+          buildFile: ${{ env.BUILD_FILE }}
+          buildPath: ${{ env.BUILD_PATH }}
           allowDirtyBuild: true
-          customParameters: -quit -batchmode -nographics -silent-crashes
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: KazFishing-APK
-          path: ${{ env.BUILD_DIR }}/${{ env.BUILD_NAME }}.apk
-
-      - name: Build AAB
-        uses: game-ci/unity-builder@v4
-        env:
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-        with:
-          unityVersion: ${{ env.UNITY_VERSION }}
-          targetPlatform: Android
-          androidExportType: androidAppBundle
-          projectPath: ${{ env.PROJECT_PATH }}
-          buildName: ${{ env.BUILD_NAME }}
-          buildFile: ${{ env.BUILD_DIR }}/${{ env.BUILD_NAME }}.aab
-          versioning: Custom
-          version: 1.0.0
-          allowDirtyBuild: true
-          customParameters: -quit -batchmode -nographics -silent-crashes
-
-      - name: Upload AAB
-        uses: actions/upload-artifact@v4
-        with:
-          name: KazFishing-AAB
-          path: ${{ env.BUILD_DIR }}/${{ env.BUILD_NAME }}.aab
+          name: ${{ env.BUILD_FILE }}
+          path: ${{ env.PROJECT_PATH }}/${{ env.BUILD_PATH }}/${{ env.BUILD_FILE }}
