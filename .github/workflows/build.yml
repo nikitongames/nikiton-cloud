@@ -1,60 +1,91 @@
-name: Android Build
+name: Android Build — KazFishing Mobile
 
 on:
   workflow_dispatch:
 
+env:
+  UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+  UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+  UNITY_ACTIVATION_METHOD: PERSONAL
+  UNITY_VERSION: 6000.0.60f1
+  PROJECT_PATH: games/KazFishingMobile
+  BUILD_NAME: kazfishing_1.0.0
+  BUILD_DIR: build/Android
+
 jobs:
   build-android:
-    name: Build Android
     runs-on: ubuntu-latest
 
-    env:
-      UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-      UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-      UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-      UNITY_ACTIVATION_METHOD: PERSONAL
-      UNITY_VERSION: 6000.0.60f1
-      PROJECT_PATH: game
-
     steps:
-      - name: Checkout repository
+      - name: Checkout repo (full history to avoid shallow warning)
         uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 0
+
+      - name: Precheck: ensure Unity project exists
+        run: |
+          set -e
+          echo "Listing PROJECT_PATH:"
+          ls -la "${{ env.PROJECT_PATH }}"
+          test -d "${{ env.PROJECT_PATH }}/Assets" \
+            && test -d "${{ env.PROJECT_PATH }}/Packages" \
+            && test -d "${{ env.PROJECT_PATH }}/ProjectSettings" \
+            || (echo "❌ Unity project structure not found under ${{ env.PROJECT_PATH }}"; exit 1)
 
       - name: Cache Unity Library
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
-          path: Library
-          key: Library-${{ hashFiles('**/Packages/manifest.json') }}
+          path: ${{ env.PROJECT_PATH }}/Library
+          key: Library-${{ env.UNITY_VERSION }}-${{ hashFiles(format('{0}/Packages/manifest.json', env.PROJECT_PATH)) }}
           restore-keys: |
             Library-
 
-      - name: Build Android APK
+      - name: Build APK
         uses: game-ci/unity-builder@v4
+        env:
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
+          unityVersion: ${{ env.UNITY_VERSION }}
           targetPlatform: Android
-          unityVersion: 6000.0.60f1
           projectPath: ${{ env.PROJECT_PATH }}
-          buildName: kazfishing_1.0.0
-          buildFile: build/Android/kazfishing_1.0.0.apk
+          buildName: ${{ env.BUILD_NAME }}
+          buildFile: ${{ env.BUILD_DIR }}/${{ env.BUILD_NAME }}.apk
+          versioning: Custom
+          version: 1.0.0
+          androidExportType: androidPackage
+          allowDirtyBuild: true
+          customParameters: -quit -batchmode -nographics -silent-crashes
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: KazFishing APK
-          path: build/Android/kazfishing_1.0.0.apk
+          name: KazFishing-APK
+          path: ${{ env.BUILD_DIR }}/${{ env.BUILD_NAME }}.apk
 
-      - name: Build Android AAB
+      - name: Build AAB
         uses: game-ci/unity-builder@v4
+        env:
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
+          unityVersion: ${{ env.UNITY_VERSION }}
           targetPlatform: Android
-          unityVersion: 6000.0.60f1
           androidExportType: androidAppBundle
           projectPath: ${{ env.PROJECT_PATH }}
-          buildName: kazfishing_1.0.0
-          buildFile: build/Android/kazfishing_1.0.0.aab
+          buildName: ${{ env.BUILD_NAME }}
+          buildFile: ${{ env.BUILD_DIR }}/${{ env.BUILD_NAME }}.aab
+          versioning: Custom
+          version: 1.0.0
+          allowDirtyBuild: true
+          customParameters: -quit -batchmode -nographics -silent-crashes
 
       - name: Upload AAB
         uses: actions/upload-artifact@v4
         with:
-          name: KazFishing AAB
-          path: build/Android/kazfishing_1.0.0.aab
+          name: KazFishing-AAB
+          path: ${{ env.BUILD_DIR }}/${{ env.BUILD_NAME }}.aab
