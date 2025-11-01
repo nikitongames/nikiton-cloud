@@ -1,11 +1,11 @@
-name: Nikiton Cloud Build — KazFishing Mobile
+name: Build Android (APK + AAB)
 
 on:
   workflow_dispatch:
 
 jobs:
   build-android:
-    name: Build Android APK
+    name: Unity Build (Android)
     runs-on: ubuntu-latest
 
     env:
@@ -14,10 +14,11 @@ jobs:
       UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
       UNITY_ACTIVATION_METHOD: PERSONAL
       UNITY_VERSION: 6000.0.60f1
-      PROJECT_PATH: game/KazFishingMobile
+      PROJECT_PATH: games/KazFishingMobile
       BUILD_NAME: kazfishing_1.0.0
-      BUILD_FILE: kazfishing_1.0.0.apk
       BUILD_PATH: build/Android
+      ANDROID_VERSION_CODE: 1
+      ANDROID_EXPORT_TYPE: androidPackage
 
     steps:
       - name: Checkout repository
@@ -26,26 +27,50 @@ jobs:
           lfs: true
 
       - name: Cache Unity Library
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ env.PROJECT_PATH }}/Library
-          key: Library-${{ env.UNITY_VERSION }}
+          key: Library-${{ hashFiles('**/Packages/manifest.json') }}
           restore-keys: |
             Library-
 
-      - name: Unity Build (Android)
+      # === Сборка APK ===
+      - name: Build Android APK
         uses: game-ci/unity-builder@v4
         with:
           targetPlatform: Android
           unityVersion: ${{ env.UNITY_VERSION }}
           projectPath: ${{ env.PROJECT_PATH }}
           buildName: ${{ env.BUILD_NAME }}
-          buildFile: ${{ env.BUILD_FILE }}
           buildPath: ${{ env.BUILD_PATH }}
-          allowDirtyBuild: true
+          buildFile: ${{ env.BUILD_NAME }}.apk
+          versioning: Custom
+          version: 1.0.0
+          androidVersionCode: ${{ env.ANDROID_VERSION_CODE }}
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ env.BUILD_FILE }}
-          path: ${{ env.PROJECT_PATH }}/${{ env.BUILD_PATH }}/${{ env.BUILD_FILE }}
+          name: Android-APK
+          path: ${{ env.BUILD_PATH }}/${{ env.BUILD_NAME }}.apk
+
+      # === Сборка AAB ===
+      - name: Build Android AAB
+        uses: game-ci/unity-builder@v4
+        with:
+          targetPlatform: Android
+          unityVersion: ${{ env.UNITY_VERSION }}
+          projectPath: ${{ env.PROJECT_PATH }}
+          buildName: ${{ env.BUILD_NAME }}
+          buildPath: ${{ env.BUILD_PATH }}
+          buildFile: ${{ env.BUILD_NAME }}.aab
+          versioning: Custom
+          version: 1.0.0
+          androidVersionCode: ${{ env.ANDROID_VERSION_CODE }}
+          androidExportType: aab
+
+      - name: Upload AAB
+        uses: actions/upload-artifact@v4
+        with:
+          name: Android-AAB
+          path: ${{ env.BUILD_PATH }}/${{ env.BUILD_NAME }}.aab
